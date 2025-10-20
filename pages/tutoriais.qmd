@@ -1,7 +1,7 @@
 --- 
 title: "Tabela de Símbolos"
 ---
-Durante o processo de análise léxica, a **Oxe Lang** utiliza uma **Tabela de Símbolos** para armazenar e rastrear todos os identificadores encontrados no código fonte.
+Durante o processo de análise léxica, a **Calabreso++** utiliza uma **Tabela de Símbolos** para armazenar e rastrear todos os identificadores encontrados no código fonte.
 
 Essa tabela é essencial para garantir que variáveis, funções e outros símbolos sejam reconhecidos corretamente ao longo da análise e fases posteriores da compilação.
 

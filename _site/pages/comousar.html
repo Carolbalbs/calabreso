@@ -111,10 +111,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Analisador Léxico –">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://carolbalbs.github.io/calabreso/pages/images/yotraPixel.png">
 <meta property="og:site_name" content=" ">
 <meta name="twitter:title" content="Analisador Léxico –">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://carolbalbs.github.io/calabreso/pages/images/yotraPixel.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -275,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><img src="../images/yotraPixel.png" class="img-fluid"></p>
+<p><img src="../images/calabresoPxl.png" class="img-fluid"></p>
 </div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -299,8 +301,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="como-executar-o-analisador-léxico" class="level2">
+<div class="quarto-layout-panel" data-layout="[300,30]">
+<div class="quarto-layout-row">
+<section id="como-executar-o-analisador-léxico" class="level2 quarto-layout-cell" style="flex-basis: 90.9%;justify-content: center;">
 <h2 class="anchored" data-anchor-id="como-executar-o-analisador-léxico">⚙️ Como Executar o Analisador Léxico</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/yotraPixel.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+</div>
+</div>
 <ol type="1">
 <li><strong>Compile o projeto:</strong></li>
 </ol>
@@ -312,7 +324,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>A saída será uma lista dos <strong>tokens reconhecidos</strong>, com sua <strong>categoria</strong> e valor identificado.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>T_BARRIL, <span class="st">'barril'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_BROCOU, <span class="st">'brocou'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_LPAREN, <span class="st">'('</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_RPAREN, <span class="st">')'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_COLON, <span class="st">':'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_NADA, <span class="st">'nada'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_ <span class="ex">LBRACE,</span> <span class="st">'{'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_PEGAVISAO, <span class="st">'pegaVisao'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_LPAREN, <span class="st">'('</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_STRING_LITERAL, <span class="st">'"Olá, Mundo!"'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_RPAREN, <span class="st">')'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_SEMICOLON, <span class="st">';'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_RBRACE, <span class="st">'}'</span><span class="op">&gt;</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
-</section>
 <section id="observações-finais" class="level2">
 <h2 class="anchored" data-anchor-id="observações-finais">📌 Observações Finais</h2>
 <ul>

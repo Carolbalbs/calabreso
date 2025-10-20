@@ -1,7 +1,7 @@
 project:
   type: website
   preview:
-    port: 8080
+    port: 3030
     browser: false
 
 format:
@@ -18,7 +18,7 @@ website:
   title: " "
   favicon: ./images/calabresa.png
   margin-footer: |
-    ![](/images/yotraPixel.png)
+    ![](/images/calabresoPxl.png)
   site-url: "https://carolbalbs.github.io/calabreso"
   twitter-card: true
   open-graph: true

@@ -3,7 +3,7 @@ title: "Estruturas de Controle"
 ---
 ## Condicional
 
-```yotra
+```js
 se_ligue (nota >= 7.0) {
     oPrai("Aprovado com sucesso!");
 } yotra (nota >= 5.0) {
@@ -15,7 +15,7 @@ se_ligue (nota >= 7.0) {
 
 ## Laço `dinovo` (for)
 
-```yotra
+```js
 dinovo (var inteiro contador = 1; contador <= 10; contador++) {
     oPrai("Tabuada do 5: 5 x " + contador + " = " + (5 * contador));
 
@@ -24,7 +24,7 @@ dinovo (var inteiro contador = 1; contador <= 10; contador++) {
 
 ## Laço `ensonha` (while)
 
-```yotra
+```js
 var inteiro senha = 0;
 ensonha (senha != 1234) {
     oPrai("Digite a senha correta:");
@@ -35,7 +35,7 @@ oPrai("Acesso liberado!");
 
 ## Laço `dorme...ensonha` (do-while)
 
-```yotra
+```js
 var inteiro opcao = 0;
 dorme {
     oPrai("Menu: 1-Jogar | 2-Sair");

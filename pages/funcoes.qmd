@@ -3,7 +3,7 @@ title: "Funções"
 ---
 ### Função com retorno
 
-```yotra
+```js
 deGue() calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {
     devolva (nota1 + nota2) / 2;
 }
@@ -11,7 +11,7 @@ deGue() calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {
 
 ### Função sem retorno
 
-```yotra
+```js
 deGue() exibirBemVindo(): sem_volta {
     oPrai("=== Sistema Calabreso++ ===");
     oPrai("Bem-vindo ao programa!");
@@ -20,7 +20,7 @@ deGue() exibirBemVindo(): sem_volta {
 
 ### Chamadas de função
 
-```yotra
+```js
 var flutuante mediaFinal = calcularMedia(8.5, 7.0);
 oPrai("Média do aluno: " + mediaFinal);     
 ```
@@ -29,7 +29,7 @@ oPrai("Média do aluno: " + mediaFinal);
 
 ## 📄 Exemplo de Código `calculadora.yotra` 
 
-```yotra
+```js
 deGue_calculadora(): sem_volta {
     // Declaração e inicialização de variáveis
     var flutuante preco = 150.0, desconto = 20.0;
@@ -40,9 +40,6 @@ deGue_calculadora(): sem_volta {
     // Impressão do resultado
     oPrai("Preço original: R$ " + preco);
     oPrai("Desconto: " + desconto + "%");
-    oPrai("Valor final: R$ " + valorFinal);
-
-}
+    oPrai("Valor final: R$ " + valorFinal)
 ```
 
----

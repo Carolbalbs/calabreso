@@ -47,19 +47,7 @@
     "href": "pages/comousar.html",
     "title": "Analisador Léxico",
     "section": "",
-    "text": "Compile o projeto:\n\nmake\n\nExecute o analisador com um arquivo .yotra:\n\n./lexer input/exemplo-input.txt\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.\n&lt;T_BARRIL, 'barril'&gt; &lt;T_BROCOU, 'brocou'&gt; &lt;T_LPAREN, '('&gt; &lt;T_RPAREN, ')'&gt; &lt;T_COLON, ':'&gt; &lt;T_NADA, 'nada'&gt; &lt;T_ LBRACE, '{'&gt; &lt;T_PEGAVISAO, 'pegaVisao'&gt; &lt;T_LPAREN, '('&gt; &lt;T_STRING_LITERAL, '\"Olá, Mundo!\"'&gt; &lt;T_RPAREN, ')'&gt; &lt;T_SEMICOLON, ';'&gt; &lt;T_RBRACE, '}'&gt;",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Analisador Léxico"
-    ]
-  },
-  {
-    "objectID": "pages/comousar.html#como-executar-o-analisador-léxico",
-    "href": "pages/comousar.html#como-executar-o-analisador-léxico",
-    "title": "Analisador Léxico",
-    "section": "",
-    "text": "Compile o projeto:\n\nmake\n\nExecute o analisador com um arquivo .yotra:\n\n./lexer input/exemplo-input.txt\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.\n&lt;T_BARRIL, 'barril'&gt; &lt;T_BROCOU, 'brocou'&gt; &lt;T_LPAREN, '('&gt; &lt;T_RPAREN, ')'&gt; &lt;T_COLON, ':'&gt; &lt;T_NADA, 'nada'&gt; &lt;T_ LBRACE, '{'&gt; &lt;T_PEGAVISAO, 'pegaVisao'&gt; &lt;T_LPAREN, '('&gt; &lt;T_STRING_LITERAL, '\"Olá, Mundo!\"'&gt; &lt;T_RPAREN, ')'&gt; &lt;T_SEMICOLON, ';'&gt; &lt;T_RBRACE, '}'&gt;",
+    "text": "A saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -83,7 +71,7 @@
     "href": "pages/tutoriais.html",
     "title": "Tabela de Símbolos",
     "section": "",
-    "text": "Durante o processo de análise léxica, a Oxe Lang utiliza uma Tabela de Símbolos para armazenar e rastrear todos os identificadores encontrados no código fonte.\nEssa tabela é essencial para garantir que variáveis, funções e outros símbolos sejam reconhecidos corretamente ao longo da análise e fases posteriores da compilação.",
+    "text": "Durante o processo de análise léxica, a Calabreso++ utiliza uma Tabela de Símbolos para armazenar e rastrear todos os identificadores encontrados no código fonte.\nEssa tabela é essencial para garantir que variáveis, funções e outros símbolos sejam reconhecidos corretamente ao longo da análise e fases posteriores da compilação.",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -131,7 +119,7 @@
     "href": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
     "title": "Funções",
     "section": "📄 Exemplo de Código calculadora.yotra",
-    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    var flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    var flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal);\n\n}",
+    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    var flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    var flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal)",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
