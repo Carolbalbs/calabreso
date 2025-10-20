@@ -3,8 +3,6 @@
 ## Visão Geral
 
 Este projeto constroi uma linguagem de programação capaz de ser reconhecida por um sistema envolvendo a implementacao de Analisador léxico. Sendo assim, nossa linguagem é:
-- **Reliable Multicast**: Garantia de entrega confiável de mensagens para todos os processos
-- **Relógio de Lamport**: Ordenação lógica de eventos em sistemas distribuídos assíncronos
 
 - Imperativa e **compatível com o ASCII.**
 - Possibilidade de **inicializar variáveis do tipo numérico(int ou float)**, com tipagem estática, além de vetores do tipo
