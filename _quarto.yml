@@ -18,7 +18,7 @@ website:
   title: " "
   favicon: ./images/calabresa.png
   margin-footer: |
-    ![](./images/calabresoPxl.png)
+    ![](./images/)
   site-url: "https://carolbalbs.github.io/calabreso"
   twitter-card: true
   open-graph: true
