@@ -27,7 +27,7 @@ A saída será uma lista dos **tokens reconhecidos**, com sua **categoria** e va
 ## 📌 Observações Finais
 
 - O projeto foi desenvolvido com **Flex (Lex)**.
-- Os padrões léxicos estão definidos no arquivo `oxelang_lexer.l`.
+- Os padrões léxicos estão definidos no arquivo `calabreso_lexer.l`.
 - A linguagem é uma ferramenta **educacional**, com o objetivo de tornar o estudo de análise léxica mais leve, divertido e regionalizado.
 
 ---

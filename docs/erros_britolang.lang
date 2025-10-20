@@ -1,0 +1,37 @@
+//Teste de erros para o scanner_britolang.l
+
+//Palavras-chave incorretas
+se_ligo (x == 10) deGue      
+    oPrai("Teste errado!\n");
+}
+
+//Caractere a mais
+dinovoo (x < 5) deGue       
+    oPrai("Loop errado!\n");
+}
+
+//Caracteres inválidos
+malocar inteiro x = 10@;     
+malocar flutuante y = 2.5#; 
+
+//Erros de formatação
+malocar textão nome = "Texto sem fechamento;   
+malocar letrinha letra = 'AB';                 
+
+//Operadores malformados
+se_ligue (x === 5) deGue                      
+    oPrai("Operador inválido\n");
+}
+
+ensonha (x >> 0) deGue                        
+    oPrai("Shift não existe aqui\n");
+}
+
+//Símbolos não reconhecidos
+malocar inteiro ¢moeda = 5;                  
+malocar textão texto = "Olá µniverso!";       
+
+//Bloco sem fechamento
+deGue                                          
+    oPrai("Bloco sem parênteses ou chaves\n");
+

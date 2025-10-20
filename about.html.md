@@ -9,10 +9,10 @@ about:
       href: https://www.linkedin.com/ana-carolina-balbino
     - icon: linkedin
       text: Stefane Oliveira
-      href: https://www.linkedin.com/in/
+      href: https://www.linkedin.com/in/stefaneolliveira
     - icon: linkedin
-      text: Mayara 
-      href: https://www.linkedin.com/in/
+      text: Mayara Rodrigues
+      href: https://www.linkedin.com/in/mayara-rodrigues-mr01
 
 
 ---

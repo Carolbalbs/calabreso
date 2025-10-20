@@ -59,7 +59,7 @@
     "href": "pages/comousar.html#observações-finais",
     "title": "Analisador Léxico",
     "section": "📌 Observações Finais",
-    "text": "📌 Observações Finais\n\nO projeto foi desenvolvido com Flex (Lex).\nOs padrões léxicos estão definidos no arquivo oxelang_lexer.l.\nA linguagem é uma ferramenta educacional, com o objetivo de tornar o estudo de análise léxica mais leve, divertido e regionalizado.",
+    "text": "📌 Observações Finais\n\nO projeto foi desenvolvido com Flex (Lex).\nOs padrões léxicos estão definidos no arquivo calabreso_lexer.l.\nA linguagem é uma ferramenta educacional, com o objetivo de tornar o estudo de análise léxica mais leve, divertido e regionalizado.",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
