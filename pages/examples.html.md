@@ -1,8 +1,8 @@
 ---
 title: "Diagramas de Transição"
 ---
-# Diagrama de transição para palavras chave
-## se_ligue
+## Diagrama de transição para palavras chave
+### se_ligue
 
 ::::::{.cell fig-width="6.5" layout-align="default"}
 
@@ -28,7 +28,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-## yotra
+### yotra
 
 ::::::{.cell layout-align="default"}
 
@@ -52,7 +52,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-## nada_ve
+### nada_ve
 
 ::::::{.cell layout-align="default"}
 
@@ -78,7 +78,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-## ensonha
+### ensonha
 
 ::::::{.cell layout-align="default"}
 
@@ -104,7 +104,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-##  dorme_ensonha
+###  dorme_ensonha
 
 ::::::{.cell layout-align="default"}
 
@@ -136,7 +136,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-## dinovo
+### dinovo
 
 ::::::{.cell layout-align="default"}
 
@@ -161,7 +161,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-## malocar
+### malocar
 
 ::::::{.cell layout-align="default"}
 
@@ -187,7 +187,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-## fun
+### fun
 
 ::::::{.cell layout-align="default"}
 
@@ -209,7 +209,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-## deGue
+### deGue
 
 ::::::{.cell layout-align="default"}
 
@@ -233,7 +233,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-## devolva
+### devolva
 
 ::::::{.cell layout-align="default"}
 
@@ -259,7 +259,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-## oPrai
+### oPrai
 
 ::::::{.cell layout-align="default"}
 
@@ -283,7 +283,7 @@ title: "Diagramas de Transição"
 ::::
 :::::
 ::::::
-## calma_calabreso
+### calma_calabreso
 
 ::::::{.cell layout-align="default"}
 
@@ -318,7 +318,8 @@ title: "Diagramas de Transição"
 :::::
 ::::::
 
-# Diagrama de transições para expressões regulares
+## Diagrama de transições para expressões regulares
+### Diagrama para dígitos
 
 ::::::{.cell layout-align="default"}
 
@@ -330,38 +331,190 @@ title: "Diagramas de Transição"
 :::{}
 
 <pre class="mermaid mermaid-js">  %%| fig-width: 6.5
-graph LR
+  graph LR
     R1(Start DIGITO) --&quot;0–9&quot;--&gt; R2((DIGITO))
+</pre>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
 
+### Diagrama para letras
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
     R3(Start LETRA) --&quot;a–z, A–Z, _&quot;--&gt; R4((LETRA))
+</pre>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
 
+### Diagrama para identificadores (ID)
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
     R5(Start ID) --&quot;letra&quot;--&gt; R6(id1)
     R6 --&quot;letra ou digito&quot;--&gt; R6
     R6 --&gt; R7((ID))
+</pre>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
 
+### Diagrama para números inteiros
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
     R8(Start INTEIRO) --&quot;dígito&quot;--&gt; R9(inteiro 1)
     R9 --&quot;dígito&quot;--&gt; R9
     R9 --&gt; R10((INTEIRO))
+</pre>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
 
+### Diagrama para números de ponto flutuante (FLOAT)
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
     R11(Start FLOAT) --&quot;dígito&quot;--&gt; R12
     R12 --&quot;dígito&quot;--&gt; R12
     R12 --&quot;.&quot;--&gt; R13
     R13 --&quot;dígito&quot;--&gt; R14
     R14 --&quot;dígito&quot;--&gt; R14
     R14 --&gt; R15((FLOAT))
+</pre>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
 
-    R16(Start STRING_LITERAL) --&#39;&quot;&#39;--&gt; R17
+### Diagrama para literais de string
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    R16(Start STRING_LITERAL) --&quot;aspas&quot;--&gt; R17
     R17 --&quot;qualquer exceto aspas&quot;--&gt; R17
-    R17 --&#39;&quot;&#39;--&gt; R18((STRING_LITERAL))
+    R17 --&quot;aspas&quot;--&gt; R18((STRING_LITERAL))
+</pre>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
 
+### Diagrama para literais de caractere
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
     R19(Start CHAR_LITERAL) --&quot;&#39;&quot;--&gt; R20
     R20 --&quot;qualquer exceto aspas simples&quot;--&gt; R21
     R21 --&quot;&#39;&quot;--&gt; R22((CHAR_LITERAL))
+</pre>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
 
+### Diagrama para comentários de linha
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
     R23(Start COMENTARIO_LINHA) --&quot;//&quot;--&gt; R24
     R24 --&quot;qualquer caractere exceto \\n&quot;--&gt; R24
     R24 --&quot;\\n&quot;--&gt; R25((COMENTARIO_LINHA))
+</pre>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
 
+### Diagrama para comentários de bloco
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
     R26(Start COMENTARIO_BLOCO) --&quot;/*&quot;--&gt; R27
     R27 --&quot;qualquer exceto &#39;*/&#39;&quot;--&gt; R27
     R27 --&quot;*/&quot;--&gt; R28((COMENTARIO_BLOCO))

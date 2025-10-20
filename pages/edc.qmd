@@ -4,39 +4,42 @@ title: "Estruturas de Controle"
 ## Condicional
 
 ```yotra
-se plante (idade >= 18) {
-    pegaVisao("Você é maior de idade.");
-} sePlante (idade > 12) {
-    pegaVisao("Você é adolescente.");
-} va nessa {
-    pegaVisao("Você é criança.");
+se_ligue (nota >= 7.0) {
+    oPrai("Aprovado com sucesso!");
+} yotra (nota >= 5.0) {
+    oPrai("Recuperação necessária.");
+} nada_ve {
+    oPrai("Reprovado.");
 }
 ```
 
-## Laço `paletada` (for)
+## Laço `dinovo` (for)
 
 ```yotra
-paletada (var inteiro i = 0; i < 5; i++) {
-    pegaVisao("Número: " + i);
+dinovo (var inteiro contador = 1; contador <= 10; contador++) {
+    oPrai("Tabuada do 5: 5 x " + contador + " = " + (5 * contador));
+
 }
 ```
 
-## Laço `enquanto` (while)
+## Laço `ensonha` (while)
 
 ```yotra
-var inteiro tentativas = 0;
-enquanto (tentativas < 3) {
-    pegaVisao("Tentativa número: " + tentativas);
-    tentativas++;
+var inteiro senha = 0;
+ensonha (senha != 1234) {
+    oPrai("Digite a senha correta:");
+    // senha = leitura();
 }
+oPrai("Acesso liberado!");
 ```
 
-## Laço `faz...enquanto` (do-while)
+## Laço `dorme...ensonha` (do-while)
 
 ```yotra
-vareia inteiro j = 0;
-faz {
-    pegaVisao("Executando pelo menos uma vez.");
-    j++;
-} enquanto (j < 1);
+var inteiro opcao = 0;
+dorme {
+    oPrai("Menu: 1-Jogar | 2-Sair");
+    oPrai("Escolha uma opção:");
+    opcao++;
+} ensonha (opcao < 2);
 ```

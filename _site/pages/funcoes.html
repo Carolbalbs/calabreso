@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tutorais e Guias</li><li class="breadcrumb-item"><a href="../pages/funcoes.html">Funções</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/tutoriais.html">Tutorais e Guias</a></li><li class="breadcrumb-item"><a href="../pages/funcoes.html">Funções</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -181,8 +181,11 @@ ul.task-list li input[type="checkbox"] {
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
- <span class="menu-text">pages/tutoriais.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../pages/tutoriais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tabela de Símbolos</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/edc.html" class="sidebar-item-text sidebar-link">
@@ -233,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#função-com-retorno" id="toc-função-com-retorno" class="nav-link active" data-scroll-target="#função-com-retorno">Função com retorno</a></li>
   <li><a href="#função-sem-retorno" id="toc-função-sem-retorno" class="nav-link" data-scroll-target="#função-sem-retorno">Função sem retorno</a></li>
   <li><a href="#chamadas-de-função" id="toc-chamadas-de-função" class="nav-link" data-scroll-target="#chamadas-de-função">Chamadas de função</a></li>
-  <li><a href="#exemplo-de-código-soma.yotra" id="toc-exemplo-de-código-soma.yotra" class="nav-link" data-scroll-target="#exemplo-de-código-soma.yotra">📄 Exemplo de Código <code>soma.yotra</code></a></li>
+  <li><a href="#exemplo-de-código-calculadora.yotra" id="toc-exemplo-de-código-calculadora.yotra" class="nav-link" data-scroll-target="#exemplo-de-código-calculadora.yotra">📄 Exemplo de Código <code>calculadora.yotra</code></a></li>
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -242,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tutorais e Guias</li><li class="breadcrumb-item"><a href="../pages/funcoes.html">Funções</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/tutoriais.html">Tutorais e Guias</a></li><li class="breadcrumb-item"><a href="../pages/funcoes.html">Funções</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Funções</h1>
 </div>
@@ -263,33 +266,37 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="função-com-retorno" class="level3">
 <h3 class="anchored" data-anchor-id="função-com-retorno">Função com retorno</h3>
-<pre class="yotra"><code>barril soma(a: inteiro, b: inteiro): inteiro {
-    sePique a + b;
+<pre class="yotra"><code>deGue() calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {
+    devolva (nota1 + nota2) / 2;
 }</code></pre>
 </section>
 <section id="função-sem-retorno" class="level3">
 <h3 class="anchored" data-anchor-id="função-sem-retorno">Função sem retorno</h3>
-<pre class="yotra"><code>barril cumprimenta(): nada {
-    pegaVisao("E aí, beleza?");
+<pre class="yotra"><code>deGue() exibirBemVindo(): sem_volta {
+    oPrai("=== Sistema Calabreso++ ===");
+    oPrai("Bem-vindo ao programa!");
 }</code></pre>
 </section>
 <section id="chamadas-de-função" class="level3">
 <h3 class="anchored" data-anchor-id="chamadas-de-função">Chamadas de função</h3>
-<pre class="yotra"><code>var inteiro resultado = soma(5, 7);
-pegaVisao("Resultado: " + resultado);</code></pre>
+<pre class="yotra"><code>var flutuante mediaFinal = calcularMedia(8.5, 7.0);
+oPrai("Média do aluno: " + mediaFinal);     </code></pre>
 <hr>
 </section>
-<section id="exemplo-de-código-soma.yotra" class="level2">
-<h2 class="anchored" data-anchor-id="exemplo-de-código-soma.yotra">📄 Exemplo de Código <code>soma.yotra</code></h2>
-<pre class="yotra"><code>barril soma(): nada {
-    // Declaração e inicialização de variáveis inteiras
-    var inteiro a = 10, b = 4;
+<section id="exemplo-de-código-calculadora.yotra" class="level2">
+<h2 class="anchored" data-anchor-id="exemplo-de-código-calculadora.yotra">📄 Exemplo de Código <code>calculadora.yotra</code></h2>
+<pre class="yotra"><code>deGue_calculadora(): sem_volta {
+    // Declaração e inicialização de variáveis
+    var flutuante preco = 150.0, desconto = 20.0;
 
-    // Operação de divisão inteira armazenada em um flutuante
-    var flutuante c = a / b;
+    // Cálculo do valor final com desconto
+    var flutuante valorFinal = preco - (preco * desconto / 100);
 
     // Impressão do resultado
-    pegaVisao(c);
+    oPrai("Preço original: R$ " + preco);
+    oPrai("Desconto: " + desconto + "%");
+    oPrai("Valor final: R$ " + valorFinal);
+
 }</code></pre>
 <hr>
 

@@ -28,7 +28,7 @@ Arquivos `.yotra` contêm código-fonte em calabreso++. O analisador identifica:
 
 ---
 
-## 🧩🔤 Palavras-chave e usos de Tokens Brito Family 🧩🔤 
+## 🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤 
 
 | Palavra-chave     | Uso                           |
 | ----------------  | ----------------------------- |
@@ -47,7 +47,7 @@ Arquivos `.yotra` contêm código-fonte em calabreso++. O analisador identifica:
 
 
 
-## Operadores
+## Operadores 🔢
 
 - **Aritméticos:** `+`, `-`, `*`, `/`, `%`, `**`
 - **Relacionais:** `==`, `!=`, `<`, `>`, `<=`, `>=`

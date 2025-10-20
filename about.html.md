@@ -1,7 +1,7 @@
 ---
 title: "Sobre nós"
-image: "/imagens/sobre.jpeg"
-about:
+image: "/images/studie.png"
+about: 
   template: jolla
   links:
     - icon: linkedin

@@ -7,180 +7,39 @@
     "text": "Olá! Somos um grupo de estudantes de Ciência da Computação na Universidade Federal da Bahia. Nosso objetivo com este trabalho implementar os conceitos teoricos adquiridos na disciplina de compiladores, por meio de uma abordagem divertida e criativa.\n\n\n Back to top"
   },
   {
-    "objectID": "pages/tutorials.html",
-    "href": "pages/tutorials.html",
-    "title": "Tabela de Símbolos",
+    "objectID": "pages/examples.html",
+    "href": "pages/examples.html",
+    "title": "Diagramas de Transição",
     "section": "",
-    "text": "Durante o processo de análise léxica, a Oxe Lang utiliza uma Tabela de Símbolos para armazenar e rastrear todos os identificadores encontrados no código fonte.\nEssa tabela é essencial para garantir que variáveis, funções e outros símbolos sejam reconhecidos corretamente ao longo da análise e fases posteriores da compilação."
+    "text": "graph LR\n    A1(Start se_ligue) --\"s\"--&gt; A2\n    A2 --\"e\"--&gt; A3\n    A3 --\"_\"--&gt; A4\n    A4 --\"l\"--&gt; A5\n    A5 --\"i\"--&gt; A6\n    A6 --\"g\"--&gt; A7\n    A7 --\"u\"--&gt; A8\n    A8 --\"e\"--&gt; A9((T_SE_LIGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    B1(Start yotra) --\"y\"--&gt; B2\n    B2 --\"o\"--&gt; B3\n    B3 --\"t\"--&gt; B4\n    B4 --\"r\"--&gt; B5\n    B5 --\"a\"--&gt; B6((T_YOTRA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    C1(Start nada_ve) --\"n\"--&gt; C2\n    C2 --\"a\"--&gt; C3\n    C3 --\"d\"--&gt; C4\n    C4 --\"a\"--&gt; C5\n    C5 --\"_\"--&gt; C6\n    C6 --\"v\"--&gt; C7\n    C7 --\"e\"--&gt; C8((T_NADA_VE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    D1(Start ensonha) --\"e\"--&gt; D2\n    D2 --\"n\"--&gt; D3\n    D3 --\"s\"--&gt; D4\n    D4 --\"o\"--&gt; D5\n    D5 --\"n\"--&gt; D6\n    D6 --\"h\"--&gt; D7\n    D7 --\"a\"--&gt; D8((T_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    E1(Start dorme_ensonha) --\"d\"--&gt; E2\n    E2 --\"o\"--&gt; E3\n    E3 --\"r\"--&gt; E4\n    E4 --\"m\"--&gt; E5\n    E5 --\"e\"--&gt; E6\n    E6 --\"_\"--&gt; E7\n    E7 --\"e\"--&gt; E8\n    E8 --\"n\"--&gt; E9\n    E9 --\"s\"--&gt; E10\n    E10 --\"o\"--&gt; E11\n    E11 --\"n\"--&gt; E12\n    E12 --\"h\"--&gt; E13\n    E13 --\"a\"--&gt; E14((T_DORME_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    F1(Start dinovo) --\"d\"--&gt; F2\n    F2 --\"i\"--&gt; F3\n    F3 --\"n\"--&gt; F4\n    F4 --\"o\"--&gt; F5\n    F5 --\"v\"--&gt; F6\n    F6 --\"o\"--&gt; F7((T_DINOVO))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    G1(Start malocar) --\"m\"--&gt; G2\n    G2 --\"a\"--&gt; G3\n    G3 --\"l\"--&gt; G4\n    G4 --\"o\"--&gt; G5\n    G5 --\"c\"--&gt; G6\n    G6 --\"a\"--&gt; G7\n    G7 --\"r\"--&gt; G8((T_MALOCAR))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    H1(Start fun) --\"f\"--&gt; H2\n    H2 --\"u\"--&gt; H3\n    H3 --\"n\"--&gt; H4((T_FUN))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    I1(Start deGue) --\"d\"--&gt; I2\n    I2 --\"e\"--&gt; I3\n    I3 --\"G\"--&gt; I4\n    I4 --\"u\"--&gt; I5\n    I5 --\"e\"--&gt; I6((T_DEGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    J1(Start devolva) --\"d\"--&gt; J2\n    J2 --\"e\"--&gt; J3\n    J3 --\"v\"--&gt; J4\n    J4 --\"o\"--&gt; J5\n    J5 --\"l\"--&gt; J6\n    J6 --\"v\"--&gt; J7\n    J7 --\"a\"--&gt; J8((T_DEVOLVA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    K1(Start oPrai) --\"o\"--&gt; K2\n    K2 --\"P\"--&gt; K3\n    K3 --\"r\"--&gt; K4\n    K4 --\"a\"--&gt; K5\n    K5 --\"i\"--&gt; K6((T_OPRAI))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    L1(Start calma_calabreso) --\"c\"--&gt; L2\n    L2 --\"a\"--&gt; L3\n    L3 --\"l\"--&gt; L4\n    L4 --\"m\"--&gt; L5\n    L5 --\"a\"--&gt; L6\n    L6 --\"_\"--&gt; L7\n    L7 --\"c\"--&gt; L8\n    L8 --\"a\"--&gt; L9\n    L9 --\"l\"--&gt; L10\n    L10 --\"a\"--&gt; L11\n    L11 --\"b\"--&gt; L12\n    L12 --\"r\"--&gt; L13\n    L13 --\"e\"--&gt; L14\n    L14 --\"s\"--&gt; L15\n    L15 --\"o\"--&gt; L16((T_CALMA_CALABRESO))",
+    "crumbs": [
+      "Home",
+      "Estados de Transição",
+      "Diagramas de Transição"
+    ]
   },
   {
-    "objectID": "pages/tutorials.html#como-funciona",
-    "href": "pages/tutorials.html#como-funciona",
-    "title": "Tabela de Símbolos",
-    "section": "Como funciona?",
-    "text": "Como funciona?\nA Tabela de Símbolos é implementada como uma estrutura simples baseada em arrays. Cada identificador único é armazenado na tabela à medida que aparece no código. Quando o mesmo identificador reaparece, sua posição é reutilizada — evitando duplicação."
-  },
-  {
-    "objectID": "pages/tutorials.html#estrutura",
-    "href": "pages/tutorials.html#estrutura",
-    "title": "Tabela de Símbolos",
-    "section": "Estrutura:",
-    "text": "Estrutura:\n#define MAX_SYMBOLS 100000\n#define MAX_ID_LENGTH 256\n\nchar symbol_table[MAX_SYMBOLS][MAX_ID_LENGTH];\nint symbol_count = 0;\n\nMAX_SYMBOLS: Número máximo de símbolos que a tabela pode armazenar.\nMAX_ID_LENGTH: Tamanho máximo de cada identificador.\nsymbol_table: Array que guarda os nomes dos identificadores.\nsymbol_count: Quantidade atual de símbolos armazenados.\n\n\nFunção Principal: get_symbol_position\nint get_symbol_position(const char* id);\nEssa função é responsável por:\n\nBuscar um identificador já existente na tabela.\nAdicionar um novo identificador se ele ainda não estiver registrado.\nRetornar a posição do identificador na tabela.\nRetornar -1 caso a tabela esteja cheia.\n\nExemplo de uso dentro do analisador:\nvoid print_identifier(const char* yytext_val) {\n    printf(\"ID\");\n    int pos = get_symbol_position(yytext_val);\n    if (pos != -1){\n        printf(\", %d\", pos);\n    }\n}\nEssa impressão ajuda a visualizar não apenas que o token é um identificador, mas qual a sua posição na tabela de símbolos, facilitando o rastreamento e testes."
-  },
-  {
-    "objectID": "pages/edc.html",
-    "href": "pages/edc.html",
-    "title": "Estruturas de Controle",
+    "objectID": "pages/examples.html#diagrama-de-transição-para-palavras-chave",
+    "href": "pages/examples.html#diagrama-de-transição-para-palavras-chave",
+    "title": "Diagramas de Transição",
     "section": "",
-    "text": "se plante (idade &gt;= 18) {\n    pegaVisao(\"Você é maior de idade.\");\n} sePlante (idade &gt; 12) {\n    pegaVisao(\"Você é adolescente.\");\n} va nessa {\n    pegaVisao(\"Você é criança.\");\n}",
+    "text": "graph LR\n    A1(Start se_ligue) --\"s\"--&gt; A2\n    A2 --\"e\"--&gt; A3\n    A3 --\"_\"--&gt; A4\n    A4 --\"l\"--&gt; A5\n    A5 --\"i\"--&gt; A6\n    A6 --\"g\"--&gt; A7\n    A7 --\"u\"--&gt; A8\n    A8 --\"e\"--&gt; A9((T_SE_LIGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    B1(Start yotra) --\"y\"--&gt; B2\n    B2 --\"o\"--&gt; B3\n    B3 --\"t\"--&gt; B4\n    B4 --\"r\"--&gt; B5\n    B5 --\"a\"--&gt; B6((T_YOTRA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    C1(Start nada_ve) --\"n\"--&gt; C2\n    C2 --\"a\"--&gt; C3\n    C3 --\"d\"--&gt; C4\n    C4 --\"a\"--&gt; C5\n    C5 --\"_\"--&gt; C6\n    C6 --\"v\"--&gt; C7\n    C7 --\"e\"--&gt; C8((T_NADA_VE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    D1(Start ensonha) --\"e\"--&gt; D2\n    D2 --\"n\"--&gt; D3\n    D3 --\"s\"--&gt; D4\n    D4 --\"o\"--&gt; D5\n    D5 --\"n\"--&gt; D6\n    D6 --\"h\"--&gt; D7\n    D7 --\"a\"--&gt; D8((T_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    E1(Start dorme_ensonha) --\"d\"--&gt; E2\n    E2 --\"o\"--&gt; E3\n    E3 --\"r\"--&gt; E4\n    E4 --\"m\"--&gt; E5\n    E5 --\"e\"--&gt; E6\n    E6 --\"_\"--&gt; E7\n    E7 --\"e\"--&gt; E8\n    E8 --\"n\"--&gt; E9\n    E9 --\"s\"--&gt; E10\n    E10 --\"o\"--&gt; E11\n    E11 --\"n\"--&gt; E12\n    E12 --\"h\"--&gt; E13\n    E13 --\"a\"--&gt; E14((T_DORME_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    F1(Start dinovo) --\"d\"--&gt; F2\n    F2 --\"i\"--&gt; F3\n    F3 --\"n\"--&gt; F4\n    F4 --\"o\"--&gt; F5\n    F5 --\"v\"--&gt; F6\n    F6 --\"o\"--&gt; F7((T_DINOVO))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    G1(Start malocar) --\"m\"--&gt; G2\n    G2 --\"a\"--&gt; G3\n    G3 --\"l\"--&gt; G4\n    G4 --\"o\"--&gt; G5\n    G5 --\"c\"--&gt; G6\n    G6 --\"a\"--&gt; G7\n    G7 --\"r\"--&gt; G8((T_MALOCAR))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    H1(Start fun) --\"f\"--&gt; H2\n    H2 --\"u\"--&gt; H3\n    H3 --\"n\"--&gt; H4((T_FUN))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    I1(Start deGue) --\"d\"--&gt; I2\n    I2 --\"e\"--&gt; I3\n    I3 --\"G\"--&gt; I4\n    I4 --\"u\"--&gt; I5\n    I5 --\"e\"--&gt; I6((T_DEGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    J1(Start devolva) --\"d\"--&gt; J2\n    J2 --\"e\"--&gt; J3\n    J3 --\"v\"--&gt; J4\n    J4 --\"o\"--&gt; J5\n    J5 --\"l\"--&gt; J6\n    J6 --\"v\"--&gt; J7\n    J7 --\"a\"--&gt; J8((T_DEVOLVA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    K1(Start oPrai) --\"o\"--&gt; K2\n    K2 --\"P\"--&gt; K3\n    K3 --\"r\"--&gt; K4\n    K4 --\"a\"--&gt; K5\n    K5 --\"i\"--&gt; K6((T_OPRAI))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    L1(Start calma_calabreso) --\"c\"--&gt; L2\n    L2 --\"a\"--&gt; L3\n    L3 --\"l\"--&gt; L4\n    L4 --\"m\"--&gt; L5\n    L5 --\"a\"--&gt; L6\n    L6 --\"_\"--&gt; L7\n    L7 --\"c\"--&gt; L8\n    L8 --\"a\"--&gt; L9\n    L9 --\"l\"--&gt; L10\n    L10 --\"a\"--&gt; L11\n    L11 --\"b\"--&gt; L12\n    L12 --\"r\"--&gt; L13\n    L13 --\"e\"--&gt; L14\n    L14 --\"s\"--&gt; L15\n    L15 --\"o\"--&gt; L16((T_CALMA_CALABRESO))",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Estruturas de Controle"
+      "Estados de Transição",
+      "Diagramas de Transição"
     ]
   },
   {
-    "objectID": "pages/edc.html#condicional",
-    "href": "pages/edc.html#condicional",
-    "title": "Estruturas de Controle",
-    "section": "",
-    "text": "se plante (idade &gt;= 18) {\n    pegaVisao(\"Você é maior de idade.\");\n} sePlante (idade &gt; 12) {\n    pegaVisao(\"Você é adolescente.\");\n} va nessa {\n    pegaVisao(\"Você é criança.\");\n}",
+    "objectID": "pages/examples.html#diagrama-de-transições-para-expressões-regulares",
+    "href": "pages/examples.html#diagrama-de-transições-para-expressões-regulares",
+    "title": "Diagramas de Transição",
+    "section": "Diagrama de transições para expressões regulares",
+    "text": "Diagrama de transições para expressões regulares\n\nDiagrama para dígitos\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R1(Start DIGITO) --\"0–9\"--&gt; R2((DIGITO))\n\n\n\n\n\n\n\n\nDiagrama para letras\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R3(Start LETRA) --\"a–z, A–Z, _\"--&gt; R4((LETRA))\n\n\n\n\n\n\n\n\nDiagrama para identificadores (ID)\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R5(Start ID) --\"letra\"--&gt; R6(id1)\n    R6 --\"letra ou digito\"--&gt; R6\n    R6 --&gt; R7((ID))\n\n\n\n\n\n\n\n\nDiagrama para números inteiros\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R8(Start INTEIRO) --\"dígito\"--&gt; R9(inteiro 1)\n    R9 --\"dígito\"--&gt; R9\n    R9 --&gt; R10((INTEIRO))\n\n\n\n\n\n\n\n\nDiagrama para números de ponto flutuante (FLOAT)\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R11(Start FLOAT) --\"dígito\"--&gt; R12\n    R12 --\"dígito\"--&gt; R12\n    R12 --\".\"--&gt; R13\n    R13 --\"dígito\"--&gt; R14\n    R14 --\"dígito\"--&gt; R14\n    R14 --&gt; R15((FLOAT))\n\n\n\n\n\n\n\n\nDiagrama para literais de string\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R16(Start STRING_LITERAL) --\"aspas\"--&gt; R17\n    R17 --\"qualquer exceto aspas\"--&gt; R17\n    R17 --\"aspas\"--&gt; R18((STRING_LITERAL))\n\n\n\n\n\n\n\n\nDiagrama para literais de caractere\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R19(Start CHAR_LITERAL) --\"'\"--&gt; R20\n    R20 --\"qualquer exceto aspas simples\"--&gt; R21\n    R21 --\"'\"--&gt; R22((CHAR_LITERAL))\n\n\n\n\n\n\n\n\nDiagrama para comentários de linha\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R23(Start COMENTARIO_LINHA) --\"//\"--&gt; R24\n    R24 --\"qualquer caractere exceto \\\\n\"--&gt; R24\n    R24 --\"\\\\n\"--&gt; R25((COMENTARIO_LINHA))\n\n\n\n\n\n\n\n\nDiagrama para comentários de bloco\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R26(Start COMENTARIO_BLOCO) --\"/*\"--&gt; R27\n    R27 --\"qualquer exceto '*/'\"--&gt; R27\n    R27 --\"*/\"--&gt; R28((COMENTARIO_BLOCO))",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Estruturas de Controle"
-    ]
-  },
-  {
-    "objectID": "pages/edc.html#laço-paletada-for",
-    "href": "pages/edc.html#laço-paletada-for",
-    "title": "Estruturas de Controle",
-    "section": "Laço paletada (for)",
-    "text": "Laço paletada (for)\npaletada (var inteiro i = 0; i &lt; 5; i++) {\n    pegaVisao(\"Número: \" + i);\n}",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Estruturas de Controle"
-    ]
-  },
-  {
-    "objectID": "pages/edc.html#laço-enquanto-while",
-    "href": "pages/edc.html#laço-enquanto-while",
-    "title": "Estruturas de Controle",
-    "section": "Laço enquanto (while)",
-    "text": "Laço enquanto (while)\nvar inteiro tentativas = 0;\nenquanto (tentativas &lt; 3) {\n    pegaVisao(\"Tentativa número: \" + tentativas);\n    tentativas++;\n}",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Estruturas de Controle"
-    ]
-  },
-  {
-    "objectID": "pages/edc.html#laço-faz...enquanto-do-while",
-    "href": "pages/edc.html#laço-faz...enquanto-do-while",
-    "title": "Estruturas de Controle",
-    "section": "Laço faz...enquanto (do-while)",
-    "text": "Laço faz...enquanto (do-while)\nvareia inteiro j = 0;\nfaz {\n    pegaVisao(\"Executando pelo menos uma vez.\");\n    j++;\n} enquanto (j &lt; 1);",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Estruturas de Controle"
-    ]
-  },
-  {
-    "objectID": "pages/intro.html",
-    "href": "pages/intro.html",
-    "title": "Conceitos Importantes",
-    "section": "",
-    "text": "Arquivos .yotra contêm código-fonte em calabreso++. O analisador identifica:\n\n✅ Tipos de dados\n\n✅ Palavras-chave culturais\n\n✅ Operadores\n\n✅ Identificadores\n\n✅ Funções\n\n✅ Comentários",
-    "crumbs": [
-      "Home",
-      "Introdução",
-      "Conceitos Importantes"
-    ]
-  },
-  {
-    "objectID": "pages/intro.html#estrutura-dos-arquivos-.yotra",
-    "href": "pages/intro.html#estrutura-dos-arquivos-.yotra",
-    "title": "Conceitos Importantes",
-    "section": "",
-    "text": "Arquivos .yotra contêm código-fonte em calabreso++. O analisador identifica:\n\n✅ Tipos de dados\n\n✅ Palavras-chave culturais\n\n✅ Operadores\n\n✅ Identificadores\n\n✅ Funções\n\n✅ Comentários",
-    "crumbs": [
-      "Home",
-      "Introdução",
-      "Conceitos Importantes"
-    ]
-  },
-  {
-    "objectID": "pages/intro.html#tipos-de-dados",
-    "href": "pages/intro.html#tipos-de-dados",
-    "title": "Conceitos Importantes",
-    "section": "Tipos de Dados",
-    "text": "Tipos de Dados\n\n\n\nTipo em Calabreso++\nDescrição\n\n\n\n\ninteiro\nNúmeros inteiros\n\n\nflutuante\nNúmeros com casas decimais\n\n\nletrinha\nCaractere único\n\n\ntextão\nCadeia de caracteres (strings)\n\n\nsem_volta\nTipo para funções sem retorno",
-    "crumbs": [
-      "Home",
-      "Introdução",
-      "Conceitos Importantes"
-    ]
-  },
-  {
-    "objectID": "pages/intro.html#palavras-chave-e-tokens-culturais",
-    "href": "pages/intro.html#palavras-chave-e-tokens-culturais",
-    "title": "Conceitos Importantes",
-    "section": "Palavras-chave e Tokens Culturais",
-    "text": "Palavras-chave e Tokens Culturais\n\n\n\n\n\n\n\n\nFunção\nPalavra-chave em Calabreso++\nOrigem / Explicação\n\n\n\n\nAtribuição com tipo\nmalocar\nOutro bordão de Davi (“de guê?”) — usado para ligar variável e tipo.\n\n\nDefinição de função\ndeGue fun()\n“Yotra” (Raquel) + “func” — toda função começa com energia da Raquel.\n\n\nInício de condição (if)\nse_ligue\nDavi fala “se ligou?” pra chamar atenção — perfeito pra um if.\n\n\nCondição intermediária (elif)\nyotra\nExpressão baiana que cabe bem como “senão, mas pense nisso…”.\n\n\nCondição final (else)\nnada_ve\nBordão de Davi e Raquel pra quando nada mais faz sentido.\n\n\nLaço de repetição (for)\ndinovo\nExpressão de seguir o ritmo — representa um for.\n\n\nLaço de repetição (while)\nensonha\nDavi dizia “segue o jogo” — continua enquanto for verdade.\n\n\nLaço do-while\ndorme-ensonha\nEstilo Raquel — repetir até que pare.\n\n\nRetorno de valor\ndevolva\nExpressivo e direto — equivalente a return.\n\n\nImpressão na tela\noPrai\nRepresenta um print, com tom dramático.\n\n\nInterrupção de laço (break/stop)\ncalma_calabreso\nUso para interromper laços (equivalente a break).",
-    "crumbs": [
-      "Home",
-      "Introdução",
-      "Conceitos Importantes"
-    ]
-  },
-  {
-    "objectID": "pages/intro.html#operadores",
-    "href": "pages/intro.html#operadores",
-    "title": "Conceitos Importantes",
-    "section": "Operadores",
-    "text": "Operadores\n\nAritméticos: +, -, *, /, %, **\nRelacionais: ==, !=, &lt;, &gt;, &lt;=, &gt;=\nLógicos: &&, ||, !\nBitwise: &, |, ^, ~\nAtribuições compostas: +=, -=, *=, /=, %=, etc.\n\nExemplo:\nnotasAlunos[1] = (nota1 + nota2) / 2.0;\nvar inteiro resto = numero % 10;",
-    "crumbs": [
-      "Home",
-      "Introdução",
-      "Conceitos Importantes"
-    ]
-  },
-  {
-    "objectID": "pages/intro.html#comentários",
-    "href": "pages/intro.html#comentários",
-    "title": "Conceitos Importantes",
-    "section": "Comentários",
-    "text": "Comentários\n\n\n\nTipo\nSintaxe\n\n\n\n\nLinha\n// Ja vendeu agua na Lapa?\n\n\nBloco\n/* Comentário de que? */",
-    "crumbs": [
-      "Home",
-      "Introdução",
-      "Conceitos Importantes"
-    ]
-  },
-  {
-    "objectID": "pages/funcoes.html",
-    "href": "pages/funcoes.html",
-    "title": "Funções",
-    "section": "",
-    "text": "barril soma(a: inteiro, b: inteiro): inteiro {\n    sePique a + b;\n}",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "pages/funcoes.html#exemplo-de-código-soma.yotra",
-    "href": "pages/funcoes.html#exemplo-de-código-soma.yotra",
-    "title": "Funções",
-    "section": "📄 Exemplo de Código soma.yotra",
-    "text": "📄 Exemplo de Código soma.yotra\nbarril soma(): nada {\n    // Declaração e inicialização de variáveis inteiras\n    var inteiro a = 10, b = 4;\n\n    // Operação de divisão inteira armazenada em um flutuante\n    var flutuante c = a / b;\n\n    // Impressão do resultado\n    pegaVisao(c);\n}",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Funções"
+      "Estados de Transição",
+      "Diagramas de Transição"
     ]
   },
   {
@@ -220,202 +79,71 @@
     ]
   },
   {
-    "objectID": "pages/examples.html",
-    "href": "pages/examples.html",
-    "title": "Diagramas de Transição",
+    "objectID": "pages/tutoriais.html",
+    "href": "pages/tutoriais.html",
+    "title": "Tabela de Símbolos",
     "section": "",
-    "text": "graph LR\n    A1(Start se_ligue) --\"s\"--&gt; A2\n    A2 --\"e\"--&gt; A3\n    A3 --\"_\"--&gt; A4\n    A4 --\"l\"--&gt; A5\n    A5 --\"i\"--&gt; A6\n    A6 --\"g\"--&gt; A7\n    A7 --\"u\"--&gt; A8\n    A8 --\"e\"--&gt; A9((T_SE_LIGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    B1(Start yotra) --\"y\"--&gt; B2\n    B2 --\"o\"--&gt; B3\n    B3 --\"t\"--&gt; B4\n    B4 --\"r\"--&gt; B5\n    B5 --\"a\"--&gt; B6((T_YOTRA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    C1(Start nada_ve) --\"n\"--&gt; C2\n    C2 --\"a\"--&gt; C3\n    C3 --\"d\"--&gt; C4\n    C4 --\"a\"--&gt; C5\n    C5 --\"_\"--&gt; C6\n    C6 --\"v\"--&gt; C7\n    C7 --\"e\"--&gt; C8((T_NADA_VE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    D1(Start ensonha) --\"e\"--&gt; D2\n    D2 --\"n\"--&gt; D3\n    D3 --\"s\"--&gt; D4\n    D4 --\"o\"--&gt; D5\n    D5 --\"n\"--&gt; D6\n    D6 --\"h\"--&gt; D7\n    D7 --\"a\"--&gt; D8((T_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    E1(Start dorme_ensonha) --\"d\"--&gt; E2\n    E2 --\"o\"--&gt; E3\n    E3 --\"r\"--&gt; E4\n    E4 --\"m\"--&gt; E5\n    E5 --\"e\"--&gt; E6\n    E6 --\"_\"--&gt; E7\n    E7 --\"e\"--&gt; E8\n    E8 --\"n\"--&gt; E9\n    E9 --\"s\"--&gt; E10\n    E10 --\"o\"--&gt; E11\n    E11 --\"n\"--&gt; E12\n    E12 --\"h\"--&gt; E13\n    E13 --\"a\"--&gt; E14((T_DORME_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    F1(Start dinovo) --\"d\"--&gt; F2\n    F2 --\"i\"--&gt; F3\n    F3 --\"n\"--&gt; F4\n    F4 --\"o\"--&gt; F5\n    F5 --\"v\"--&gt; F6\n    F6 --\"o\"--&gt; F7((T_DINOVO))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    G1(Start malocar) --\"m\"--&gt; G2\n    G2 --\"a\"--&gt; G3\n    G3 --\"l\"--&gt; G4\n    G4 --\"o\"--&gt; G5\n    G5 --\"c\"--&gt; G6\n    G6 --\"a\"--&gt; G7\n    G7 --\"r\"--&gt; G8((T_MALOCAR))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    H1(Start fun) --\"f\"--&gt; H2\n    H2 --\"u\"--&gt; H3\n    H3 --\"n\"--&gt; H4((T_FUN))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    I1(Start deGue) --\"d\"--&gt; I2\n    I2 --\"e\"--&gt; I3\n    I3 --\"G\"--&gt; I4\n    I4 --\"u\"--&gt; I5\n    I5 --\"e\"--&gt; I6((T_DEGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    J1(Start devolva) --\"d\"--&gt; J2\n    J2 --\"e\"--&gt; J3\n    J3 --\"v\"--&gt; J4\n    J4 --\"o\"--&gt; J5\n    J5 --\"l\"--&gt; J6\n    J6 --\"v\"--&gt; J7\n    J7 --\"a\"--&gt; J8((T_DEVOLVA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    K1(Start oPrai) --\"o\"--&gt; K2\n    K2 --\"P\"--&gt; K3\n    K3 --\"r\"--&gt; K4\n    K4 --\"a\"--&gt; K5\n    K5 --\"i\"--&gt; K6((T_OPRAI))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    L1(Start calma_calabreso) --\"c\"--&gt; L2\n    L2 --\"a\"--&gt; L3\n    L3 --\"l\"--&gt; L4\n    L4 --\"m\"--&gt; L5\n    L5 --\"a\"--&gt; L6\n    L6 --\"_\"--&gt; L7\n    L7 --\"c\"--&gt; L8\n    L8 --\"a\"--&gt; L9\n    L9 --\"l\"--&gt; L10\n    L10 --\"a\"--&gt; L11\n    L11 --\"b\"--&gt; L12\n    L12 --\"r\"--&gt; L13\n    L13 --\"e\"--&gt; L14\n    L14 --\"s\"--&gt; L15\n    L15 --\"o\"--&gt; L16((T_CALMA_CALABRESO))",
+    "text": "Durante o processo de análise léxica, a Oxe Lang utiliza uma Tabela de Símbolos para armazenar e rastrear todos os identificadores encontrados no código fonte.\nEssa tabela é essencial para garantir que variáveis, funções e outros símbolos sejam reconhecidos corretamente ao longo da análise e fases posteriores da compilação.",
     "crumbs": [
       "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
+      "Tutorais e Guias",
+      "Tabela de Símbolos"
     ]
   },
   {
-    "objectID": "pages/examples.html#se_ligue",
-    "href": "pages/examples.html#se_ligue",
-    "title": "Diagramas de Transição",
+    "objectID": "pages/tutoriais.html#como-funciona",
+    "href": "pages/tutoriais.html#como-funciona",
+    "title": "Tabela de Símbolos",
+    "section": "Como funciona?",
+    "text": "Como funciona?\nA Tabela de Símbolos é implementada como uma estrutura simples baseada em arrays. Cada identificador único é armazenado na tabela à medida que aparece no código. Quando o mesmo identificador reaparece, sua posição é reutilizada — evitando duplicação.",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Tabela de Símbolos"
+    ]
+  },
+  {
+    "objectID": "pages/tutoriais.html#estrutura",
+    "href": "pages/tutoriais.html#estrutura",
+    "title": "Tabela de Símbolos",
+    "section": "Estrutura:",
+    "text": "Estrutura:\n#define MAX_SYMBOLS 100000\n#define MAX_ID_LENGTH 256\n\nchar symbol_table[MAX_SYMBOLS][MAX_ID_LENGTH];\nint symbol_count = 0;\n\nMAX_SYMBOLS: Número máximo de símbolos que a tabela pode armazenar.\nMAX_ID_LENGTH: Tamanho máximo de cada identificador.\nsymbol_table: Array que guarda os nomes dos identificadores.\nsymbol_count: Quantidade atual de símbolos armazenados.\n\n\nFunção Principal: get_symbol_position\nint get_symbol_position(const char* id);\nEssa função é responsável por:\n\nBuscar um identificador já existente na tabela.\nAdicionar um novo identificador se ele ainda não estiver registrado.\nRetornar a posição do identificador na tabela.\nRetornar -1 caso a tabela esteja cheia.\n\nExemplo de uso dentro do analisador:\nvoid print_identifier(const char* yytext_val) {\n    printf(\"ID\");\n    int pos = get_symbol_position(yytext_val);\n    if (pos != -1){\n        printf(\", %d\", pos);\n    }\n}\nEssa impressão ajuda a visualizar não apenas que o token é um identificador, mas qual a sua posição na tabela de símbolos, facilitando o rastreamento e testes.",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Tabela de Símbolos"
+    ]
+  },
+  {
+    "objectID": "pages/funcoes.html",
+    "href": "pages/funcoes.html",
+    "title": "Funções",
     "section": "",
-    "text": "graph LR\n    A1(Start se_ligue) --\"s\"--&gt; A2\n    A2 --\"e\"--&gt; A3\n    A3 --\"_\"--&gt; A4\n    A4 --\"l\"--&gt; A5\n    A5 --\"i\"--&gt; A6\n    A6 --\"g\"--&gt; A7\n    A7 --\"u\"--&gt; A8\n    A8 --\"e\"--&gt; A9((T_SE_LIGUE))",
+    "text": "deGue() calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {\n    devolva (nota1 + nota2) / 2;\n}",
     "crumbs": [
       "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
+      "Tutorais e Guias",
+      "Funções"
     ]
   },
   {
-    "objectID": "pages/examples.html#yotra",
-    "href": "pages/examples.html#yotra",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    B1(Start yotra) --\"y\"--&gt; B2\n    B2 --\"o\"--&gt; B3\n    B3 --\"t\"--&gt; B4\n    B4 --\"r\"--&gt; B5\n    B5 --\"a\"--&gt; B6((T_YOTRA))",
+    "objectID": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
+    "href": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
+    "title": "Funções",
+    "section": "📄 Exemplo de Código calculadora.yotra",
+    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    var flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    var flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal);\n\n}",
     "crumbs": [
       "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
+      "Tutorais e Guias",
+      "Funções"
     ]
   },
   {
-    "objectID": "pages/examples.html#nada_ve",
-    "href": "pages/examples.html#nada_ve",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    C1(Start nada_ve) --\"n\"--&gt; C2\n    C2 --\"a\"--&gt; C3\n    C3 --\"d\"--&gt; C4\n    C4 --\"a\"--&gt; C5\n    C5 --\"_\"--&gt; C6\n    C6 --\"v\"--&gt; C7\n    C7 --\"e\"--&gt; C8((T_NADA_VE))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#ensonha",
-    "href": "pages/examples.html#ensonha",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    D1(Start ensonha) --\"e\"--&gt; D2\n    D2 --\"n\"--&gt; D3\n    D3 --\"s\"--&gt; D4\n    D4 --\"o\"--&gt; D5\n    D5 --\"n\"--&gt; D6\n    D6 --\"h\"--&gt; D7\n    D7 --\"a\"--&gt; D8((T_ENSONHA))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#dorme_ensonha",
-    "href": "pages/examples.html#dorme_ensonha",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    E1(Start dorme_ensonha) --\"d\"--&gt; E2\n    E2 --\"o\"--&gt; E3\n    E3 --\"r\"--&gt; E4\n    E4 --\"m\"--&gt; E5\n    E5 --\"e\"--&gt; E6\n    E6 --\"_\"--&gt; E7\n    E7 --\"e\"--&gt; E8\n    E8 --\"n\"--&gt; E9\n    E9 --\"s\"--&gt; E10\n    E10 --\"o\"--&gt; E11\n    E11 --\"n\"--&gt; E12\n    E12 --\"h\"--&gt; E13\n    E13 --\"a\"--&gt; E14((T_DORME_ENSONHA))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#dinovo",
-    "href": "pages/examples.html#dinovo",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    F1(Start dinovo) --\"d\"--&gt; F2\n    F2 --\"i\"--&gt; F3\n    F3 --\"n\"--&gt; F4\n    F4 --\"o\"--&gt; F5\n    F5 --\"v\"--&gt; F6\n    F6 --\"o\"--&gt; F7((T_DINOVO))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#malocar",
-    "href": "pages/examples.html#malocar",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    G1(Start malocar) --\"m\"--&gt; G2\n    G2 --\"a\"--&gt; G3\n    G3 --\"l\"--&gt; G4\n    G4 --\"o\"--&gt; G5\n    G5 --\"c\"--&gt; G6\n    G6 --\"a\"--&gt; G7\n    G7 --\"r\"--&gt; G8((T_MALOCAR))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#fun",
-    "href": "pages/examples.html#fun",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    H1(Start fun) --\"f\"--&gt; H2\n    H2 --\"u\"--&gt; H3\n    H3 --\"n\"--&gt; H4((T_FUN))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#degue",
-    "href": "pages/examples.html#degue",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    I1(Start deGue) --\"d\"--&gt; I2\n    I2 --\"e\"--&gt; I3\n    I3 --\"G\"--&gt; I4\n    I4 --\"u\"--&gt; I5\n    I5 --\"e\"--&gt; I6((T_DEGUE))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#devolva",
-    "href": "pages/examples.html#devolva",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    J1(Start devolva) --\"d\"--&gt; J2\n    J2 --\"e\"--&gt; J3\n    J3 --\"v\"--&gt; J4\n    J4 --\"o\"--&gt; J5\n    J5 --\"l\"--&gt; J6\n    J6 --\"v\"--&gt; J7\n    J7 --\"a\"--&gt; J8((T_DEVOLVA))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#oprai",
-    "href": "pages/examples.html#oprai",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    K1(Start oPrai) --\"o\"--&gt; K2\n    K2 --\"P\"--&gt; K3\n    K3 --\"r\"--&gt; K4\n    K4 --\"a\"--&gt; K5\n    K5 --\"i\"--&gt; K6((T_OPRAI))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#calma_calabreso",
-    "href": "pages/examples.html#calma_calabreso",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "%%| fig-width: 6.5\n  graph LR\n    L1(Start calma_calabreso) --\"c\"--&gt; L2\n    L2 --\"a\"--&gt; L3\n    L3 --\"l\"--&gt; L4\n    L4 --\"m\"--&gt; L5\n    L5 --\"a\"--&gt; L6\n    L6 --\"_\"--&gt; L7\n    L7 --\"c\"--&gt; L8\n    L8 --\"a\"--&gt; L9\n    L9 --\"l\"--&gt; L10\n    L10 --\"a\"--&gt; L11\n    L11 --\"b\"--&gt; L12\n    L12 --\"r\"--&gt; L13\n    L13 --\"e\"--&gt; L14\n    L14 --\"s\"--&gt; L15\n    L15 --\"o\"--&gt; L16((T_CALMA_CALABRESO))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Sejam Bem vindo Calabresos",
-    "section": "",
-    "text": "A implementação desta linguagem tem como finalidade unir conceitos fundamentais da programação com elementos culturais e populares da família Brito, utilizando expressões e memes amplamente reconhecidos para tornar o aprendizado mais acessível, divertido e memorável.\n\n\n\n\n\n\n\n\n\nObjetivo\nEste possui apenas u trabalho tem como objetivo demonstrar a possibilitade de criar linguagens de programação podem ser também instrumentos de expressão cultural e social, indo além do uso estritamente técnico.\n\n\n\n\n\nAo ressignificar palavras e atribuir significados computacionais a memes e bordões, esta linguagem evidencia como a computação pode dialogar com o cotidiano, gerando novas possibilidades de ensino, gamificação e experimentação. Assim, a implementação da linguagem Calabreso++ representa apenas como uma implementação divertida utilizando os conhecimentos teoricos adquiridos na componente de MATA61 - Compiladores\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "Sejam Bem vindo Calabresos"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#diagrama-de-transição-para-palavras-chave",
-    "href": "pages/examples.html#diagrama-de-transição-para-palavras-chave",
-    "title": "Diagramas de Transição",
-    "section": "",
-    "text": "graph LR\n    A1(Start se_ligue) --\"s\"--&gt; A2\n    A2 --\"e\"--&gt; A3\n    A3 --\"_\"--&gt; A4\n    A4 --\"l\"--&gt; A5\n    A5 --\"i\"--&gt; A6\n    A6 --\"g\"--&gt; A7\n    A7 --\"u\"--&gt; A8\n    A8 --\"e\"--&gt; A9((T_SE_LIGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    B1(Start yotra) --\"y\"--&gt; B2\n    B2 --\"o\"--&gt; B3\n    B3 --\"t\"--&gt; B4\n    B4 --\"r\"--&gt; B5\n    B5 --\"a\"--&gt; B6((T_YOTRA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    C1(Start nada_ve) --\"n\"--&gt; C2\n    C2 --\"a\"--&gt; C3\n    C3 --\"d\"--&gt; C4\n    C4 --\"a\"--&gt; C5\n    C5 --\"_\"--&gt; C6\n    C6 --\"v\"--&gt; C7\n    C7 --\"e\"--&gt; C8((T_NADA_VE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    D1(Start ensonha) --\"e\"--&gt; D2\n    D2 --\"n\"--&gt; D3\n    D3 --\"s\"--&gt; D4\n    D4 --\"o\"--&gt; D5\n    D5 --\"n\"--&gt; D6\n    D6 --\"h\"--&gt; D7\n    D7 --\"a\"--&gt; D8((T_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    E1(Start dorme_ensonha) --\"d\"--&gt; E2\n    E2 --\"o\"--&gt; E3\n    E3 --\"r\"--&gt; E4\n    E4 --\"m\"--&gt; E5\n    E5 --\"e\"--&gt; E6\n    E6 --\"_\"--&gt; E7\n    E7 --\"e\"--&gt; E8\n    E8 --\"n\"--&gt; E9\n    E9 --\"s\"--&gt; E10\n    E10 --\"o\"--&gt; E11\n    E11 --\"n\"--&gt; E12\n    E12 --\"h\"--&gt; E13\n    E13 --\"a\"--&gt; E14((T_DORME_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    F1(Start dinovo) --\"d\"--&gt; F2\n    F2 --\"i\"--&gt; F3\n    F3 --\"n\"--&gt; F4\n    F4 --\"o\"--&gt; F5\n    F5 --\"v\"--&gt; F6\n    F6 --\"o\"--&gt; F7((T_DINOVO))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    G1(Start malocar) --\"m\"--&gt; G2\n    G2 --\"a\"--&gt; G3\n    G3 --\"l\"--&gt; G4\n    G4 --\"o\"--&gt; G5\n    G5 --\"c\"--&gt; G6\n    G6 --\"a\"--&gt; G7\n    G7 --\"r\"--&gt; G8((T_MALOCAR))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    H1(Start fun) --\"f\"--&gt; H2\n    H2 --\"u\"--&gt; H3\n    H3 --\"n\"--&gt; H4((T_FUN))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    I1(Start deGue) --\"d\"--&gt; I2\n    I2 --\"e\"--&gt; I3\n    I3 --\"G\"--&gt; I4\n    I4 --\"u\"--&gt; I5\n    I5 --\"e\"--&gt; I6((T_DEGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    J1(Start devolva) --\"d\"--&gt; J2\n    J2 --\"e\"--&gt; J3\n    J3 --\"v\"--&gt; J4\n    J4 --\"o\"--&gt; J5\n    J5 --\"l\"--&gt; J6\n    J6 --\"v\"--&gt; J7\n    J7 --\"a\"--&gt; J8((T_DEVOLVA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    K1(Start oPrai) --\"o\"--&gt; K2\n    K2 --\"P\"--&gt; K3\n    K3 --\"r\"--&gt; K4\n    K4 --\"a\"--&gt; K5\n    K5 --\"i\"--&gt; K6((T_OPRAI))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    L1(Start calma_calabreso) --\"c\"--&gt; L2\n    L2 --\"a\"--&gt; L3\n    L3 --\"l\"--&gt; L4\n    L4 --\"m\"--&gt; L5\n    L5 --\"a\"--&gt; L6\n    L6 --\"_\"--&gt; L7\n    L7 --\"c\"--&gt; L8\n    L8 --\"a\"--&gt; L9\n    L9 --\"l\"--&gt; L10\n    L10 --\"a\"--&gt; L11\n    L11 --\"b\"--&gt; L12\n    L12 --\"r\"--&gt; L13\n    L13 --\"e\"--&gt; L14\n    L14 --\"s\"--&gt; L15\n    L15 --\"o\"--&gt; L16((T_CALMA_CALABRESO))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/examples.html#diagrama-de-transições-para-expressões-regulares",
-    "href": "pages/examples.html#diagrama-de-transições-para-expressões-regulares",
-    "title": "Diagramas de Transição",
-    "section": "Diagrama de transições para expressões regulares",
-    "text": "Diagrama de transições para expressões regulares\n\nDiagrama para dígitos\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R1(Start DIGITO) --\"0–9\"--&gt; R2((DIGITO))\n\n\n\n\n\n\n\n\nDiagrama para letras\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R3(Start LETRA) --\"a–z, A–Z, _\"--&gt; R4((LETRA))\n\n\n\n\n\n\n\n\nDiagrama para identificadores (ID)\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R5(Start ID) --\"letra\"--&gt; R6(id1)\n    R6 --\"letra ou digito\"--&gt; R6\n    R6 --&gt; R7((ID))\n\n\n\n\n\n\n\n\nDiagrama para números inteiros\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R8(Start INTEIRO) --\"dígito\"--&gt; R9(inteiro 1)\n    R9 --\"dígito\"--&gt; R9\n    R9 --&gt; R10((INTEIRO))\n\n\n\n\n\n\n\n\nDiagrama para números de ponto flutuante (FLOAT)\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R11(Start FLOAT) --\"dígito\"--&gt; R12\n    R12 --\"dígito\"--&gt; R12\n    R12 --\".\"--&gt; R13\n    R13 --\"dígito\"--&gt; R14\n    R14 --\"dígito\"--&gt; R14\n    R14 --&gt; R15((FLOAT))\n\n\n\n\n\n\n\n\nDiagrama para literais de string\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R16(Start STRING_LITERAL) --\"aspas\"--&gt; R17\n    R17 --\"qualquer exceto aspas\"--&gt; R17\n    R17 --\"aspas\"--&gt; R18((STRING_LITERAL))\n\n\n\n\n\n\n\n\nDiagrama para literais de caractere\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R19(Start CHAR_LITERAL) --\"'\"--&gt; R20\n    R20 --\"qualquer exceto aspas simples\"--&gt; R21\n    R21 --\"'\"--&gt; R22((CHAR_LITERAL))\n\n\n\n\n\n\n\n\nDiagrama para comentários de linha\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R23(Start COMENTARIO_LINHA) --\"//\"--&gt; R24\n    R24 --\"qualquer caractere exceto \\\\n\"--&gt; R24\n    R24 --\"\\\\n\"--&gt; R25((COMENTARIO_LINHA))\n\n\n\n\n\n\n\n\nDiagrama para comentários de bloco\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R26(Start COMENTARIO_BLOCO) --\"/*\"--&gt; R27\n    R27 --\"qualquer exceto '*/'\"--&gt; R27\n    R27 --\"*/\"--&gt; R28((COMENTARIO_BLOCO))",
-    "crumbs": [
-      "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
-    ]
-  },
-  {
-    "objectID": "pages/intro.html#palavras-chave-e-tokens-brito-family",
-    "href": "pages/intro.html#palavras-chave-e-tokens-brito-family",
+    "objectID": "pages/intro.html",
+    "href": "pages/intro.html",
     "title": "Conceitos Importantes",
-    "section": "Palavras-chave e Tokens Brito Family",
-    "text": "Palavras-chave e Tokens Brito Family\n\n\n\nPalavra-chave\nUso\n\n\n\n\nvar, const\nDeclaração de variáveis\n\n\nmalocar\nAtribuição com tipo\n\n\ndeGue()\nDefinição de função\n\n\nse_ligue\nInício de condição (if)\n\n\nyotra\nCondição intermediária (elif)\n\n\nnada_ve\nCondição final (else)\n\n\ndinovo\nLaço de repetição (for)\n\n\nensonha\nLaço de repetição (while)\n\n\ndorme-ensonha\nLaço do-while\n\n\ndevolva\nRetorno de valor\n\n\noPrai\nImpressão na tela\n\n\nbreak\nbreak",
+    "section": "",
+    "text": "Arquivos .yotra contêm código-fonte em calabreso++. O analisador identifica:\n\n✅ Tipos de dados\n\n✅ Palavras-chave culturais\n\n✅ Operadores\n\n✅ Identificadores\n\n✅ Funções\n\n✅ Comentários",
     "crumbs": [
       "Home",
       "Introdução",
@@ -423,11 +151,23 @@
     ]
   },
   {
-    "objectID": "pages/intro.html#palavras-chave-e-usos-e-tokens-brito-family",
-    "href": "pages/intro.html#palavras-chave-e-usos-e-tokens-brito-family",
+    "objectID": "pages/intro.html#estrutura-dos-arquivos-.yotra",
+    "href": "pages/intro.html#estrutura-dos-arquivos-.yotra",
     "title": "Conceitos Importantes",
-    "section": "🧠 Palavras-chave e usos e Tokens Brito Family",
-    "text": "🧠 Palavras-chave e usos e Tokens Brito Family\n\n\n\nPalavra-chave\nUso\n\n\n\n\nvar, const\nDeclaração de variáveis\n\n\nmalocar\nAtribuição com tipo\n\n\ndeGue()\nDefinição de função\n\n\nse_ligue\nInício de condição (if)\n\n\nyotra\nCondição intermediária (elif)\n\n\nnada_ve\nCondição final (else)\n\n\ndinovo\nLaço de repetição (for)\n\n\nensonha\nLaço de repetição (while)\n\n\ndorme-ensonha\nLaço do-while\n\n\ndevolva\nRetorno de valor\n\n\noPrai\nImpressão na tela\n\n\nbreak\nbreak",
+    "section": "",
+    "text": "Arquivos .yotra contêm código-fonte em calabreso++. O analisador identifica:\n\n✅ Tipos de dados\n\n✅ Palavras-chave culturais\n\n✅ Operadores\n\n✅ Identificadores\n\n✅ Funções\n\n✅ Comentários",
+    "crumbs": [
+      "Home",
+      "Introdução",
+      "Conceitos Importantes"
+    ]
+  },
+  {
+    "objectID": "pages/intro.html#tipos-de-dados",
+    "href": "pages/intro.html#tipos-de-dados",
+    "title": "Conceitos Importantes",
+    "section": "Tipos de Dados",
+    "text": "Tipos de Dados\n\n\n\nTipo em Calabreso++\nDescrição\n\n\n\n\ninteiro\nNúmeros inteiros\n\n\nflutuante\nNúmeros com casas decimais\n\n\nletrinha\nCaractere único\n\n\ntextão\nCadeia de caracteres (strings)\n\n\nsem_volta\nTipo para funções sem retorno",
     "crumbs": [
       "Home",
       "Introdução",
@@ -438,12 +178,107 @@
     "objectID": "pages/intro.html#palavras-chave-e-usos-de-tokens-brito-family",
     "href": "pages/intro.html#palavras-chave-e-usos-de-tokens-brito-family",
     "title": "Conceitos Importantes",
-    "section": "🧩🔤 Palavras-chave e usos de Tokens Brito Family 🧩🔤",
-    "text": "🧩🔤 Palavras-chave e usos de Tokens Brito Family 🧩🔤\n\n\n\nPalavra-chave\nUso\n\n\n\n\nvar, const\nDeclaração de variáveis\n\n\nmalocar\nAtribuição com tipo\n\n\ndeGue()\nDefinição de função\n\n\nse_ligue\nInício de condição (if)\n\n\nyotra\nCondição intermediária (elif)\n\n\nnada_ve\nCondição final (else)\n\n\ndinovo\nLaço de repetição (for)\n\n\nensonha\nLaço de repetição (while)\n\n\ndorme-ensonha\nLaço do-while\n\n\ndevolva\nRetorno de valor\n\n\noPrai\nImpressão na tela\n\n\nbreak\nbreak",
+    "section": "🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤",
+    "text": "🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤\n\n\n\nPalavra-chave\nUso\n\n\n\n\nvar, const\nDeclaração de variáveis\n\n\nmalocar\nAtribuição com tipo\n\n\ndeGue()\nDefinição de função\n\n\nse_ligue\nInício de condição (if)\n\n\nyotra\nCondição intermediária (elif)\n\n\nnada_ve\nCondição final (else)\n\n\ndinovo\nLaço de repetição (for)\n\n\nensonha\nLaço de repetição (while)\n\n\ndorme-ensonha\nLaço do-while\n\n\ndevolva\nRetorno de valor\n\n\noPrai\nImpressão na tela\n\n\nbreak\nbreak",
     "crumbs": [
       "Home",
       "Introdução",
       "Conceitos Importantes"
+    ]
+  },
+  {
+    "objectID": "pages/intro.html#operadores",
+    "href": "pages/intro.html#operadores",
+    "title": "Conceitos Importantes",
+    "section": "Operadores 🔢",
+    "text": "Operadores 🔢\n\nAritméticos: +, -, *, /, %, **\nRelacionais: ==, !=, &lt;, &gt;, &lt;=, &gt;=\nLógicos: &&, ||, !\nBitwise: &, |, ^, ~\nAtribuições compostas: +=, -=, *=, /=, %=, etc.\n\nExemplo:\nnotasAlunos[1] = (nota1 + nota2) / 2.0;\nvar inteiro resto = numero % 10;",
+    "crumbs": [
+      "Home",
+      "Introdução",
+      "Conceitos Importantes"
+    ]
+  },
+  {
+    "objectID": "pages/intro.html#comentários",
+    "href": "pages/intro.html#comentários",
+    "title": "Conceitos Importantes",
+    "section": "Comentários",
+    "text": "Comentários\n\n\n\nTipo\nSintaxe\n\n\n\n\nLinha\n// Ja vendeu agua na Lapa?\n\n\nBloco\n/* Comentário de que? */",
+    "crumbs": [
+      "Home",
+      "Introdução",
+      "Conceitos Importantes"
+    ]
+  },
+  {
+    "objectID": "pages/edc.html",
+    "href": "pages/edc.html",
+    "title": "Estruturas de Controle",
+    "section": "",
+    "text": "se_ligue (nota &gt;= 7.0) {\n    oPrai(\"Aprovado com sucesso!\");\n} yotra (nota &gt;= 5.0) {\n    oPrai(\"Recuperação necessária.\");\n} nada_ve {\n    oPrai(\"Reprovado.\");\n}",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Estruturas de Controle"
+    ]
+  },
+  {
+    "objectID": "pages/edc.html#condicional",
+    "href": "pages/edc.html#condicional",
+    "title": "Estruturas de Controle",
+    "section": "",
+    "text": "se_ligue (nota &gt;= 7.0) {\n    oPrai(\"Aprovado com sucesso!\");\n} yotra (nota &gt;= 5.0) {\n    oPrai(\"Recuperação necessária.\");\n} nada_ve {\n    oPrai(\"Reprovado.\");\n}",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Estruturas de Controle"
+    ]
+  },
+  {
+    "objectID": "pages/edc.html#laço-dinovo-for",
+    "href": "pages/edc.html#laço-dinovo-for",
+    "title": "Estruturas de Controle",
+    "section": "Laço dinovo (for)",
+    "text": "Laço dinovo (for)\ndinovo (var inteiro contador = 1; contador &lt;= 10; contador++) {\n    oPrai(\"Tabuada do 5: 5 x \" + contador + \" = \" + (5 * contador));\n\n}",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Estruturas de Controle"
+    ]
+  },
+  {
+    "objectID": "pages/edc.html#laço-ensonha-while",
+    "href": "pages/edc.html#laço-ensonha-while",
+    "title": "Estruturas de Controle",
+    "section": "Laço ensonha (while)",
+    "text": "Laço ensonha (while)\nvar inteiro senha = 0;\nensonha (senha != 1234) {\n    oPrai(\"Digite a senha correta:\");\n    // senha = leitura();\n}\noPrai(\"Acesso liberado!\");",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Estruturas de Controle"
+    ]
+  },
+  {
+    "objectID": "pages/edc.html#laço-dorme...ensonha-do-while",
+    "href": "pages/edc.html#laço-dorme...ensonha-do-while",
+    "title": "Estruturas de Controle",
+    "section": "Laço dorme...ensonha (do-while)",
+    "text": "Laço dorme...ensonha (do-while)\nvar inteiro opcao = 0;\ndorme {\n    oPrai(\"Menu: 1-Jogar | 2-Sair\");\n    oPrai(\"Escolha uma opção:\");\n    opcao++;\n} ensonha (opcao &lt; 2);",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Estruturas de Controle"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sejam Bem vindo Calabresos",
+    "section": "",
+    "text": "A implementação desta linguagem tem como finalidade unir conceitos fundamentais da programação com elementos culturais e populares da família Brito, utilizando expressões e memes amplamente reconhecidos para tornar o aprendizado mais acessível, divertido e memorável.\n\n\n\n\n\n\n\n\n\nObjetivo\nEste possui apenas u trabalho tem como objetivo demonstrar a possibilitade de criar linguagens de programação podem ser também instrumentos de expressão cultural e social, indo além do uso estritamente técnico.\nAo ressignificar palavras e atribuir significados computacionais a memes e bordões, esta linguagem evidencia como a computação pode dialogar com o cotidiano, gerando novas possibilidades de ensino, gamificação e experimentação. Assim, a implementação da linguagem Calabreso++ representa apenas como uma implementação divertida utilizando os conhecimentos teoricos adquiridos na componente de MATA61 - Compiladores\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Sejam Bem vindo Calabresos"
     ]
   }
 ]
