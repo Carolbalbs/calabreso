@@ -10,28 +10,28 @@ dinovoo (x < 5) deGue
     oPrai("Loop errado!\n");
 }
 
-//Caracteres inválidos
+//Caracteres invalidos
 malocar inteiro x = 10@;     
 malocar flutuante y = 2.5#; 
 
-//Erros de formatação
+//Erros de formatacao
 malocar textão nome = "Texto sem fechamento;   
 malocar letrinha letra = 'AB';                 
 
 //Operadores malformados
 se_ligue (x === 5) deGue                      
-    oPrai("Operador inválido\n");
+    oPrai("Operador invalido\n");
 }
 
 ensonha (x >> 0) deGue                        
-    oPrai("Shift não existe aqui\n");
+    oPrai("Shift nao existe aqui\n");
 }
 
 //Símbolos não reconhecidos
 malocar inteiro ¢moeda = 5;                  
-malocar textão texto = "Olá µniverso!";       
+malocar textão texto = "Ola µniverso!";       
 
 //Bloco sem fechamento
 deGue                                          
-    oPrai("Bloco sem parênteses ou chaves\n");
+    oPrai("Bloco sem parenteses ou chaves\n");
 

@@ -1,0 +1,129 @@
+Token: 275 | Lexema: se_ligo
+Token: 293 | Lexema: (
+Token: 275 | Lexema: x
+Token: 280 | Lexema: ==
+Token: 276 | Lexema: 10
+Token: 294 | Lexema: )
+Token: 266 | Lexema: deGue
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 278 | Lexema: "Teste errado!\n"
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 296 | Lexema: }
+Token: 275 | Lexema: dinovoo
+Token: 293 | Lexema: (
+Token: 275 | Lexema: x
+Token: 282 | Lexema: <
+Token: 276 | Lexema: 5
+Token: 294 | Lexema: )
+Token: 266 | Lexema: deGue
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 278 | Lexema: "Loop errado!\n"
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 296 | Lexema: }
+Token: 264 | Lexema: malocar
+Token: 270 | Lexema: inteiro
+Token: 275 | Lexema: x
+Token: 290 | Lexema: =
+Token: 276 | Lexema: 10
+Erro Lexico na linha 1: caractere inesperado '@'
+Token: 297 | Lexema: @
+Token: 291 | Lexema: ;
+Token: 264 | Lexema: malocar
+Token: 271 | Lexema: flutuante
+Token: 275 | Lexema: y
+Token: 290 | Lexema: =
+Token: 277 | Lexema: 2.5
+Erro Lexico na linha 1: caractere inesperado '#'
+Token: 297 | Lexema: #
+Token: 291 | Lexema: ;
+Token: 264 | Lexema: malocar
+Token: 275 | Lexema: text
+Erro Lexico na linha 1: caractere inesperado '�'
+Token: 297 | Lexema: �
+Erro Lexico na linha 1: caractere inesperado '�'
+Token: 297 | Lexema: �
+Token: 275 | Lexema: o
+Token: 275 | Lexema: nome
+Token: 290 | Lexema: =
+Token: 278 | Lexema: "Texto sem fechamento;   
+malocar letrinha letra = 'AB';                 
+
+//Operadores malformados
+se_ligue (x === 5) deGue                      
+    oPrai("
+Token: 275 | Lexema: Operador
+Token: 275 | Lexema: invalido
+Erro Lexico na linha 1: caractere inesperado '\'
+Token: 297 | Lexema: \
+Token: 275 | Lexema: n
+Token: 278 | Lexema: ");
+}
+
+ensonha (x >> 0) deGue                        
+    oPrai("
+Token: 275 | Lexema: Shift
+Token: 275 | Lexema: nao
+Token: 275 | Lexema: existe
+Token: 275 | Lexema: aqui
+Erro Lexico na linha 1: caractere inesperado '\'
+Token: 297 | Lexema: \
+Token: 275 | Lexema: n
+Token: 278 | Lexema: ");
+}
+
+//Símbolos não reconhecidos
+malocar inteiro ¢moeda = 5;                  
+malocar textão texto = "
+Token: 275 | Lexema: Ola
+Erro Lexico na linha 1: caractere inesperado '�'
+Token: 297 | Lexema: �
+Erro Lexico na linha 1: caractere inesperado '�'
+Token: 297 | Lexema: �
+Token: 275 | Lexema: niverso
+Erro Lexico na linha 1: caractere inesperado '!'
+Token: 297 | Lexema: !
+Token: 278 | Lexema: ";       
+
+//Bloco sem fechamento
+deGue                                          
+    oPrai("
+Token: 275 | Lexema: Bloco
+Token: 275 | Lexema: sem
+Token: 275 | Lexema: parenteses
+Token: 275 | Lexema: ou
+Token: 275 | Lexema: chaves
+Erro Lexico na linha 1: caractere inesperado '\'
+Token: 297 | Lexema: \
+Token: 275 | Lexema: n
+Erro Lexico na linha 1: caractere inesperado '"'
+Token: 297 | Lexema: "
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+
+--- Tabela de Simbolos ---
+[0] se_ligo
+[1] x
+[2] dinovoo
+[3] y
+[4] text
+[5] o
+[6] nome
+[7] Operador
+[8] invalido
+[9] n
+[10] Shift
+[11] nao
+[12] existe
+[13] aqui
+[14] Ola
+[15] niverso
+[16] Bloco
+[17] sem
+[18] parenteses
+[19] ou
+[20] chaves
+

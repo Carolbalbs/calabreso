@@ -1,0 +1,173 @@
+./scanner exemplo_britolang.lang 
+Token: 265 | Lexema: fun
+Token: 275 | Lexema: principal
+Token: 293 | Lexema: (
+Token: 294 | Lexema: )
+Token: 266 | Lexema: deGue
+Token: 264 | Lexema: malocar
+Token: 270 | Lexema: inteiro
+Token: 275 | Lexema: contador
+Token: 290 | Lexema: =
+Token: 276 | Lexema: 0
+Token: 291 | Lexema: ;
+Token: 264 | Lexema: malocar
+Token: 271 | Lexema: flutuante
+Token: 275 | Lexema: media
+Token: 290 | Lexema: =
+Token: 277 | Lexema: 0.0
+Token: 291 | Lexema: ;
+Token: 264 | Lexema: malocar
+Token: 272 | Lexema: letrinha
+Token: 275 | Lexema: letra
+Token: 290 | Lexema: =
+Token: 279 | Lexema: 'A'
+Token: 291 | Lexema: ;
+Token: 264 | Lexema: malocar
+Token: 275 | Lexema: text
+Erro Lexico na linha 1: caractere inesperado '�'
+Token: 297 | Lexema: �
+Erro Lexico na linha 1: caractere inesperado '�'
+Token: 297 | Lexema: �
+Token: 275 | Lexema: o
+Token: 275 | Lexema: nome
+Token: 290 | Lexema: =
+Token: 278 | Lexema: "BritoLang Scanner"
+Token: 291 | Lexema: ;
+Token: 264 | Lexema: malocar
+Token: 274 | Lexema: sem_volta
+Token: 275 | Lexema: nada
+Token: 291 | Lexema: ;
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 278 | Lexema: "Iniciando o programa...\n"
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 263 | Lexema: dinovo
+Token: 293 | Lexema: (
+Token: 275 | Lexema: contador
+Token: 290 | Lexema: =
+Token: 276 | Lexema: 0
+Token: 291 | Lexema: ;
+Token: 275 | Lexema: contador
+Token: 282 | Lexema: <
+Token: 276 | Lexema: 5
+Token: 291 | Lexema: ;
+Token: 275 | Lexema: contador
+Token: 290 | Lexema: =
+Token: 275 | Lexema: contador
+Token: 286 | Lexema: +
+Token: 276 | Lexema: 1
+Token: 294 | Lexema: )
+Token: 266 | Lexema: deGue
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 278 | Lexema: "Contador: "
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 275 | Lexema: contador
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 296 | Lexema: }
+Token: 258 | Lexema: se_ligue
+Token: 293 | Lexema: (
+Token: 275 | Lexema: contador
+Token: 283 | Lexema: >
+Token: 276 | Lexema: 3
+Token: 294 | Lexema: )
+Token: 266 | Lexema: deGue
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 278 | Lexema: "Maior que tres\n"
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 259 | Lexema: yotra
+Token: 293 | Lexema: (
+Token: 275 | Lexema: contador
+Token: 280 | Lexema: ==
+Token: 276 | Lexema: 3
+Token: 294 | Lexema: )
+Token: 266 | Lexema: deGue
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 278 | Lexema: "Igual a tres\n"
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 260 | Lexema: nada_ve
+Token: 266 | Lexema: deGue
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 278 | Lexema: "Menor que tres\n"
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 296 | Lexema: }
+Token: 261 | Lexema: ensonha
+Token: 293 | Lexema: (
+Token: 275 | Lexema: contador
+Token: 282 | Lexema: <
+Token: 276 | Lexema: 8
+Token: 294 | Lexema: )
+Token: 266 | Lexema: deGue
+Token: 275 | Lexema: contador
+Token: 290 | Lexema: =
+Token: 275 | Lexema: contador
+Token: 286 | Lexema: +
+Token: 276 | Lexema: 1
+Token: 291 | Lexema: ;
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 278 | Lexema: "Incrementando contador...\n"
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 258 | Lexema: se_ligue
+Token: 293 | Lexema: (
+Token: 275 | Lexema: contador
+Token: 280 | Lexema: ==
+Token: 276 | Lexema: 7
+Token: 294 | Lexema: )
+Token: 266 | Lexema: deGue
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 278 | Lexema: "Parando loop!\n"
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 269 | Lexema: calma_calabreso
+Token: 291 | Lexema: ;
+Token: 296 | Lexema: }
+Token: 296 | Lexema: }
+Token: 262 | Lexema: dorme_ensonha
+Token: 266 | Lexema: deGue
+Token: 268 | Lexema: oPrai
+Token: 293 | Lexema: (
+Token: 278 | Lexema: "Executa pelo menos uma vez!\n"
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 275 | Lexema: contador
+Token: 290 | Lexema: =
+Token: 275 | Lexema: contador
+Token: 287 | Lexema: -
+Token: 276 | Lexema: 1
+Token: 291 | Lexema: ;
+Token: 296 | Lexema: }
+Token: 261 | Lexema: ensonha
+Token: 293 | Lexema: (
+Token: 275 | Lexema: contador
+Token: 283 | Lexema: >
+Token: 276 | Lexema: 0
+Token: 294 | Lexema: )
+Token: 291 | Lexema: ;
+Token: 267 | Lexema: devolva
+Token: 291 | Lexema: ;
+Token: 296 | Lexema: }
+
+--- Tabela de Simbolos ---
+[0] principal
+[1] contador
+[2] media
+[3] letra
+[4] text
+[5] o
+[6] nome
+[7] nada
+

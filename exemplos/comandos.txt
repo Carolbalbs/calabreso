@@ -1,0 +1,7 @@
+Comandos utilizados:
+
+flex scanner_britolang.l
+gcc lex.yy.c -o scanner
+./scanner exemplo_britolang.lang
+./scanner  erros_britolang.lang
+

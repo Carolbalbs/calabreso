@@ -11,7 +11,7 @@ fun principal() deGue
 
     oPrai("Iniciando o programa...\n");
 
-    //Estrutura de repetição tipo for
+    //Estrutura de repeticao tipo for
     dinovo (contador = 0; contador < 5; contador = contador + 1) deGue
         oPrai("Contador: ");
         oPrai(contador);
@@ -19,11 +19,11 @@ fun principal() deGue
 
     //Estrutura condicional
     se_ligue (contador > 3) deGue
-        oPrai("Maior que três\n");
+        oPrai("Maior que tres\n");
     yotra (contador == 3) deGue
-        oPrai("Igual a três\n");
+        oPrai("Igual a tres\n");
     nada_ve deGue
-        oPrai("Menor que três\n");
+        oPrai("Menor que tres\n");
     }
 
     //Estrutura de repetição tipo while
