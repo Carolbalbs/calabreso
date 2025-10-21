@@ -67,42 +67,6 @@
     ]
   },
   {
-    "objectID": "pages/tutoriais.html",
-    "href": "pages/tutoriais.html",
-    "title": "Tabela de Símbolos",
-    "section": "",
-    "text": "Durante o processo de análise léxica, a Calabreso++ utiliza uma Tabela de Símbolos para armazenar e rastrear todos os identificadores encontrados no código fonte.\nEssa tabela é essencial para garantir que variáveis, funções e outros símbolos sejam reconhecidos corretamente ao longo da análise e fases posteriores da compilação.",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Tabela de Símbolos"
-    ]
-  },
-  {
-    "objectID": "pages/tutoriais.html#como-funciona",
-    "href": "pages/tutoriais.html#como-funciona",
-    "title": "Tabela de Símbolos",
-    "section": "Como funciona?",
-    "text": "Como funciona?\nA Tabela de Símbolos é implementada como uma estrutura simples baseada em arrays. Cada identificador único é armazenado na tabela à medida que aparece no código. Quando o mesmo identificador reaparece, sua posição é reutilizada — evitando duplicação.",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Tabela de Símbolos"
-    ]
-  },
-  {
-    "objectID": "pages/tutoriais.html#estrutura",
-    "href": "pages/tutoriais.html#estrutura",
-    "title": "Tabela de Símbolos",
-    "section": "Estrutura:",
-    "text": "Estrutura:\n#define MAX_SYMBOLS 100000\n#define MAX_ID_LENGTH 256\n\nchar symbol_table[MAX_SYMBOLS][MAX_ID_LENGTH];\nint symbol_count = 0;\n\nMAX_SYMBOLS: Número máximo de símbolos que a tabela pode armazenar.\nMAX_ID_LENGTH: Tamanho máximo de cada identificador.\nsymbol_table: Array que guarda os nomes dos identificadores.\nsymbol_count: Quantidade atual de símbolos armazenados.\n\n\nFunção Principal: get_symbol_position\nint get_symbol_position(const char* id);\nEssa função é responsável por:\n\nBuscar um identificador já existente na tabela.\nAdicionar um novo identificador se ele ainda não estiver registrado.\nRetornar a posição do identificador na tabela.\nRetornar -1 caso a tabela esteja cheia.\n\nExemplo de uso dentro do analisador:\nvoid print_identifier(const char* yytext_val) {\n    printf(\"ID\");\n    int pos = get_symbol_position(yytext_val);\n    if (pos != -1){\n        printf(\", %d\", pos);\n    }\n}\nEssa impressão ajuda a visualizar não apenas que o token é um identificador, mas qual a sua posição na tabela de símbolos, facilitando o rastreamento e testes.",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Tabela de Símbolos"
-    ]
-  },
-  {
     "objectID": "pages/funcoes.html",
     "href": "pages/funcoes.html",
     "title": "Funções",

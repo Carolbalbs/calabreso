@@ -7,7 +7,6 @@ website:
         - pages/intro.qmd
       - section: Tutorais e Guias
         contents:
-        - pages/tutoriais.qmd
         - pages/edc.qmd
         - pages/funcoes.qmd
         - pages/comousar.qmd
