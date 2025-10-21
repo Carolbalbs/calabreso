@@ -316,19 +316,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li><strong>Compile o projeto:</strong></li>
 </ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">flex</span> scanner_britolang.l</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="2" type="1">
 <li><strong>Execute o analisador com um arquivo <code>.yotra</code>:</strong></li>
 </ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./lexer</span> input/exemplo-input.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gcc</span> lex.yy.c <span class="at">-o</span> scanner_britolang.l</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./scanner_britolang.l</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>A saída será uma lista dos <strong>tokens reconhecidos</strong>, com sua <strong>categoria</strong> e valor identificado.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>T_BARRIL, <span class="st">'barril'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_BROCOU, <span class="st">'brocou'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_LPAREN, <span class="st">'('</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_RPAREN, <span class="st">')'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_COLON, <span class="st">':'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_NADA, <span class="st">'nada'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_ <span class="ex">LBRACE,</span> <span class="st">'{'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_PEGAVISAO, <span class="st">'pegaVisao'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_LPAREN, <span class="st">'('</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_STRING_LITERAL, <span class="st">'"Olá, Mundo!"'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_RPAREN, <span class="st">')'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_SEMICOLON, <span class="st">';'</span><span class="op">&gt;</span> <span class="op">&lt;</span>T_RBRACE, <span class="st">'}'</span><span class="op">&gt;</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 <section id="observações-finais" class="level2">
 <h2 class="anchored" data-anchor-id="observações-finais">📌 Observações Finais</h2>
 <ul>
 <li>O projeto foi desenvolvido com <strong>Flex (Lex)</strong>.</li>
-<li>Os padrões léxicos estão definidos no arquivo <code>calabreso_lexer.l</code>.</li>
+<li>Os padrões léxicos estão definidos no arquivo <code>scanner_britolang.l</code>.</li>
 <li>A linguagem é uma ferramenta <strong>educacional</strong>, com o objetivo de tornar o estudo de análise léxica mais leve, divertido e regionalizado.</li>
 </ul>
 <hr>
