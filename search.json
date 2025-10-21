@@ -59,71 +59,11 @@
     "href": "pages/comousar.html#observações-finais",
     "title": "Analisador Léxico",
     "section": "📌 Observações Finais",
-    "text": "📌 Observações Finais\n\nO projeto foi desenvolvido com Flex (Lex).\nOs padrões léxicos estão definidos no arquivo calabreso_lexer.l.\nA linguagem é uma ferramenta educacional, com o objetivo de tornar o estudo de análise léxica mais leve, divertido e regionalizado.",
+    "text": "📌 Observações Finais\n\nO projeto foi desenvolvido com Flex (Lex).\nOs padrões léxicos estão definidos no arquivo scanner_britolang.l.\nA linguagem é uma ferramenta educacional, com o objetivo de tornar o estudo de análise léxica mais leve, divertido e regionalizado.",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
       "Analisador Léxico"
-    ]
-  },
-  {
-    "objectID": "pages/tutoriais.html",
-    "href": "pages/tutoriais.html",
-    "title": "Tabela de Símbolos",
-    "section": "",
-    "text": "Durante o processo de análise léxica, a Calabreso++ utiliza uma Tabela de Símbolos para armazenar e rastrear todos os identificadores encontrados no código fonte.\nEssa tabela é essencial para garantir que variáveis, funções e outros símbolos sejam reconhecidos corretamente ao longo da análise e fases posteriores da compilação.",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Tabela de Símbolos"
-    ]
-  },
-  {
-    "objectID": "pages/tutoriais.html#como-funciona",
-    "href": "pages/tutoriais.html#como-funciona",
-    "title": "Tabela de Símbolos",
-    "section": "Como funciona?",
-    "text": "Como funciona?\nA Tabela de Símbolos é implementada como uma estrutura simples baseada em arrays. Cada identificador único é armazenado na tabela à medida que aparece no código. Quando o mesmo identificador reaparece, sua posição é reutilizada — evitando duplicação.",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Tabela de Símbolos"
-    ]
-  },
-  {
-    "objectID": "pages/tutoriais.html#estrutura",
-    "href": "pages/tutoriais.html#estrutura",
-    "title": "Tabela de Símbolos",
-    "section": "Estrutura:",
-    "text": "Estrutura:\n#define MAX_SYMBOLS 100000\n#define MAX_ID_LENGTH 256\n\nchar symbol_table[MAX_SYMBOLS][MAX_ID_LENGTH];\nint symbol_count = 0;\n\nMAX_SYMBOLS: Número máximo de símbolos que a tabela pode armazenar.\nMAX_ID_LENGTH: Tamanho máximo de cada identificador.\nsymbol_table: Array que guarda os nomes dos identificadores.\nsymbol_count: Quantidade atual de símbolos armazenados.\n\n\nFunção Principal: get_symbol_position\nint get_symbol_position(const char* id);\nEssa função é responsável por:\n\nBuscar um identificador já existente na tabela.\nAdicionar um novo identificador se ele ainda não estiver registrado.\nRetornar a posição do identificador na tabela.\nRetornar -1 caso a tabela esteja cheia.\n\nExemplo de uso dentro do analisador:\nvoid print_identifier(const char* yytext_val) {\n    printf(\"ID\");\n    int pos = get_symbol_position(yytext_val);\n    if (pos != -1){\n        printf(\", %d\", pos);\n    }\n}\nEssa impressão ajuda a visualizar não apenas que o token é um identificador, mas qual a sua posição na tabela de símbolos, facilitando o rastreamento e testes.",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Tabela de Símbolos"
-    ]
-  },
-  {
-    "objectID": "pages/funcoes.html",
-    "href": "pages/funcoes.html",
-    "title": "Funções",
-    "section": "",
-    "text": "deGue() calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {\n    devolva (nota1 + nota2) / 2;\n}",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
-    "href": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
-    "title": "Funções",
-    "section": "📄 Exemplo de Código calculadora.yotra",
-    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    var flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    var flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal)",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Funções"
     ]
   },
   {
@@ -199,6 +139,17 @@
     ]
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sejam Bem vindo Calabresos",
+    "section": "",
+    "text": "A implementação desta linguagem tem como finalidade unir conceitos fundamentais da programação com elementos culturais e populares da família Brito, utilizando expressões e memes amplamente reconhecidos para tornar o aprendizado mais acessível, divertido e memorável.\n\n\n\n\n\n\n\n\n\nObjetivo\nEste possui apenas u trabalho tem como objetivo demonstrar a possibilitade de criar linguagens de programação podem ser também instrumentos de expressão cultural e social, indo além do uso estritamente técnico.\nAo ressignificar palavras e atribuir significados computacionais a memes e bordões, esta linguagem evidencia como a computação pode dialogar com o cotidiano, gerando novas possibilidades de ensino, gamificação e experimentação. Assim, a implementação da linguagem Calabreso++ representa apenas como uma implementação divertida utilizando os conhecimentos teoricos adquiridos na componente de MATA61 - Compiladores\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Sejam Bem vindo Calabresos"
+    ]
+  },
+  {
     "objectID": "pages/edc.html",
     "href": "pages/edc.html",
     "title": "Estruturas de Controle",
@@ -259,14 +210,63 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Sejam Bem vindo Calabresos",
+    "objectID": "pages/funcoes.html",
+    "href": "pages/funcoes.html",
+    "title": "Funções",
     "section": "",
-    "text": "A implementação desta linguagem tem como finalidade unir conceitos fundamentais da programação com elementos culturais e populares da família Brito, utilizando expressões e memes amplamente reconhecidos para tornar o aprendizado mais acessível, divertido e memorável.\n\n\n\n\n\n\n\n\n\nObjetivo\nEste possui apenas u trabalho tem como objetivo demonstrar a possibilitade de criar linguagens de programação podem ser também instrumentos de expressão cultural e social, indo além do uso estritamente técnico.\nAo ressignificar palavras e atribuir significados computacionais a memes e bordões, esta linguagem evidencia como a computação pode dialogar com o cotidiano, gerando novas possibilidades de ensino, gamificação e experimentação. Assim, a implementação da linguagem Calabreso++ representa apenas como uma implementação divertida utilizando os conhecimentos teoricos adquiridos na componente de MATA61 - Compiladores\n\n\n\n\n Back to top",
+    "text": "deGue() calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {\n    devolva (nota1 + nota2) / 2;\n}",
     "crumbs": [
       "Home",
-      "Sejam Bem vindo Calabresos"
+      "Tutorais e Guias",
+      "Funções"
+    ]
+  },
+  {
+    "objectID": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
+    "href": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
+    "title": "Funções",
+    "section": "📄 Exemplo de Código calculadora.yotra",
+    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    var flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    var flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal)",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Funções"
+    ]
+  },
+  {
+    "objectID": "pages/tutoriais.html",
+    "href": "pages/tutoriais.html",
+    "title": "Tabela de Símbolos",
+    "section": "",
+    "text": "Durante o processo de análise léxica, a Calabreso++ utiliza uma Tabela de Símbolos para armazenar e rastrear todos os identificadores encontrados no código fonte.\nEssa tabela é essencial para garantir que variáveis, funções e outros símbolos sejam reconhecidos corretamente ao longo da análise e fases posteriores da compilação.",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Tabela de Símbolos"
+    ]
+  },
+  {
+    "objectID": "pages/tutoriais.html#como-funciona",
+    "href": "pages/tutoriais.html#como-funciona",
+    "title": "Tabela de Símbolos",
+    "section": "Como funciona?",
+    "text": "Como funciona?\nA Tabela de Símbolos é implementada como uma estrutura simples baseada em arrays. Cada identificador único é armazenado na tabela à medida que aparece no código. Quando o mesmo identificador reaparece, sua posição é reutilizada — evitando duplicação.",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Tabela de Símbolos"
+    ]
+  },
+  {
+    "objectID": "pages/tutoriais.html#estrutura",
+    "href": "pages/tutoriais.html#estrutura",
+    "title": "Tabela de Símbolos",
+    "section": "Estrutura:",
+    "text": "Estrutura:\n#define MAX_SYMBOLS 100000\n#define MAX_ID_LENGTH 256\n\nchar symbol_table[MAX_SYMBOLS][MAX_ID_LENGTH];\nint symbol_count = 0;\n\nMAX_SYMBOLS: Número máximo de símbolos que a tabela pode armazenar.\nMAX_ID_LENGTH: Tamanho máximo de cada identificador.\nsymbol_table: Array que guarda os nomes dos identificadores.\nsymbol_count: Quantidade atual de símbolos armazenados.\n\n\nFunção Principal: get_symbol_position\nint get_symbol_position(const char* id);\nEssa função é responsável por:\n\nBuscar um identificador já existente na tabela.\nAdicionar um novo identificador se ele ainda não estiver registrado.\nRetornar a posição do identificador na tabela.\nRetornar -1 caso a tabela esteja cheia.\n\nExemplo de uso dentro do analisador:\nvoid print_identifier(const char* yytext_val) {\n    printf(\"ID\");\n    int pos = get_symbol_position(yytext_val);\n    if (pos != -1){\n        printf(\", %d\", pos);\n    }\n}\nEssa impressão ajuda a visualizar não apenas que o token é um identificador, mas qual a sua posição na tabela de símbolos, facilitando o rastreamento e testes.",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Tabela de Símbolos"
     ]
   }
 ]

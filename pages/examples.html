@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Estruturas de Controle –</title>
+<title>Diagramas de Transição –</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -65,8 +30,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pages/funcoes.html" rel="next">
-<link href="../pages/tutoriais.html" rel="prev">
+<link href="../pages/comousar.html" rel="prev">
 <link href=".././images/calabresa.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -78,7 +42,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a8ce9dc7af5da88079a6f214d93ebe40.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a624822aebd705a72cafe257f9c8af1e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,12 +70,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Estruturas de Controle –">
+<meta property="og:title" content="Diagramas de Transição –">
 <meta property="og:site_name" content=" ">
-<meta name="twitter:title" content="Estruturas de Controle –">
+<meta name="twitter:title" content="Diagramas de Transição –">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -167,7 +134,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/tutoriais.html">Tutorais e Guias</a></li><li class="breadcrumb-item"><a href="../pages/edc.html">Estruturas de Controle</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/examples.html">Estados de Transição</a></li><li class="breadcrumb-item"><a href="../pages/examples.html">Diagramas de Transição</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -223,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/edc.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pages/edc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Estruturas de Controle</span></a>
   </div>
 </li>
@@ -252,7 +219,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/examples.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/examples.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Diagramas de Transição</span></a>
   </div>
 </li>
@@ -268,10 +235,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#condicional" id="toc-condicional" class="nav-link active" data-scroll-target="#condicional">Condicional</a></li>
-  <li><a href="#laço-dinovo-for" id="toc-laço-dinovo-for" class="nav-link" data-scroll-target="#laço-dinovo-for">Laço <code>dinovo</code> (for)</a></li>
-  <li><a href="#laço-ensonha-while" id="toc-laço-ensonha-while" class="nav-link" data-scroll-target="#laço-ensonha-while">Laço <code>ensonha</code> (while)</a></li>
-  <li><a href="#laço-dorme...ensonha-do-while" id="toc-laço-dorme...ensonha-do-while" class="nav-link" data-scroll-target="#laço-dorme...ensonha-do-while">Laço <code>dorme...ensonha</code> (do-while)</a></li>
+  <li><a href="#diagrama-de-transição-para-palavras-chave" id="toc-diagrama-de-transição-para-palavras-chave" class="nav-link active" data-scroll-target="#diagrama-de-transição-para-palavras-chave">Diagrama de transição para palavras chave</a>
+  <ul class="collapse">
+  <li><a href="#se_ligue" id="toc-se_ligue" class="nav-link" data-scroll-target="#se_ligue">se_ligue</a></li>
+  <li><a href="#yotra" id="toc-yotra" class="nav-link" data-scroll-target="#yotra">yotra</a></li>
+  <li><a href="#nada_ve" id="toc-nada_ve" class="nav-link" data-scroll-target="#nada_ve">nada_ve</a></li>
+  <li><a href="#ensonha" id="toc-ensonha" class="nav-link" data-scroll-target="#ensonha">ensonha</a></li>
+  <li><a href="#dorme_ensonha" id="toc-dorme_ensonha" class="nav-link" data-scroll-target="#dorme_ensonha">dorme_ensonha</a></li>
+  <li><a href="#dinovo" id="toc-dinovo" class="nav-link" data-scroll-target="#dinovo">dinovo</a></li>
+  <li><a href="#malocar" id="toc-malocar" class="nav-link" data-scroll-target="#malocar">malocar</a></li>
+  <li><a href="#fun" id="toc-fun" class="nav-link" data-scroll-target="#fun">fun</a></li>
+  <li><a href="#degue" id="toc-degue" class="nav-link" data-scroll-target="#degue">deGue</a></li>
+  <li><a href="#devolva" id="toc-devolva" class="nav-link" data-scroll-target="#devolva">devolva</a></li>
+  <li><a href="#oprai" id="toc-oprai" class="nav-link" data-scroll-target="#oprai">oPrai</a></li>
+  <li><a href="#calma_calabreso" id="toc-calma_calabreso" class="nav-link" data-scroll-target="#calma_calabreso">calma_calabreso</a></li>
+  </ul></li>
+  <li><a href="#diagrama-de-transições-para-expressões-regulares" id="toc-diagrama-de-transições-para-expressões-regulares" class="nav-link" data-scroll-target="#diagrama-de-transições-para-expressões-regulares">Diagrama de transições para expressões regulares</a>
+  <ul class="collapse">
+  <li><a href="#diagrama-para-dígitos" id="toc-diagrama-para-dígitos" class="nav-link" data-scroll-target="#diagrama-para-dígitos">Diagrama para dígitos</a></li>
+  <li><a href="#diagrama-para-letras" id="toc-diagrama-para-letras" class="nav-link" data-scroll-target="#diagrama-para-letras">Diagrama para letras</a></li>
+  <li><a href="#diagrama-para-identificadores-id" id="toc-diagrama-para-identificadores-id" class="nav-link" data-scroll-target="#diagrama-para-identificadores-id">Diagrama para identificadores (ID)</a></li>
+  <li><a href="#diagrama-para-números-inteiros" id="toc-diagrama-para-números-inteiros" class="nav-link" data-scroll-target="#diagrama-para-números-inteiros">Diagrama para números inteiros</a></li>
+  <li><a href="#diagrama-para-números-de-ponto-flutuante-float" id="toc-diagrama-para-números-de-ponto-flutuante-float" class="nav-link" data-scroll-target="#diagrama-para-números-de-ponto-flutuante-float">Diagrama para números de ponto flutuante (FLOAT)</a></li>
+  <li><a href="#diagrama-para-literais-de-string" id="toc-diagrama-para-literais-de-string" class="nav-link" data-scroll-target="#diagrama-para-literais-de-string">Diagrama para literais de string</a></li>
+  <li><a href="#diagrama-para-literais-de-caractere" id="toc-diagrama-para-literais-de-caractere" class="nav-link" data-scroll-target="#diagrama-para-literais-de-caractere">Diagrama para literais de caractere</a></li>
+  <li><a href="#diagrama-para-comentários-de-linha" id="toc-diagrama-para-comentários-de-linha" class="nav-link" data-scroll-target="#diagrama-para-comentários-de-linha">Diagrama para comentários de linha</a></li>
+  <li><a href="#diagrama-para-comentários-de-bloco" id="toc-diagrama-para-comentários-de-bloco" class="nav-link" data-scroll-target="#diagrama-para-comentários-de-bloco">Diagrama para comentários de bloco</a></li>
+  </ul></li>
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -280,9 +270,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/tutoriais.html">Tutorais e Guias</a></li><li class="breadcrumb-item"><a href="../pages/edc.html">Estruturas de Controle</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/examples.html">Estados de Transição</a></li><li class="breadcrumb-item"><a href="../pages/examples.html">Diagramas de Transição</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Estruturas de Controle</h1>
+<h1 class="title">Diagramas de Transição</h1>
 </div>
 
 
@@ -299,42 +289,462 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="condicional" class="level2">
-<h2 class="anchored" data-anchor-id="condicional">Condicional</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">se_ligue</span> (nota <span class="op">&gt;=</span> <span class="fl">7.0</span>) {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">oPrai</span>(<span class="st">"Aprovado com sucesso!"</span>)<span class="op">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>} <span class="fu">yotra</span> (nota <span class="op">&gt;=</span> <span class="fl">5.0</span>) {</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">oPrai</span>(<span class="st">"Recuperação necessária."</span>)<span class="op">;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>} nada_ve {</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">oPrai</span>(<span class="st">"Reprovado."</span>)<span class="op">;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="diagrama-de-transição-para-palavras-chave" class="level2">
+<h2 class="anchored" data-anchor-id="diagrama-de-transição-para-palavras-chave">Diagrama de transição para palavras chave</h2>
+<section id="se_ligue" class="level3">
+<h3 class="anchored" data-anchor-id="se_ligue">se_ligue</h3>
+<div class="cell" data-fig-width="6.5" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  graph LR
+    A1(Start se_ligue) --"s"--&gt; A2
+    A2 --"e"--&gt; A3
+    A3 --"_"--&gt; A4
+    A4 --"l"--&gt; A5
+    A5 --"i"--&gt; A6
+    A6 --"g"--&gt; A7
+    A7 --"u"--&gt; A8
+    A8 --"e"--&gt; A9((T_SE_LIGUE))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
-<section id="laço-dinovo-for" class="level2">
-<h2 class="anchored" data-anchor-id="laço-dinovo-for">Laço <code>dinovo</code> (for)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dinovo</span> (<span class="kw">var</span> inteiro contador <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> contador <span class="op">&lt;=</span> <span class="dv">10</span><span class="op">;</span> contador<span class="op">++</span>) {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">oPrai</span>(<span class="st">"Tabuada do 5: 5 x "</span> <span class="op">+</span> contador <span class="op">+</span> <span class="st">" = "</span> <span class="op">+</span> (<span class="dv">5</span> <span class="op">*</span> contador))<span class="op">;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="yotra" class="level3">
+<h3 class="anchored" data-anchor-id="yotra">yotra</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    B1(Start yotra) --"y"--&gt; B2
+    B2 --"o"--&gt; B3
+    B3 --"t"--&gt; B4
+    B4 --"r"--&gt; B5
+    B5 --"a"--&gt; B6((T_YOTRA))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
-<section id="laço-ensonha-while" class="level2">
-<h2 class="anchored" data-anchor-id="laço-ensonha-while">Laço <code>ensonha</code> (while)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> inteiro senha <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ensonha</span> (senha <span class="op">!=</span> <span class="dv">1234</span>) {</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">oPrai</span>(<span class="st">"Digite a senha correta:"</span>)<span class="op">;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">// senha = leitura();</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">oPrai</span>(<span class="st">"Acesso liberado!"</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="nada_ve" class="level3">
+<h3 class="anchored" data-anchor-id="nada_ve">nada_ve</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    C1(Start nada_ve) --"n"--&gt; C2
+    C2 --"a"--&gt; C3
+    C3 --"d"--&gt; C4
+    C4 --"a"--&gt; C5
+    C5 --"_"--&gt; C6
+    C6 --"v"--&gt; C7
+    C7 --"e"--&gt; C8((T_NADA_VE))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
-<section id="laço-dorme...ensonha-do-while" class="level2">
-<h2 class="anchored" data-anchor-id="laço-dorme...ensonha-do-while">Laço <code>dorme...ensonha</code> (do-while)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> inteiro opcao <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>dorme {</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">oPrai</span>(<span class="st">"Menu: 1-Jogar | 2-Sair"</span>)<span class="op">;</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">oPrai</span>(<span class="st">"Escolha uma opção:"</span>)<span class="op">;</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    opcao<span class="op">++;</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>} <span class="fu">ensonha</span> (opcao <span class="op">&lt;</span> <span class="dv">2</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="ensonha" class="level3">
+<h3 class="anchored" data-anchor-id="ensonha">ensonha</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    D1(Start ensonha) --"e"--&gt; D2
+    D2 --"n"--&gt; D3
+    D3 --"s"--&gt; D4
+    D4 --"o"--&gt; D5
+    D5 --"n"--&gt; D6
+    D6 --"h"--&gt; D7
+    D7 --"a"--&gt; D8((T_ENSONHA))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="dorme_ensonha" class="level3">
+<h3 class="anchored" data-anchor-id="dorme_ensonha">dorme_ensonha</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    E1(Start dorme_ensonha) --"d"--&gt; E2
+    E2 --"o"--&gt; E3
+    E3 --"r"--&gt; E4
+    E4 --"m"--&gt; E5
+    E5 --"e"--&gt; E6
+    E6 --"_"--&gt; E7
+    E7 --"e"--&gt; E8
+    E8 --"n"--&gt; E9
+    E9 --"s"--&gt; E10
+    E10 --"o"--&gt; E11
+    E11 --"n"--&gt; E12
+    E12 --"h"--&gt; E13
+    E13 --"a"--&gt; E14((T_DORME_ENSONHA))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="dinovo" class="level3">
+<h3 class="anchored" data-anchor-id="dinovo">dinovo</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    F1(Start dinovo) --"d"--&gt; F2
+    F2 --"i"--&gt; F3
+    F3 --"n"--&gt; F4
+    F4 --"o"--&gt; F5
+    F5 --"v"--&gt; F6
+    F6 --"o"--&gt; F7((T_DINOVO))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="malocar" class="level3">
+<h3 class="anchored" data-anchor-id="malocar">malocar</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    G1(Start malocar) --"m"--&gt; G2
+    G2 --"a"--&gt; G3
+    G3 --"l"--&gt; G4
+    G4 --"o"--&gt; G5
+    G5 --"c"--&gt; G6
+    G6 --"a"--&gt; G7
+    G7 --"r"--&gt; G8((T_MALOCAR))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="fun" class="level3">
+<h3 class="anchored" data-anchor-id="fun">fun</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    H1(Start fun) --"f"--&gt; H2
+    H2 --"u"--&gt; H3
+    H3 --"n"--&gt; H4((T_FUN))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="degue" class="level3">
+<h3 class="anchored" data-anchor-id="degue">deGue</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    I1(Start deGue) --"d"--&gt; I2
+    I2 --"e"--&gt; I3
+    I3 --"G"--&gt; I4
+    I4 --"u"--&gt; I5
+    I5 --"e"--&gt; I6((T_DEGUE))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="devolva" class="level3">
+<h3 class="anchored" data-anchor-id="devolva">devolva</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    J1(Start devolva) --"d"--&gt; J2
+    J2 --"e"--&gt; J3
+    J3 --"v"--&gt; J4
+    J4 --"o"--&gt; J5
+    J5 --"l"--&gt; J6
+    J6 --"v"--&gt; J7
+    J7 --"a"--&gt; J8((T_DEVOLVA))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="oprai" class="level3">
+<h3 class="anchored" data-anchor-id="oprai">oPrai</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    K1(Start oPrai) --"o"--&gt; K2
+    K2 --"P"--&gt; K3
+    K3 --"r"--&gt; K4
+    K4 --"a"--&gt; K5
+    K5 --"i"--&gt; K6((T_OPRAI))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="calma_calabreso" class="level3">
+<h3 class="anchored" data-anchor-id="calma_calabreso">calma_calabreso</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    L1(Start calma_calabreso) --"c"--&gt; L2
+    L2 --"a"--&gt; L3
+    L3 --"l"--&gt; L4
+    L4 --"m"--&gt; L5
+    L5 --"a"--&gt; L6
+    L6 --"_"--&gt; L7
+    L7 --"c"--&gt; L8
+    L8 --"a"--&gt; L9
+    L9 --"l"--&gt; L10
+    L10 --"a"--&gt; L11
+    L11 --"b"--&gt; L12
+    L12 --"r"--&gt; L13
+    L13 --"e"--&gt; L14
+    L14 --"s"--&gt; L15
+    L15 --"o"--&gt; L16((T_CALMA_CALABRESO))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="diagrama-de-transições-para-expressões-regulares" class="level2">
+<h2 class="anchored" data-anchor-id="diagrama-de-transições-para-expressões-regulares">Diagrama de transições para expressões regulares</h2>
+<section id="diagrama-para-dígitos" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-para-dígitos">Diagrama para dígitos</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    R1(Start DIGITO) --"0–9"--&gt; R2((DIGITO))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="diagrama-para-letras" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-para-letras">Diagrama para letras</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    R3(Start LETRA) --"a–z, A–Z, _"--&gt; R4((LETRA))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="diagrama-para-identificadores-id" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-para-identificadores-id">Diagrama para identificadores (ID)</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    R5(Start ID) --"letra"--&gt; R6(id1)
+    R6 --"letra ou digito"--&gt; R6
+    R6 --&gt; R7((ID))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="diagrama-para-números-inteiros" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-para-números-inteiros">Diagrama para números inteiros</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    R8(Start INTEIRO) --"dígito"--&gt; R9(inteiro 1)
+    R9 --"dígito"--&gt; R9
+    R9 --&gt; R10((INTEIRO))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="diagrama-para-números-de-ponto-flutuante-float" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-para-números-de-ponto-flutuante-float">Diagrama para números de ponto flutuante (FLOAT)</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    R11(Start FLOAT) --"dígito"--&gt; R12
+    R12 --"dígito"--&gt; R12
+    R12 --"."--&gt; R13
+    R13 --"dígito"--&gt; R14
+    R14 --"dígito"--&gt; R14
+    R14 --&gt; R15((FLOAT))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="diagrama-para-literais-de-string" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-para-literais-de-string">Diagrama para literais de string</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    R16(Start STRING_LITERAL) --"aspas"--&gt; R17
+    R17 --"qualquer exceto aspas"--&gt; R17
+    R17 --"aspas"--&gt; R18((STRING_LITERAL))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="diagrama-para-literais-de-caractere" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-para-literais-de-caractere">Diagrama para literais de caractere</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    R19(Start CHAR_LITERAL) --"'"--&gt; R20
+    R20 --"qualquer exceto aspas simples"--&gt; R21
+    R21 --"'"--&gt; R22((CHAR_LITERAL))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="diagrama-para-comentários-de-linha" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-para-comentários-de-linha">Diagrama para comentários de linha</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    R23(Start COMENTARIO_LINHA) --"//"--&gt; R24
+    R24 --"qualquer caractere exceto \\n"--&gt; R24
+    R24 --"\\n"--&gt; R25((COMENTARIO_LINHA))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="diagrama-para-comentários-de-bloco" class="level3">
+<h3 class="anchored" data-anchor-id="diagrama-para-comentários-de-bloco">Diagrama para comentários de bloco</h3>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">  %%| fig-width: 6.5
+  graph LR
+    R26(Start COMENTARIO_BLOCO) --"/*"--&gt; R27
+    R27 --"qualquer exceto '*/'"--&gt; R27
+    R27 --"*/"--&gt; R28((COMENTARIO_BLOCO))
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -740,14 +1150,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../pages/tutoriais.html" class="pagination-link" aria-label="Tabela de Símbolos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tabela de Símbolos</span>
+      <a href="../pages/comousar.html" class="pagination-link" aria-label="Analisador Léxico">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Analisador Léxico</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pages/funcoes.html" class="pagination-link" aria-label="Funções">
-        <span class="nav-page-text">Funções</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
