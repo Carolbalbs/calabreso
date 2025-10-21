@@ -47,7 +47,19 @@
     "href": "pages/comousar.html",
     "title": "Analisador Léxico",
     "section": "",
-    "text": "A saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
+    "text": "Compile o projeto:\n\nflex scanner_britolang.l\n\nExecute o analisador com um arquivo .yotra:\n\ngcc lex.yy.c -o scanner_britolang.l\n./scanner_britolang.l\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Analisador Léxico"
+    ]
+  },
+  {
+    "objectID": "pages/comousar.html#como-executar-o-analisador-léxico",
+    "href": "pages/comousar.html#como-executar-o-analisador-léxico",
+    "title": "Analisador Léxico",
+    "section": "",
+    "text": "Compile o projeto:\n\nflex scanner_britolang.l\n\nExecute o analisador com um arquivo .yotra:\n\ngcc lex.yy.c -o scanner_britolang.l\n./scanner_britolang.l\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -95,7 +107,7 @@
     "href": "pages/intro.html",
     "title": "Conceitos Importantes",
     "section": "",
-    "text": "Arquivos .yotra contêm código-fonte em calabreso++. O analisador identifica:\n\n✅ Tipos de dados\n\n✅ Palavras-chave culturais\n\n✅ Operadores\n\n✅ Identificadores\n\n✅ Funções\n\n✅ Comentários",
+    "text": "Arquivos .yotra contêm código-fonte em calabreso++. O analisador identifica:\n\n\n\n✅ Tipos de dados\n\n✅ Palavras-chave culturais\n\n✅ Operadores\n\n✅ Identificadores\n\n✅ Funções\n\n✅ Comentários",
     "crumbs": [
       "Home",
       "Introdução",
@@ -107,7 +119,7 @@
     "href": "pages/intro.html#estrutura-dos-arquivos-.yotra",
     "title": "Conceitos Importantes",
     "section": "",
-    "text": "Arquivos .yotra contêm código-fonte em calabreso++. O analisador identifica:\n\n✅ Tipos de dados\n\n✅ Palavras-chave culturais\n\n✅ Operadores\n\n✅ Identificadores\n\n✅ Funções\n\n✅ Comentários",
+    "text": "Arquivos .yotra contêm código-fonte em calabreso++. O analisador identifica:",
     "crumbs": [
       "Home",
       "Introdução",
@@ -227,7 +239,7 @@
     "href": "index.html",
     "title": "Sejam Bem vindo Calabresos",
     "section": "",
-    "text": "A implementação desta linguagem tem como finalidade unir conceitos fundamentais da programação com elementos culturais e populares da família Brito, utilizando expressões e memes amplamente reconhecidos para tornar o aprendizado mais acessível, divertido e memorável.\n\n\n\n\n\n\n\n\n\nObjetivo\nEste possui apenas u trabalho tem como objetivo demonstrar a possibilitade de criar linguagens de programação podem ser também instrumentos de expressão cultural e social, indo além do uso estritamente técnico.\nAo ressignificar palavras e atribuir significados computacionais a memes e bordões, esta linguagem evidencia como a computação pode dialogar com o cotidiano, gerando novas possibilidades de ensino, gamificação e experimentação. Assim, a implementação da linguagem Calabreso++ representa apenas como uma implementação divertida utilizando os conhecimentos teoricos adquiridos na componente de MATA61 - Compiladores\n\n\n\n\n Back to top",
+    "text": "A implementação desta linguagem tem como finalidade unir conceitos fundamentais da programação com elementos culturais e populares da família Brito, utilizando expressões e memes amplamente reconhecidos para tornar o aprendizado mais acessível, divertido e memorável.\n\n\n\n\n\n\n\n\n\nObjetivo\nEste possui projeto se trata apenas de um trabalho educacional que tem como objetivo demonstrar a possibilidade de criar linguagens de programação podem ser também instrumentos de expressão cultural e social, indo além do uso estritamente técnico.\nAo ressignificar palavras e atribuir significados computacionais a memes e bordões, esta linguagem evidencia como a computação pode dialogar com o cotidiano, gerando novas possibilidades de ensino, gamificação e experimentação. Assim, a implementação da linguagem Calabreso++ representa apenas como uma implementação divertida utilizando os conhecimentos teoricos adquiridos na componente de MATA61 - Compiladores\n\n\n\n\n Back to top",
     "crumbs": [
       "Home",
       "Sejam Bem vindo Calabresos"

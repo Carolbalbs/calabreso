@@ -1,10 +1,13 @@
 ---
 title: "Analisador Léxico"
 ---
-:::{layout="[300,30]"}
+
 ## ⚙️ Como Executar o Analisador Léxico
-![](./images/yotraPixel.png){fig-align="center" }
+::: {layout="[40,300]"}
+
 :::
+![](/images/yotraPixel.png){fig-align="center" width="20%"}
+
 1. **Compile o projeto:**
 
 ```bash

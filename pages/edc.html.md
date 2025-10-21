@@ -43,3 +43,6 @@ dorme {
     opcao++;
 } ensonha (opcao < 2);
 ```
+::: {layout="[10,1]"}
+![](/images/ensonha.png){fig-align="center" width="5%" }
+:::

@@ -40,6 +40,9 @@ main ol ol, main ul ul, main ol ul, main ul ol {
     width: auto;
     
 }
+.quarto-layout-cell img {
+  max-width: 40%;
+}
 .img-fluid {
   max-width: 50%;
   height: auto;

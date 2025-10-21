@@ -2,7 +2,7 @@
 title: "Conceitos Importantes"
 ---
 
-
+::: {layout="[50,50]"}
 ## 📁 Estrutura dos Arquivos `.yotra`
 
 Arquivos `.yotra` contêm código-fonte em calabreso++. O analisador identifica:
@@ -15,6 +15,10 @@ Arquivos `.yotra` contêm código-fonte em calabreso++. O analisador identifica:
 - ✅ Comentários  
 
 ---
+
+
+:::
+![](/images/brothes2.png){fig-align="center" width="30%" }
 
 ## Tipos de Dados
 
