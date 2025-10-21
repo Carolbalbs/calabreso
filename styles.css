@@ -41,6 +41,6 @@ main ol ol, main ul ul, main ol ul, main ul ol {
     
 }
 .img-fluid {
-    max-width: 60%;
-    height: auto;
+  max-width: 50%;
+  height: auto;
 }
