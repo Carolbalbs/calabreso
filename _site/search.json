@@ -79,23 +79,11 @@
     ]
   },
   {
-    "objectID": "pages/funcoes.html",
-    "href": "pages/funcoes.html",
-    "title": "Funções",
-    "section": "",
-    "text": "deGue() calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {\n    devolva (nota1 + nota2) / 2;\n}",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Funções"
-    ]
-  },
-  {
     "objectID": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
     "href": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
     "title": "Funções",
     "section": "📄 Exemplo de Código calculadora.yotra",
-    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    malocar flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    malocar flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal)",
+    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    malocar flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    malocar flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal)\n    }",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -243,6 +231,18 @@
     "crumbs": [
       "Home",
       "Sejam Bem vindo Calabresos"
+    ]
+  },
+  {
+    "objectID": "pages/funcoes.html",
+    "href": "pages/funcoes.html",
+    "title": "Funções",
+    "section": "",
+    "text": "deGue calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {\n    devolva (nota1 + nota2) / 2;\n}",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Funções"
     ]
   }
 ]

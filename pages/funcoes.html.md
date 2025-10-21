@@ -4,7 +4,7 @@ title: "Funções"
 ### Função com retorno
 
 ```js
-deGue() calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {
+deGue calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {
     devolva (nota1 + nota2) / 2;
 }
 ```
@@ -12,7 +12,7 @@ deGue() calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {
 ### Função sem retorno
 
 ```js
-deGue() exibirBemVindo(): sem_volta {
+deGue exibirBemVindo(): sem_volta {
     oPrai("=== Sistema Calabreso++ ===");
     oPrai("Bem-vindo ao programa!");
 }
@@ -41,5 +41,6 @@ deGue_calculadora(): sem_volta {
     oPrai("Preço original: R$ " + preco);
     oPrai("Desconto: " + desconto + "%");
     oPrai("Valor final: R$ " + valorFinal)
+    }
 ```
 
