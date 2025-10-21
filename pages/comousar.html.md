@@ -8,21 +8,26 @@ title: "Analisador Léxico"
 :::
 ![](/images/yotraPixel.png){fig-align="center" width="20%"}
 
-1. **Compile o projeto:**
+1. **Compile o projeto, dentro da pasta docs, siga os passos abaixo:**
 
+**1.1**
 ```bash
 flex scanner_britolang.l
 ```
-
-2. **Execute o analisador com um arquivo `.yotra`:**
+**1.2**
+```bash
+gcc lex.yy.c -o scanner
+```
+2. **Execute o analisador com o arquivo scanner de exemplo**
 
 ```bash
-gcc lex.yy.c -o scanner_britolang.l
+ ./scanner_britolang exemplo_britolang.lang
+```
+3. **Para verificar os erros, executeo scanner em um arquivo com erros**
+```bash
+  ./scanner_britolang erros_britolang.lang
 ```
 
-```bash
-./scanner_britolang.l
-```
 A saída será uma lista dos **tokens reconhecidos**, com sua **categoria** e valor identificado.
 
 ---

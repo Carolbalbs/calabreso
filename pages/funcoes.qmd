@@ -21,7 +21,7 @@ deGue() exibirBemVindo(): sem_volta {
 ### Chamadas de função
 
 ```js
-var flutuante mediaFinal = calcularMedia(8.5, 7.0);
+malocar flutuante mediaFinal = calcularMedia(8.5, 7.0);
 oPrai("Média do aluno: " + mediaFinal);     
 ```
 
@@ -32,10 +32,10 @@ oPrai("Média do aluno: " + mediaFinal);
 ```js
 deGue_calculadora(): sem_volta {
     // Declaração e inicialização de variáveis
-    var flutuante preco = 150.0, desconto = 20.0;
+    malocar flutuante preco = 150.0, desconto = 20.0;
 
     // Cálculo do valor final com desconto
-    var flutuante valorFinal = preco - (preco * desconto / 100);
+    malocar flutuante valorFinal = preco - (preco * desconto / 100);
 
     // Impressão do resultado
     oPrai("Preço original: R$ " + preco);

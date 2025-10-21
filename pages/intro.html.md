@@ -36,7 +36,6 @@ Arquivos `.yotra` contêm código-fonte em calabreso++. O analisador identifica:
 
 | Palavra-chave     | Uso                           |
 | ----------------  | ----------------------------- |
-| `var`, `const`    | Declaração de variáveis       |
 | `malocar`         | Atribuição com tipo           |
 | `deGue()`         | Definição de função           |
 | `se_ligue`        | Início de condição (if)       |

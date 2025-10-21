@@ -47,7 +47,7 @@
     "href": "pages/comousar.html",
     "title": "Analisador Léxico",
     "section": "",
-    "text": "Compile o projeto:\n\nflex scanner_britolang.l\n\nExecute o analisador com um arquivo .yotra:\n\ngcc lex.yy.c -o scanner_britolang.l\n./scanner_britolang.l\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
+    "text": "Compile o projeto, dentro da pasta docs, siga os passos abaixo:\n\n1.1\nflex scanner_britolang.l\n1.2\ngcc lex.yy.c -o scanner\n\nExecute o analisador com o arquivo scanner de exemplo\n\n ./scanner_britolang exemplo_britolang.lang\n\nPara verificar os erros, executeo scanner em um arquivo com erros\n\n  ./scanner_britolang erros_britolang.lang\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -59,7 +59,7 @@
     "href": "pages/comousar.html#como-executar-o-analisador-léxico",
     "title": "Analisador Léxico",
     "section": "",
-    "text": "Compile o projeto:\n\nflex scanner_britolang.l\n\nExecute o analisador com um arquivo .yotra:\n\ngcc lex.yy.c -o scanner_britolang.l\n./scanner_britolang.l\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
+    "text": "Compile o projeto, dentro da pasta docs, siga os passos abaixo:\n\n1.1\nflex scanner_britolang.l\n1.2\ngcc lex.yy.c -o scanner\n\nExecute o analisador com o arquivo scanner de exemplo\n\n ./scanner_britolang exemplo_britolang.lang\n\nPara verificar os erros, executeo scanner em um arquivo com erros\n\n  ./scanner_britolang erros_britolang.lang\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -95,7 +95,7 @@
     "href": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
     "title": "Funções",
     "section": "📄 Exemplo de Código calculadora.yotra",
-    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    var flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    var flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal)",
+    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    malocar flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    malocar flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal)",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -143,7 +143,7 @@
     "href": "pages/intro.html#palavras-chave-e-usos-de-tokens-brito-family",
     "title": "Conceitos Importantes",
     "section": "🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤",
-    "text": "🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤\n\n\n\nPalavra-chave\nUso\n\n\n\n\nvar, const\nDeclaração de variáveis\n\n\nmalocar\nAtribuição com tipo\n\n\ndeGue()\nDefinição de função\n\n\nse_ligue\nInício de condição (if)\n\n\nyotra\nCondição intermediária (elif)\n\n\nnada_ve\nCondição final (else)\n\n\ndinovo\nLaço de repetição (for)\n\n\nensonha\nLaço de repetição (while)\n\n\ndorme-ensonha\nLaço do-while\n\n\ndevolva\nRetorno de valor\n\n\noPrai\nImpressão na tela\n\n\nbreak\nbreak",
+    "text": "🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤\n\n\n\nPalavra-chave\nUso\n\n\n\n\nmalocar\nAtribuição com tipo\n\n\ndeGue()\nDefinição de função\n\n\nse_ligue\nInício de condição (if)\n\n\nyotra\nCondição intermediária (elif)\n\n\nnada_ve\nCondição final (else)\n\n\ndinovo\nLaço de repetição (for)\n\n\nensonha\nLaço de repetição (while)\n\n\ndorme-ensonha\nLaço do-while\n\n\ndevolva\nRetorno de valor\n\n\noPrai\nImpressão na tela\n\n\nbreak\nbreak",
     "crumbs": [
       "Home",
       "Introdução",
@@ -203,7 +203,7 @@
     "href": "pages/edc.html#laço-dinovo-for",
     "title": "Estruturas de Controle",
     "section": "Laço dinovo (for)",
-    "text": "Laço dinovo (for)\ndinovo (var inteiro contador = 1; contador &lt;= 10; contador++) {\n    oPrai(\"Tabuada do 5: 5 x \" + contador + \" = \" + (5 * contador));\n\n}",
+    "text": "Laço dinovo (for)\ndinovo (malocar inteiro contador = 1; contador &lt;= 10; contador++) {\n    oPrai(\"Tabuada do 5: 5 x \" + contador + \" = \" + (5 * contador));\n\n}",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -215,7 +215,7 @@
     "href": "pages/edc.html#laço-ensonha-while",
     "title": "Estruturas de Controle",
     "section": "Laço ensonha (while)",
-    "text": "Laço ensonha (while)\nvar inteiro senha = 0;\nensonha (senha != 1234) {\n    oPrai(\"Digite a senha correta:\");\n    // senha = leitura();\n}\noPrai(\"Acesso liberado!\");",
+    "text": "Laço ensonha (while)\nmalocar inteiro senha = 0;\nensonha (senha != 1234) {\n    oPrai(\"Digite a senha correta:\");\n    // senha = leitura();\n}\noPrai(\"Acesso liberado!\");",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -227,7 +227,7 @@
     "href": "pages/edc.html#laço-dorme...ensonha-do-while",
     "title": "Estruturas de Controle",
     "section": "Laço dorme...ensonha (do-while)",
-    "text": "Laço dorme...ensonha (do-while)\nvar inteiro opcao = 0;\ndorme {\n    oPrai(\"Menu: 1-Jogar | 2-Sair\");\n    oPrai(\"Escolha uma opção:\");\n    opcao++;\n} ensonha (opcao &lt; 2);",
+    "text": "Laço dorme...ensonha (do-while)\nmalocar inteiro opcao = 0;\ndorme {\n    oPrai(\"Menu: 1-Jogar | 2-Sair\");\n    oPrai(\"Escolha uma opção:\");\n    opcao++;\n} ensonha (opcao &lt; 2);",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
