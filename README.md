@@ -11,5 +11,5 @@ numérico.
 - Possibilidade de **criar desvios condicionais simples e compostos**.
 - Possibilidade de **criar um comando de repetição**.
   
-### Para visualizar mais informações sobre como excutar visite: [documentação Calabreso++](https://carolbalbs.github.io/-REDES-reliable-multicast).
+### Para visualizar mais informações sobre como excutar visite: [documentação Calabreso++](https://carolbalbs.github.io/calabreso).
 
