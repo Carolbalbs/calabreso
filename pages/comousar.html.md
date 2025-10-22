@@ -21,11 +21,11 @@ gcc lex.yy.c -o scanner
 2. **Execute o analisador com o arquivo scanner de exemplo**
 
 ```bash
- ./scanner_britolang exemplo_britolang.lang
+ ./scanner exemplo_britolang.lang
 ```
 3. **Para verificar os erros, executeo scanner em um arquivo com erros**
 ```bash
-  ./scanner_britolang erros_britolang.lang
+  ./scanner erros_britolang.lang
 ```
 
 A saída será uma lista dos **tokens reconhecidos**, com sua **categoria** e valor identificado.

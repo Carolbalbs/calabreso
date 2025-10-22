@@ -46,7 +46,7 @@ Arquivos `.yotra` contêm código-fonte em calabreso++. O analisador identifica:
 | `dorme-ensonha`   | Laço do-while                 |
 | `devolva`         | Retorno de valor              |
 | `oPrai`           | Impressão na tela             |
-| `break`           | break                         |
+| `calma_calabreso` | break                         |
 
 
 
@@ -62,7 +62,7 @@ Arquivos `.yotra` contêm código-fonte em calabreso++. O analisador identifica:
 
 ```yotra
 notasAlunos[1] = (nota1 + nota2) / 2.0;
-var inteiro resto = numero % 10;
+malocar inteiro resto = numero % 10;
 ```
 
 

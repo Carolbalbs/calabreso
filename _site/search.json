@@ -47,7 +47,7 @@
     "href": "pages/comousar.html",
     "title": "Analisador Léxico",
     "section": "",
-    "text": "Compile o projeto, dentro da pasta docs, siga os passos abaixo:\n\n1.1\nflex scanner_britolang.l\n1.2\ngcc lex.yy.c -o scanner\n\nExecute o analisador com o arquivo scanner de exemplo\n\n ./scanner_britolang exemplo_britolang.lang\n\nPara verificar os erros, executeo scanner em um arquivo com erros\n\n  ./scanner_britolang erros_britolang.lang\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
+    "text": "Compile o projeto, dentro da pasta docs, siga os passos abaixo:\n\n1.1\nflex scanner_britolang.l\n1.2\ngcc lex.yy.c -o scanner\n\nExecute o analisador com o arquivo scanner de exemplo\n\n ./scanner exemplo_britolang.lang\n\nPara verificar os erros, executeo scanner em um arquivo com erros\n\n  ./scanner erros_britolang.lang\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -59,7 +59,7 @@
     "href": "pages/comousar.html#como-executar-o-analisador-léxico",
     "title": "Analisador Léxico",
     "section": "",
-    "text": "Compile o projeto, dentro da pasta docs, siga os passos abaixo:\n\n1.1\nflex scanner_britolang.l\n1.2\ngcc lex.yy.c -o scanner\n\nExecute o analisador com o arquivo scanner de exemplo\n\n ./scanner_britolang exemplo_britolang.lang\n\nPara verificar os erros, executeo scanner em um arquivo com erros\n\n  ./scanner_britolang erros_britolang.lang\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
+    "text": "Compile o projeto, dentro da pasta docs, siga os passos abaixo:\n\n1.1\nflex scanner_britolang.l\n1.2\ngcc lex.yy.c -o scanner\n\nExecute o analisador com o arquivo scanner de exemplo\n\n ./scanner exemplo_britolang.lang\n\nPara verificar os erros, executeo scanner em um arquivo com erros\n\n  ./scanner erros_britolang.lang\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
@@ -76,6 +76,18 @@
       "Home",
       "Tutorais e Guias",
       "Analisador Léxico"
+    ]
+  },
+  {
+    "objectID": "pages/funcoes.html",
+    "href": "pages/funcoes.html",
+    "title": "Funções",
+    "section": "",
+    "text": "deGue calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {\n    devolva (nota1 + nota2) / 2;\n}",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Funções"
     ]
   },
   {
@@ -131,7 +143,7 @@
     "href": "pages/intro.html#palavras-chave-e-usos-de-tokens-brito-family",
     "title": "Conceitos Importantes",
     "section": "🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤",
-    "text": "🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤\n\n\n\nPalavra-chave\nUso\n\n\n\n\nmalocar\nAtribuição com tipo\n\n\ndeGue()\nDefinição de função\n\n\nse_ligue\nInício de condição (if)\n\n\nyotra\nCondição intermediária (elif)\n\n\nnada_ve\nCondição final (else)\n\n\ndinovo\nLaço de repetição (for)\n\n\nensonha\nLaço de repetição (while)\n\n\ndorme-ensonha\nLaço do-while\n\n\ndevolva\nRetorno de valor\n\n\noPrai\nImpressão na tela\n\n\nbreak\nbreak",
+    "text": "🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤\n\n\n\nPalavra-chave\nUso\n\n\n\n\nmalocar\nAtribuição com tipo\n\n\ndeGue()\nDefinição de função\n\n\nse_ligue\nInício de condição (if)\n\n\nyotra\nCondição intermediária (elif)\n\n\nnada_ve\nCondição final (else)\n\n\ndinovo\nLaço de repetição (for)\n\n\nensonha\nLaço de repetição (while)\n\n\ndorme-ensonha\nLaço do-while\n\n\ndevolva\nRetorno de valor\n\n\noPrai\nImpressão na tela\n\n\ncalma_calabreso\nbreak",
     "crumbs": [
       "Home",
       "Introdução",
@@ -143,7 +155,7 @@
     "href": "pages/intro.html#operadores",
     "title": "Conceitos Importantes",
     "section": "Operadores 🔢",
-    "text": "Operadores 🔢\n\nAritméticos: +, -, *, /, %, **\nRelacionais: ==, !=, &lt;, &gt;, &lt;=, &gt;=\nLógicos: &&, ||, !\nBitwise: &, |, ^, ~\nAtribuições compostas: +=, -=, *=, /=, %=, etc.\n\nExemplo:\nnotasAlunos[1] = (nota1 + nota2) / 2.0;\nvar inteiro resto = numero % 10;",
+    "text": "Operadores 🔢\n\nAritméticos: +, -, *, /, %, **\nRelacionais: ==, !=, &lt;, &gt;, &lt;=, &gt;=\nLógicos: &&, ||, !\nBitwise: &, |, ^, ~\nAtribuições compostas: +=, -=, *=, /=, %=, etc.\n\nExemplo:\nnotasAlunos[1] = (nota1 + nota2) / 2.0;\nmalocar inteiro resto = numero % 10;",
     "crumbs": [
       "Home",
       "Introdução",
@@ -231,18 +243,6 @@
     "crumbs": [
       "Home",
       "Sejam Bem vindo Calabresos"
-    ]
-  },
-  {
-    "objectID": "pages/funcoes.html",
-    "href": "pages/funcoes.html",
-    "title": "Funções",
-    "section": "",
-    "text": "deGue calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {\n    devolva (nota1 + nota2) / 2;\n}",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Funções"
     ]
   }
 ]
