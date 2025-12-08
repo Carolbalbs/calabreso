@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Conceitos Importantes –</title>
+<title>Casos de teste –</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pages/edc.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../pages/regprod.html" rel="prev">
 <link href=".././images/calabresa.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -74,18 +108,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Conceitos Importantes –">
+<meta property="og:title" content="Casos de teste –">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://carolbalbs.github.io/calabreso/images/brothes2.png">
 <meta property="og:site_name" content=" ">
-<meta property="og:image:height" content="541">
-<meta property="og:image:width" content="413">
-<meta name="twitter:title" content="Conceitos Importantes –">
+<meta name="twitter:title" content="Casos de teste –">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://carolbalbs.github.io/calabreso/images/brothes2.png">
-<meta name="twitter:image-height" content="541">
-<meta name="twitter:image-width" content="413">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -140,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/intro.html">Introdução</a></li><li class="breadcrumb-item"><a href="../pages/intro.html">Conceitos Importantes</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/comoexecutar.html">Analisador Sintático</a></li><li class="breadcrumb-item"><a href="../pages/examplestree.html">Casos de teste</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -169,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pages/intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Conceitos Importantes</span></a>
   </div>
 </li>
@@ -258,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pages/examplestree.html" class="sidebar-item-text sidebar-link">
+  <a href="../pages/examplestree.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Casos de teste</span></a>
   </div>
 </li>
@@ -274,10 +302,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tipos-de-dados" id="toc-tipos-de-dados" class="nav-link active" data-scroll-target="#tipos-de-dados">Tipos de Dados</a></li>
-  <li><a href="#palavras-chave-e-usos-de-tokens-brito-family" id="toc-palavras-chave-e-usos-de-tokens-brito-family" class="nav-link" data-scroll-target="#palavras-chave-e-usos-de-tokens-brito-family">🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤</a></li>
-  <li><a href="#operadores" id="toc-operadores" class="nav-link" data-scroll-target="#operadores">Operadores 🔢</a></li>
-  <li><a href="#comentários" id="toc-comentários" class="nav-link" data-scroll-target="#comentários">Comentários</a></li>
+  <li><a href="#casos-de-teste-para-análise-sintática" id="toc-casos-de-teste-para-análise-sintática" class="nav-link active" data-scroll-target="#casos-de-teste-para-análise-sintática">Casos de Teste para Análise Sintática</a></li>
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -286,9 +311,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/intro.html">Introdução</a></li><li class="breadcrumb-item"><a href="../pages/intro.html">Conceitos Importantes</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pages/comoexecutar.html">Analisador Sintático</a></li><li class="breadcrumb-item"><a href="../pages/examplestree.html">Casos de teste</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Conceitos Importantes</h1>
+<h1 class="title">Casos de teste</h1>
 </div>
 
 
@@ -305,165 +330,238 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="quarto-layout-panel" data-layout="[50,50]">
-<div class="quarto-layout-row">
-<section id="estrutura-dos-arquivos-.yotra" class="level2 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<h2 class="anchored" data-anchor-id="estrutura-dos-arquivos-.yotra">📁 Estrutura dos Arquivos <code>.yotra</code></h2>
-<p>Arquivos <code>.yotra</code> contêm código-fonte em calabreso++. O analisador identifica:</p>
+<section id="casos-de-teste-para-análise-sintática" class="level2">
+<h2 class="anchored" data-anchor-id="casos-de-teste-para-análise-sintática">Casos de Teste para Análise Sintática</h2>
+<p>Aqui estão alguns exemplos de casos de teste para validar a geração da árvore sintática utilizando Bison e Flex:</p>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exemplo 1: Precedência aritmética
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<section id="entrada" class="level4">
+<h4 class="anchored" data-anchor-id="entrada">Entrada:</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1</span> + 2 <span class="pp">*</span> 3<span class="kw">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<ul>
-<li>✅ Tipos de dados<br>
-</li>
-<li>✅ Palavras-chave culturais<br>
-</li>
-<li>✅ Operadores<br>
-</li>
-<li>✅ Identificadores<br>
-</li>
-<li>✅ Funções<br>
-</li>
-<li>✅ Comentários</li>
-</ul>
+<section id="árvore-esperada-s-expr" class="level4">
+<h4 class="anchored" data-anchor-id="árvore-esperada-s-expr">Árvore esperada (S-expr):</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">+</span> 1 <span class="er">(</span><span class="ex">*</span> 2 3<span class="kw">))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exemplo 2: Parênteses alterando precedência
 </div>
 </div>
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<hr>
+<div class="callout-body-container callout-body">
+
 </div>
 </div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/brothes2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
-</figure>
-</div>
-<section id="tipos-de-dados" class="level2">
-<h2 class="anchored" data-anchor-id="tipos-de-dados">Tipos de Dados</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tipo em Calabreso++</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>inteiro</code></td>
-<td>Números inteiros</td>
-</tr>
-<tr class="even">
-<td><code>flutuante</code></td>
-<td>Números com casas decimais</td>
-</tr>
-<tr class="odd">
-<td><code>letrinha</code></td>
-<td>Caractere único</td>
-</tr>
-<tr class="even">
-<td><code>textão</code></td>
-<td>Cadeia de caracteres (strings)</td>
-</tr>
-<tr class="odd">
-<td><code>sem_volta</code></td>
-<td>Tipo para funções sem retorno</td>
-</tr>
-</tbody>
-</table>
-<hr>
 </section>
-<section id="palavras-chave-e-usos-de-tokens-brito-family" class="level2">
-<h2 class="anchored" data-anchor-id="palavras-chave-e-usos-de-tokens-brito-family">🧩🔤 Palavras-chave e usos de Tokens Brito Family🧩🔤</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Palavra-chave</th>
-<th>Uso</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>malocar</code></td>
-<td>Atribuição com tipo</td>
-</tr>
-<tr class="even">
-<td><code>deGue()</code></td>
-<td>Definição de função</td>
-</tr>
-<tr class="odd">
-<td><code>se_ligue</code></td>
-<td>Início de condição (if)</td>
-</tr>
-<tr class="even">
-<td><code>yotra</code></td>
-<td>Condição intermediária (elif)</td>
-</tr>
-<tr class="odd">
-<td><code>nada_ve</code></td>
-<td>Condição final (else)</td>
-</tr>
-<tr class="even">
-<td><code>dinovo</code></td>
-<td>Laço de repetição (for)</td>
-</tr>
-<tr class="odd">
-<td><code>ensonha</code></td>
-<td>Laço de repetição (while)</td>
-</tr>
-<tr class="even">
-<td><code>dorme-ensonha</code></td>
-<td>Laço do-while</td>
-</tr>
-<tr class="odd">
-<td><code>devolva</code></td>
-<td>Retorno de valor</td>
-</tr>
-<tr class="even">
-<td><code>oPrai</code></td>
-<td>Impressão na tela</td>
-</tr>
-<tr class="odd">
-<td><code>calma_calabreso</code></td>
-<td>break</td>
-</tr>
-</tbody>
-</table>
+<section id="entrada-1" class="level4">
+<h4 class="anchored" data-anchor-id="entrada-1">Entrada:</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">1</span> + 2<span class="kw">)</span> <span class="ex">*</span> 3<span class="kw">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="operadores" class="level2">
-<h2 class="anchored" data-anchor-id="operadores">Operadores 🔢</h2>
-<ul>
-<li><strong>Aritméticos:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, <code>**</code></li>
-<li><strong>Relacionais:</strong> <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code></li>
-<li><strong>Lógicos:</strong> <code>&amp;&amp;</code>, <code>||</code>, <code>!</code></li>
-<li><strong>Bitwise:</strong> <code>&amp;</code>, <code>|</code>, <code>^</code>, <code>~</code></li>
-<li><strong>Atribuições compostas:</strong> <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, etc.</li>
-</ul>
-<p><strong>Exemplo:</strong></p>
-<pre class="yotra"><code>notasAlunos[1] = (nota1 + nota2) / 2.0;
-malocar inteiro resto = numero % 10;</code></pre>
+<section id="árvore-esperada-s-expr-1" class="level4">
+<h4 class="anchored" data-anchor-id="árvore-esperada-s-expr-1">Árvore esperada (S-expr):</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">*</span> <span class="er">(</span><span class="ex">+</span> 1 2<span class="kw">)</span> <span class="ex">3</span><span class="kw">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exemplo 3: Declaração e atribuição
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
 </section>
-<section id="comentários" class="level2">
-<h2 class="anchored" data-anchor-id="comentários">Comentários</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tipo</th>
-<th>Sintaxe</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Linha</td>
-<td><code>// Ja vendeu agua na Lapa?</code></td>
-</tr>
-<tr class="even">
-<td>Bloco</td>
-<td><code>/* Comentário de que? */</code></td>
-</tr>
-</tbody>
-</table>
+<section id="entrada-2" class="level4">
+<h4 class="anchored" data-anchor-id="entrada-2">Entrada:</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">var</span> inteiro x malocar 5<span class="kw">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="árvore-esperada-s-expr-2" class="level4">
+<h4 class="anchored" data-anchor-id="árvore-esperada-s-expr-2">Árvore esperada (S-expr):</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">declaration</span> var inteiro x <span class="er">(</span><span class="ex">assign</span> 5<span class="kw">))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exemplo 4: Atribuição com expressão
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="entrada-3" class="level4">
+<h4 class="anchored" data-anchor-id="entrada-3">Entrada:</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="va">notasAlunos</span><span class="op">[</span><span class="dv">1</span><span class="op">]</span> <span class="ex">malocar</span> <span class="er">(</span><span class="ex">nota1</span> + nota2<span class="kw">)</span> <span class="ex">/</span> 2.0<span class="kw">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="árvore-esperada-s-expr-3" class="level4">
+<h4 class="anchored" data-anchor-id="árvore-esperada-s-expr-3">Árvore esperada (S-expr):</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">assign</span> <span class="er">(</span><span class="ex">index</span> notasAlunos 1<span class="kw">)</span> <span class="kw">(</span><span class="ex">/</span> <span class="er">(</span><span class="ex">+</span> nota1 nota2<span class="kw">)</span> <span class="ex">2.0</span><span class="kw">))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>:::</p>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exemplo 5: Definição de função simples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="entrada-4" class="level4">
+<h4 class="anchored" data-anchor-id="entrada-4">Entrada:</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">deGue</span> inteiro soma<span class="er">(</span><span class="ex">inteiro</span> a, inteiro b<span class="kw">)</span> <span class="kw">{</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">devolva</span> a + b<span class="kw">;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="árvore-esperada-s-expr-4" class="level4">
+<h4 class="anchored" data-anchor-id="árvore-esperada-s-expr-4">Árvore esperada (S-expr):</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">function-decl</span> inteiro soma <span class="er">(</span><span class="kw">(</span><span class="ex">param</span> inteiro a<span class="kw">)</span> <span class="kw">(</span><span class="ex">param</span> inteiro b<span class="kw">))</span> <span class="kw">(</span><span class="cf">return</span> <span class="kw">(</span><span class="ex">+</span> a b<span class="kw">)))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exemplo 6: Condicional (if / elif / else)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="entrada-5" class="level4">
+<h4 class="anchored" data-anchor-id="entrada-5">Entrada:</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">se_ligue</span> <span class="er">(</span><span class="ex">x</span> <span class="op">&gt;</span> 0<span class="kw">)</span> <span class="kw">{</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">oPrai</span><span class="er">(</span><span class="st">"positivo"</span><span class="kw">);</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span> <span class="ex">yotra</span> <span class="er">(</span><span class="ex">x</span> == 0<span class="kw">)</span> <span class="kw">{</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="ex">oPrai</span><span class="er">(</span><span class="st">"zero"</span><span class="kw">);</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span> <span class="ex">nada_ve</span> {</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="ex">oPrai</span><span class="er">(</span><span class="st">"negativo"</span><span class="kw">);</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="er">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="árvore-esperada-s-expr-5" class="level4">
+<h4 class="anchored" data-anchor-id="árvore-esperada-s-expr-5">Árvore esperada (S-expr):</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="cf">if</span> <span class="kw">(</span><span class="op">&gt;</span> x <span class="ex">0</span><span class="kw">)</span> <span class="kw">(</span><span class="ex">call</span> oPrai <span class="er">(</span><span class="st">"positivo"</span><span class="kw">))</span> <span class="kw">(</span><span class="cf">elif</span> <span class="kw">(</span><span class="ex">=</span> x 0<span class="kw">)</span> <span class="kw">(</span><span class="ex">call</span> oPrai <span class="er">(</span><span class="st">"zero"</span><span class="kw">)))</span> <span class="kw">(</span><span class="cf">else</span> <span class="kw">(</span><span class="ex">call</span> oPrai <span class="er">(</span><span class="st">"negativo"</span><span class="kw">))))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exemplo 7: Laço for (<code>dinovo</code>) com break (<code>calma_calabreso</code>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="entrada-6" class="level4">
+<h4 class="anchored" data-anchor-id="entrada-6">Entrada:</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">dinovo</span> <span class="er">(</span><span class="ex">var</span> inteiro i malocar 0<span class="kw">;</span> <span class="ex">i</span> <span class="op">&lt;</span> 5<span class="kw">;</span> <span class="ex">i</span> += 1<span class="kw">)</span> <span class="kw">{</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">se_ligue</span> <span class="er">(</span><span class="ex">i</span> == 3<span class="kw">)</span> <span class="kw">{</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>        <span class="ex">calma_calabreso</span><span class="kw">;</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="árvore-esperada-s-expr-6" class="level4">
+<h4 class="anchored" data-anchor-id="árvore-esperada-s-expr-6">Árvore esperada (S-expr):</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="cf">for</span> <span class="kw">(</span><span class="ex">declaration</span> var inteiro i <span class="er">(</span><span class="ex">assign</span> 0<span class="kw">))</span> <span class="kw">(</span><span class="op">&lt;</span> i <span class="ex">5</span><span class="kw">)</span> <span class="kw">(</span><span class="ex">assign</span> i <span class="er">(</span><span class="ex">+=</span> i 1<span class="kw">))</span> <span class="kw">(</span><span class="ex">block</span> <span class="er">(</span><span class="cf">if</span> <span class="kw">(</span><span class="ex">=</span> i 3<span class="kw">)</span> <span class="kw">(</span><span class="cf">break</span><span class="kw">))))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exemplo 8: While (<code>ensonha</code>) e Do-while (<code>dorme-ensonha</code>)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="entrada-7" class="level4">
+<h4 class="anchored" data-anchor-id="entrada-7">Entrada:</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">var</span> inteiro c malocar 0<span class="kw">;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">ensonha</span> <span class="er">(</span><span class="ex">c</span> <span class="op">&lt;</span> 2<span class="kw">)</span> <span class="kw">{</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="ex">c</span> += 1<span class="kw">;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">var</span> inteiro t malocar 0<span class="kw">;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="ex">dorme-ensonha</span> {</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="ex">t</span> += 1<span class="kw">;</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="er">}</span> <span class="ex">enquanto</span> <span class="er">(</span><span class="ex">t</span> <span class="op">&lt;</span> 2<span class="kw">);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="árvore-esperada-s-expr-7" class="level4">
+<h4 class="anchored" data-anchor-id="árvore-esperada-s-expr-7">Árvore esperada (S-expr):</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">block</span> <span class="er">(</span><span class="ex">declaration</span> var inteiro c <span class="er">(</span><span class="ex">assign</span> 0<span class="kw">))</span> <span class="kw">(</span><span class="cf">while</span> <span class="kw">(</span><span class="op">&lt;</span> c <span class="ex">2</span><span class="kw">)</span> <span class="kw">(</span><span class="ex">assign</span> c <span class="er">(</span><span class="ex">+=</span> c 1<span class="kw">)))</span> <span class="kw">(</span><span class="ex">declaration</span> var inteiro t <span class="er">(</span><span class="ex">assign</span> 0<span class="kw">))</span> <span class="kw">(</span><span class="ex">do-while</span> <span class="er">(</span><span class="ex">assign</span> t <span class="er">(</span><span class="ex">+=</span> t 1<span class="kw">))</span> <span class="kw">(</span><span class="op">&lt;</span> t <span class="ex">2</span><span class="kw">)))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exemplo 9: Expressão aninhada (testa associatividade)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="entrada-8" class="level4">
+<h4 class="anchored" data-anchor-id="entrada-8">Entrada:</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">a</span> + <span class="er">(</span><span class="ex">b</span> <span class="pp">*</span> <span class="er">(</span><span class="ex">c</span> + d<span class="kw">));</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="árvore-esperada-s-expr-8" class="level4">
+<h4 class="anchored" data-anchor-id="árvore-esperada-s-expr-8">Árvore esperada (S-expr):</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">+</span> a <span class="er">(</span><span class="ex">*</span> b <span class="er">(</span><span class="ex">+</span> c d<span class="kw">)))</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Exemplo 10: Caso de erro — falta de ponto-e-vírgula
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="entrada-9" class="level4">
+<h4 class="anchored" data-anchor-id="entrada-9">Entrada:</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">var</span> inteiro x malocar 5</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Resultado esperado: parse error indicando token <code>;</code> esperado (ou mensagem equivalente do analisador).</p>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -869,14 +967,11 @@ malocar inteiro resto = numero % 10;</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="**Sejam Bem vindo Calabresos**">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><strong>Sejam Bem vindo Calabresos</strong></span>
+      <a href="../pages/regprod.html" class="pagination-link" aria-label="Regras de Produção">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Regras de Produção</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pages/edc.html" class="pagination-link" aria-label="Estruturas de Controle">
-        <span class="nav-page-text">Estruturas de Controle</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

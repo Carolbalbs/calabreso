@@ -7,6 +7,42 @@
     "text": "Olá! Somos um grupo de estudantes de Ciência da Computação na Universidade Federal da Bahia. Nosso objetivo com este trabalho implementar os conceitos teoricos adquiridos na disciplina de compiladores, por meio de uma abordagem divertida e criativa.\n\n\n Back to top"
   },
   {
+    "objectID": "pages/examples.html",
+    "href": "pages/examples.html",
+    "title": "Diagramas de Transição",
+    "section": "",
+    "text": "graph LR\n    A1(Start se_ligue) --\"s\"--&gt; A2\n    A2 --\"e\"--&gt; A3\n    A3 --\"_\"--&gt; A4\n    A4 --\"l\"--&gt; A5\n    A5 --\"i\"--&gt; A6\n    A6 --\"g\"--&gt; A7\n    A7 --\"u\"--&gt; A8\n    A8 --\"e\"--&gt; A9((T_SE_LIGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    B1(Start yotra) --\"y\"--&gt; B2\n    B2 --\"o\"--&gt; B3\n    B3 --\"t\"--&gt; B4\n    B4 --\"r\"--&gt; B5\n    B5 --\"a\"--&gt; B6((T_YOTRA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    C1(Start nada_ve) --\"n\"--&gt; C2\n    C2 --\"a\"--&gt; C3\n    C3 --\"d\"--&gt; C4\n    C4 --\"a\"--&gt; C5\n    C5 --\"_\"--&gt; C6\n    C6 --\"v\"--&gt; C7\n    C7 --\"e\"--&gt; C8((T_NADA_VE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    D1(Start ensonha) --\"e\"--&gt; D2\n    D2 --\"n\"--&gt; D3\n    D3 --\"s\"--&gt; D4\n    D4 --\"o\"--&gt; D5\n    D5 --\"n\"--&gt; D6\n    D6 --\"h\"--&gt; D7\n    D7 --\"a\"--&gt; D8((T_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    E1(Start dorme_ensonha) --\"d\"--&gt; E2\n    E2 --\"o\"--&gt; E3\n    E3 --\"r\"--&gt; E4\n    E4 --\"m\"--&gt; E5\n    E5 --\"e\"--&gt; E6\n    E6 --\"_\"--&gt; E7\n    E7 --\"e\"--&gt; E8\n    E8 --\"n\"--&gt; E9\n    E9 --\"s\"--&gt; E10\n    E10 --\"o\"--&gt; E11\n    E11 --\"n\"--&gt; E12\n    E12 --\"h\"--&gt; E13\n    E13 --\"a\"--&gt; E14((T_DORME_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    F1(Start dinovo) --\"d\"--&gt; F2\n    F2 --\"i\"--&gt; F3\n    F3 --\"n\"--&gt; F4\n    F4 --\"o\"--&gt; F5\n    F5 --\"v\"--&gt; F6\n    F6 --\"o\"--&gt; F7((T_DINOVO))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    G1(Start malocar) --\"m\"--&gt; G2\n    G2 --\"a\"--&gt; G3\n    G3 --\"l\"--&gt; G4\n    G4 --\"o\"--&gt; G5\n    G5 --\"c\"--&gt; G6\n    G6 --\"a\"--&gt; G7\n    G7 --\"r\"--&gt; G8((T_MALOCAR))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    H1(Start fun) --\"f\"--&gt; H2\n    H2 --\"u\"--&gt; H3\n    H3 --\"n\"--&gt; H4((T_FUN))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    I1(Start deGue) --\"d\"--&gt; I2\n    I2 --\"e\"--&gt; I3\n    I3 --\"G\"--&gt; I4\n    I4 --\"u\"--&gt; I5\n    I5 --\"e\"--&gt; I6((T_DEGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    J1(Start devolva) --\"d\"--&gt; J2\n    J2 --\"e\"--&gt; J3\n    J3 --\"v\"--&gt; J4\n    J4 --\"o\"--&gt; J5\n    J5 --\"l\"--&gt; J6\n    J6 --\"v\"--&gt; J7\n    J7 --\"a\"--&gt; J8((T_DEVOLVA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    K1(Start oPrai) --\"o\"--&gt; K2\n    K2 --\"P\"--&gt; K3\n    K3 --\"r\"--&gt; K4\n    K4 --\"a\"--&gt; K5\n    K5 --\"i\"--&gt; K6((T_OPRAI))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    L1(Start calma_calabreso) --\"c\"--&gt; L2\n    L2 --\"a\"--&gt; L3\n    L3 --\"l\"--&gt; L4\n    L4 --\"m\"--&gt; L5\n    L5 --\"a\"--&gt; L6\n    L6 --\"_\"--&gt; L7\n    L7 --\"c\"--&gt; L8\n    L8 --\"a\"--&gt; L9\n    L9 --\"l\"--&gt; L10\n    L10 --\"a\"--&gt; L11\n    L11 --\"b\"--&gt; L12\n    L12 --\"r\"--&gt; L13\n    L13 --\"e\"--&gt; L14\n    L14 --\"s\"--&gt; L15\n    L15 --\"o\"--&gt; L16((T_CALMA_CALABRESO))",
+    "crumbs": [
+      "Home",
+      "Estados de Transição",
+      "Diagramas de Transição"
+    ]
+  },
+  {
+    "objectID": "pages/examples.html#diagrama-de-transição-para-palavras-chave",
+    "href": "pages/examples.html#diagrama-de-transição-para-palavras-chave",
+    "title": "Diagramas de Transição",
+    "section": "",
+    "text": "graph LR\n    A1(Start se_ligue) --\"s\"--&gt; A2\n    A2 --\"e\"--&gt; A3\n    A3 --\"_\"--&gt; A4\n    A4 --\"l\"--&gt; A5\n    A5 --\"i\"--&gt; A6\n    A6 --\"g\"--&gt; A7\n    A7 --\"u\"--&gt; A8\n    A8 --\"e\"--&gt; A9((T_SE_LIGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    B1(Start yotra) --\"y\"--&gt; B2\n    B2 --\"o\"--&gt; B3\n    B3 --\"t\"--&gt; B4\n    B4 --\"r\"--&gt; B5\n    B5 --\"a\"--&gt; B6((T_YOTRA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    C1(Start nada_ve) --\"n\"--&gt; C2\n    C2 --\"a\"--&gt; C3\n    C3 --\"d\"--&gt; C4\n    C4 --\"a\"--&gt; C5\n    C5 --\"_\"--&gt; C6\n    C6 --\"v\"--&gt; C7\n    C7 --\"e\"--&gt; C8((T_NADA_VE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    D1(Start ensonha) --\"e\"--&gt; D2\n    D2 --\"n\"--&gt; D3\n    D3 --\"s\"--&gt; D4\n    D4 --\"o\"--&gt; D5\n    D5 --\"n\"--&gt; D6\n    D6 --\"h\"--&gt; D7\n    D7 --\"a\"--&gt; D8((T_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    E1(Start dorme_ensonha) --\"d\"--&gt; E2\n    E2 --\"o\"--&gt; E3\n    E3 --\"r\"--&gt; E4\n    E4 --\"m\"--&gt; E5\n    E5 --\"e\"--&gt; E6\n    E6 --\"_\"--&gt; E7\n    E7 --\"e\"--&gt; E8\n    E8 --\"n\"--&gt; E9\n    E9 --\"s\"--&gt; E10\n    E10 --\"o\"--&gt; E11\n    E11 --\"n\"--&gt; E12\n    E12 --\"h\"--&gt; E13\n    E13 --\"a\"--&gt; E14((T_DORME_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    F1(Start dinovo) --\"d\"--&gt; F2\n    F2 --\"i\"--&gt; F3\n    F3 --\"n\"--&gt; F4\n    F4 --\"o\"--&gt; F5\n    F5 --\"v\"--&gt; F6\n    F6 --\"o\"--&gt; F7((T_DINOVO))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    G1(Start malocar) --\"m\"--&gt; G2\n    G2 --\"a\"--&gt; G3\n    G3 --\"l\"--&gt; G4\n    G4 --\"o\"--&gt; G5\n    G5 --\"c\"--&gt; G6\n    G6 --\"a\"--&gt; G7\n    G7 --\"r\"--&gt; G8((T_MALOCAR))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    H1(Start fun) --\"f\"--&gt; H2\n    H2 --\"u\"--&gt; H3\n    H3 --\"n\"--&gt; H4((T_FUN))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    I1(Start deGue) --\"d\"--&gt; I2\n    I2 --\"e\"--&gt; I3\n    I3 --\"G\"--&gt; I4\n    I4 --\"u\"--&gt; I5\n    I5 --\"e\"--&gt; I6((T_DEGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    J1(Start devolva) --\"d\"--&gt; J2\n    J2 --\"e\"--&gt; J3\n    J3 --\"v\"--&gt; J4\n    J4 --\"o\"--&gt; J5\n    J5 --\"l\"--&gt; J6\n    J6 --\"v\"--&gt; J7\n    J7 --\"a\"--&gt; J8((T_DEVOLVA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    K1(Start oPrai) --\"o\"--&gt; K2\n    K2 --\"P\"--&gt; K3\n    K3 --\"r\"--&gt; K4\n    K4 --\"a\"--&gt; K5\n    K5 --\"i\"--&gt; K6((T_OPRAI))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    L1(Start calma_calabreso) --\"c\"--&gt; L2\n    L2 --\"a\"--&gt; L3\n    L3 --\"l\"--&gt; L4\n    L4 --\"m\"--&gt; L5\n    L5 --\"a\"--&gt; L6\n    L6 --\"_\"--&gt; L7\n    L7 --\"c\"--&gt; L8\n    L8 --\"a\"--&gt; L9\n    L9 --\"l\"--&gt; L10\n    L10 --\"a\"--&gt; L11\n    L11 --\"b\"--&gt; L12\n    L12 --\"r\"--&gt; L13\n    L13 --\"e\"--&gt; L14\n    L14 --\"s\"--&gt; L15\n    L15 --\"o\"--&gt; L16((T_CALMA_CALABRESO))",
+    "crumbs": [
+      "Home",
+      "Estados de Transição",
+      "Diagramas de Transição"
+    ]
+  },
+  {
+    "objectID": "pages/examples.html#diagrama-de-transições-para-expressões-regulares",
+    "href": "pages/examples.html#diagrama-de-transições-para-expressões-regulares",
+    "title": "Diagramas de Transição",
+    "section": "Diagrama de transições para expressões regulares",
+    "text": "Diagrama de transições para expressões regulares\n\nDiagrama para dígitos\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R1(Start DIGITO) --\"0–9\"--&gt; R2((DIGITO))\n\n\n\n\n\n\n\n\nDiagrama para letras\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R3(Start LETRA) --\"a–z, A–Z, _\"--&gt; R4((LETRA))\n\n\n\n\n\n\n\n\nDiagrama para identificadores (ID)\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R5(Start ID) --\"letra\"--&gt; R6(id1)\n    R6 --\"letra ou digito\"--&gt; R6\n    R6 --&gt; R7((ID))\n\n\n\n\n\n\n\n\nDiagrama para números inteiros\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R8(Start INTEIRO) --\"dígito\"--&gt; R9(inteiro 1)\n    R9 --\"dígito\"--&gt; R9\n    R9 --&gt; R10((INTEIRO))\n\n\n\n\n\n\n\n\nDiagrama para números de ponto flutuante (FLOAT)\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R11(Start FLOAT) --\"dígito\"--&gt; R12\n    R12 --\"dígito\"--&gt; R12\n    R12 --\".\"--&gt; R13\n    R13 --\"dígito\"--&gt; R14\n    R14 --\"dígito\"--&gt; R14\n    R14 --&gt; R15((FLOAT))\n\n\n\n\n\n\n\n\nDiagrama para literais de string\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R16(Start STRING_LITERAL) --\"aspas\"--&gt; R17\n    R17 --\"qualquer exceto aspas\"--&gt; R17\n    R17 --\"aspas\"--&gt; R18((STRING_LITERAL))\n\n\n\n\n\n\n\n\nDiagrama para literais de caractere\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R19(Start CHAR_LITERAL) --\"'\"--&gt; R20\n    R20 --\"qualquer exceto aspas simples\"--&gt; R21\n    R21 --\"'\"--&gt; R22((CHAR_LITERAL))\n\n\n\n\n\n\n\n\nDiagrama para comentários de linha\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R23(Start COMENTARIO_LINHA) --\"//\"--&gt; R24\n    R24 --\"qualquer caractere exceto \\\\n\"--&gt; R24\n    R24 --\"\\\\n\"--&gt; R25((COMENTARIO_LINHA))\n\n\n\n\n\n\n\n\nDiagrama para comentários de bloco\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R26(Start COMENTARIO_BLOCO) --\"/*\"--&gt; R27\n    R27 --\"qualquer exceto '*/'\"--&gt; R27\n    R27 --\"*/\"--&gt; R28((COMENTARIO_BLOCO))",
+    "crumbs": [
+      "Home",
+      "Estados de Transição",
+      "Diagramas de Transição"
+    ]
+  },
+  {
     "objectID": "pages/funcoes.html",
     "href": "pages/funcoes.html",
     "title": "Funções",
@@ -91,6 +127,30 @@
     ]
   },
   {
+    "objectID": "pages/examplestree.html",
+    "href": "pages/examplestree.html",
+    "title": "Casos de teste",
+    "section": "",
+    "text": "Aqui estão alguns exemplos de casos de teste para validar a geração da árvore sintática utilizando Bison e Flex:\n\n\n\n\n\n\nNoteExemplo 1: Precedência aritmética\n\n\n\n\n\n\n\n\n1 + 2 * 3;\n\n\n\n(+ 1 (* 2 3))\n\n\n\n\n\n\nNoteExemplo 2: Parênteses alterando precedência\n\n\n\n\n\n\n\n\n\n(1 + 2) * 3;\n\n\n\n(* (+ 1 2) 3)\n\n\n\n\n\n\nNoteExemplo 3: Declaração e atribuição\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5;\n\n\n\n(declaration var inteiro x (assign 5))\n\n\n\n\n\n\nNoteExemplo 4: Atribuição com expressão\n\n\n\n\n\n\n\n\n\nnotasAlunos[1] malocar (nota1 + nota2) / 2.0;\n\n\n\n(assign (index notasAlunos 1) (/ (+ nota1 nota2) 2.0))\n:::\n\n\n\n\n\n\nNoteExemplo 5: Definição de função simples\n\n\n\n\n\n\n\n\n\ndeGue inteiro soma(inteiro a, inteiro b) {\n    devolva a + b;\n}\n\n\n\n(function-decl inteiro soma ((param inteiro a) (param inteiro b)) (return (+ a b)))\n\n\n\n\n\n\nNoteExemplo 6: Condicional (if / elif / else)\n\n\n\n\n\n\n\n\n\nse_ligue (x &gt; 0) {\n    oPrai(\"positivo\");\n} yotra (x == 0) {\n    oPrai(\"zero\");\n} nada_ve {\n    oPrai(\"negativo\");\n}\n\n\n\n(if (&gt; x 0) (call oPrai (\"positivo\")) (elif (= x 0) (call oPrai (\"zero\"))) (else (call oPrai (\"negativo\"))))\n\n\n\n\n\n\nNoteExemplo 7: Laço for (dinovo) com break (calma_calabreso)\n\n\n\n\n\n\n\n\n\ndinovo (var inteiro i malocar 0; i &lt; 5; i += 1) {\n    se_ligue (i == 3) {\n        calma_calabreso;\n    }\n}\n\n\n\n(for (declaration var inteiro i (assign 0)) (&lt; i 5) (assign i (+= i 1)) (block (if (= i 3) (break))))\n\n\n\n\n\n\nNoteExemplo 8: While (ensonha) e Do-while (dorme-ensonha)\n\n\n\n\n\n\n\n\n\nvar inteiro c malocar 0;\nensonha (c &lt; 2) {\n    c += 1;\n}\nvar inteiro t malocar 0;\ndorme-ensonha {\n    t += 1;\n} enquanto (t &lt; 2);\n\n\n\n(block (declaration var inteiro c (assign 0)) (while (&lt; c 2) (assign c (+= c 1))) (declaration var inteiro t (assign 0)) (do-while (assign t (+= t 1)) (&lt; t 2)))\n\n\n\n\n\n\nNoteExemplo 9: Expressão aninhada (testa associatividade)\n\n\n\n\n\n\n\n\n\na + (b * (c + d));\n\n\n\n(+ a (* b (+ c d)))\n\n\n\n\n\n\nNoteExemplo 10: Caso de erro — falta de ponto-e-vírgula\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5\nResultado esperado: parse error indicando token ; esperado (ou mensagem equivalente do analisador).",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "Casos de teste"
+    ]
+  },
+  {
+    "objectID": "pages/examplestree.html#casos-de-teste-para-análise-sintática",
+    "href": "pages/examplestree.html#casos-de-teste-para-análise-sintática",
+    "title": "Casos de teste",
+    "section": "",
+    "text": "Aqui estão alguns exemplos de casos de teste para validar a geração da árvore sintática utilizando Bison e Flex:\n\n\n\n\n\n\nNoteExemplo 1: Precedência aritmética\n\n\n\n\n\n\n\n\n1 + 2 * 3;\n\n\n\n(+ 1 (* 2 3))\n\n\n\n\n\n\nNoteExemplo 2: Parênteses alterando precedência\n\n\n\n\n\n\n\n\n\n(1 + 2) * 3;\n\n\n\n(* (+ 1 2) 3)\n\n\n\n\n\n\nNoteExemplo 3: Declaração e atribuição\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5;\n\n\n\n(declaration var inteiro x (assign 5))\n\n\n\n\n\n\nNoteExemplo 4: Atribuição com expressão\n\n\n\n\n\n\n\n\n\nnotasAlunos[1] malocar (nota1 + nota2) / 2.0;\n\n\n\n(assign (index notasAlunos 1) (/ (+ nota1 nota2) 2.0))\n:::\n\n\n\n\n\n\nNoteExemplo 5: Definição de função simples\n\n\n\n\n\n\n\n\n\ndeGue inteiro soma(inteiro a, inteiro b) {\n    devolva a + b;\n}\n\n\n\n(function-decl inteiro soma ((param inteiro a) (param inteiro b)) (return (+ a b)))\n\n\n\n\n\n\nNoteExemplo 6: Condicional (if / elif / else)\n\n\n\n\n\n\n\n\n\nse_ligue (x &gt; 0) {\n    oPrai(\"positivo\");\n} yotra (x == 0) {\n    oPrai(\"zero\");\n} nada_ve {\n    oPrai(\"negativo\");\n}\n\n\n\n(if (&gt; x 0) (call oPrai (\"positivo\")) (elif (= x 0) (call oPrai (\"zero\"))) (else (call oPrai (\"negativo\"))))\n\n\n\n\n\n\nNoteExemplo 7: Laço for (dinovo) com break (calma_calabreso)\n\n\n\n\n\n\n\n\n\ndinovo (var inteiro i malocar 0; i &lt; 5; i += 1) {\n    se_ligue (i == 3) {\n        calma_calabreso;\n    }\n}\n\n\n\n(for (declaration var inteiro i (assign 0)) (&lt; i 5) (assign i (+= i 1)) (block (if (= i 3) (break))))\n\n\n\n\n\n\nNoteExemplo 8: While (ensonha) e Do-while (dorme-ensonha)\n\n\n\n\n\n\n\n\n\nvar inteiro c malocar 0;\nensonha (c &lt; 2) {\n    c += 1;\n}\nvar inteiro t malocar 0;\ndorme-ensonha {\n    t += 1;\n} enquanto (t &lt; 2);\n\n\n\n(block (declaration var inteiro c (assign 0)) (while (&lt; c 2) (assign c (+= c 1))) (declaration var inteiro t (assign 0)) (do-while (assign t (+= t 1)) (&lt; t 2)))\n\n\n\n\n\n\nNoteExemplo 9: Expressão aninhada (testa associatividade)\n\n\n\n\n\n\n\n\n\na + (b * (c + d));\n\n\n\n(+ a (* b (+ c d)))\n\n\n\n\n\n\nNoteExemplo 10: Caso de erro — falta de ponto-e-vírgula\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5\nResultado esperado: parse error indicando token ; esperado (ou mensagem equivalente do analisador).",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "Casos de teste"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Sejam Bem vindo Calabresos",
@@ -98,7 +158,7 @@
     "text": "A implementação desta linguagem tem como finalidade unir conceitos fundamentais da programação com elementos culturais e populares da família Brito, utilizando expressões e memes amplamente reconhecidos para tornar o aprendizado mais acessível, divertido e memorável.\n\n\n\n\n\n\n\n\n\nObjetivo\nEste possui projeto se trata apenas de um trabalho educacional que tem como objetivo demonstrar a possibilidade de criar linguagens de programação podem ser também instrumentos de expressão cultural e social, indo além do uso estritamente técnico.\nAo ressignificar palavras e atribuir significados computacionais a memes e bordões, esta linguagem evidencia como a computação pode dialogar com o cotidiano, gerando novas possibilidades de ensino, gamificação e experimentação. Assim, a implementação da linguagem Calabreso++ representa apenas como uma implementação divertida utilizando os conhecimentos teoricos adquiridos na componente de MATA61 - Compiladores\n\n\n\n\n Back to top",
     "crumbs": [
       "Home",
-      "Sejam Bem vindo Calabresos"
+      "**Sejam Bem vindo Calabresos**"
     ]
   },
   {
@@ -176,73 +236,97 @@
   {
     "objectID": "pages/comousar.html",
     "href": "pages/comousar.html",
-    "title": "Analisador Léxico",
+    "title": " ",
     "section": "",
     "text": "Compile o projeto, dentro da pasta docs, siga os passos abaixo:\n\n1.1\nflex scanner_britolang.l\n1.2\ngcc lex.yy.c -o scanner\n\nExecute o analisador com o arquivo scanner de exemplo\n\n ./scanner exemplo_britolang.lang\n\nPara verificar os erros, executeo scanner em um arquivo com erros\n\n  ./scanner erros_britolang.lang\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Analisador Léxico"
+      "Analisador Léxico",
+      "⚙️ Como Executar o Analisador Léxico ⚙️"
     ]
   },
   {
     "objectID": "pages/comousar.html#como-executar-o-analisador-léxico",
     "href": "pages/comousar.html#como-executar-o-analisador-léxico",
-    "title": "Analisador Léxico",
+    "title": " ",
     "section": "",
     "text": "Compile o projeto, dentro da pasta docs, siga os passos abaixo:\n\n1.1\nflex scanner_britolang.l\n1.2\ngcc lex.yy.c -o scanner\n\nExecute o analisador com o arquivo scanner de exemplo\n\n ./scanner exemplo_britolang.lang\n\nPara verificar os erros, executeo scanner em um arquivo com erros\n\n  ./scanner erros_britolang.lang\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Analisador Léxico"
+      "Analisador Léxico",
+      "⚙️ Como Executar o Analisador Léxico ⚙️"
     ]
   },
   {
     "objectID": "pages/comousar.html#observações-finais",
     "href": "pages/comousar.html#observações-finais",
-    "title": "Analisador Léxico",
+    "title": " ",
     "section": "📌 Observações Finais",
     "text": "📌 Observações Finais\n\nO projeto foi desenvolvido com Flex (Lex).\nOs padrões léxicos estão definidos no arquivo scanner_britolang.l.\nA linguagem é uma ferramenta educacional, com o objetivo de tornar o estudo de análise léxica mais leve, divertido e regionalizado.",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Analisador Léxico"
+      "Analisador Léxico",
+      "⚙️ Como Executar o Analisador Léxico ⚙️"
     ]
   },
   {
-    "objectID": "pages/examples.html",
-    "href": "pages/examples.html",
-    "title": "Diagramas de Transição",
+    "objectID": "pages/comoexecutar.html",
+    "href": "pages/comoexecutar.html",
+    "title": " ",
     "section": "",
-    "text": "graph LR\n    A1(Start se_ligue) --\"s\"--&gt; A2\n    A2 --\"e\"--&gt; A3\n    A3 --\"_\"--&gt; A4\n    A4 --\"l\"--&gt; A5\n    A5 --\"i\"--&gt; A6\n    A6 --\"g\"--&gt; A7\n    A7 --\"u\"--&gt; A8\n    A8 --\"e\"--&gt; A9((T_SE_LIGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    B1(Start yotra) --\"y\"--&gt; B2\n    B2 --\"o\"--&gt; B3\n    B3 --\"t\"--&gt; B4\n    B4 --\"r\"--&gt; B5\n    B5 --\"a\"--&gt; B6((T_YOTRA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    C1(Start nada_ve) --\"n\"--&gt; C2\n    C2 --\"a\"--&gt; C3\n    C3 --\"d\"--&gt; C4\n    C4 --\"a\"--&gt; C5\n    C5 --\"_\"--&gt; C6\n    C6 --\"v\"--&gt; C7\n    C7 --\"e\"--&gt; C8((T_NADA_VE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    D1(Start ensonha) --\"e\"--&gt; D2\n    D2 --\"n\"--&gt; D3\n    D3 --\"s\"--&gt; D4\n    D4 --\"o\"--&gt; D5\n    D5 --\"n\"--&gt; D6\n    D6 --\"h\"--&gt; D7\n    D7 --\"a\"--&gt; D8((T_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    E1(Start dorme_ensonha) --\"d\"--&gt; E2\n    E2 --\"o\"--&gt; E3\n    E3 --\"r\"--&gt; E4\n    E4 --\"m\"--&gt; E5\n    E5 --\"e\"--&gt; E6\n    E6 --\"_\"--&gt; E7\n    E7 --\"e\"--&gt; E8\n    E8 --\"n\"--&gt; E9\n    E9 --\"s\"--&gt; E10\n    E10 --\"o\"--&gt; E11\n    E11 --\"n\"--&gt; E12\n    E12 --\"h\"--&gt; E13\n    E13 --\"a\"--&gt; E14((T_DORME_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    F1(Start dinovo) --\"d\"--&gt; F2\n    F2 --\"i\"--&gt; F3\n    F3 --\"n\"--&gt; F4\n    F4 --\"o\"--&gt; F5\n    F5 --\"v\"--&gt; F6\n    F6 --\"o\"--&gt; F7((T_DINOVO))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    G1(Start malocar) --\"m\"--&gt; G2\n    G2 --\"a\"--&gt; G3\n    G3 --\"l\"--&gt; G4\n    G4 --\"o\"--&gt; G5\n    G5 --\"c\"--&gt; G6\n    G6 --\"a\"--&gt; G7\n    G7 --\"r\"--&gt; G8((T_MALOCAR))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    H1(Start fun) --\"f\"--&gt; H2\n    H2 --\"u\"--&gt; H3\n    H3 --\"n\"--&gt; H4((T_FUN))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    I1(Start deGue) --\"d\"--&gt; I2\n    I2 --\"e\"--&gt; I3\n    I3 --\"G\"--&gt; I4\n    I4 --\"u\"--&gt; I5\n    I5 --\"e\"--&gt; I6((T_DEGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    J1(Start devolva) --\"d\"--&gt; J2\n    J2 --\"e\"--&gt; J3\n    J3 --\"v\"--&gt; J4\n    J4 --\"o\"--&gt; J5\n    J5 --\"l\"--&gt; J6\n    J6 --\"v\"--&gt; J7\n    J7 --\"a\"--&gt; J8((T_DEVOLVA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    K1(Start oPrai) --\"o\"--&gt; K2\n    K2 --\"P\"--&gt; K3\n    K3 --\"r\"--&gt; K4\n    K4 --\"a\"--&gt; K5\n    K5 --\"i\"--&gt; K6((T_OPRAI))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    L1(Start calma_calabreso) --\"c\"--&gt; L2\n    L2 --\"a\"--&gt; L3\n    L3 --\"l\"--&gt; L4\n    L4 --\"m\"--&gt; L5\n    L5 --\"a\"--&gt; L6\n    L6 --\"_\"--&gt; L7\n    L7 --\"c\"--&gt; L8\n    L8 --\"a\"--&gt; L9\n    L9 --\"l\"--&gt; L10\n    L10 --\"a\"--&gt; L11\n    L11 --\"b\"--&gt; L12\n    L12 --\"r\"--&gt; L13\n    L13 --\"e\"--&gt; L14\n    L14 --\"s\"--&gt; L15\n    L15 --\"o\"--&gt; L16((T_CALMA_CALABRESO))",
+    "text": "Para compilar e usar este parser, você precisará ter o GCC, Flex (Lex) e o Bison (Yacc) instalados em seu sistema. Os passos gerais são:\n\nBuildar o analisador_sintatico: Execute o comando make abaixo a partir da pasta raiz. ```bash make ````\nExecutar o compilador: Execute o binário gerado, passando o código fonte da linguagem ‘Oxe Lang’ como entrada.\n./arvore_sintatica &lt; input/exemplo-input.txt",
     "crumbs": [
       "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
+      "Analisador Sintático",
+      "⚙️ Como Compilar e Usar o Analisador Sintático ⚙️"
     ]
   },
   {
-    "objectID": "pages/examples.html#diagrama-de-transição-para-palavras-chave",
-    "href": "pages/examples.html#diagrama-de-transição-para-palavras-chave",
-    "title": "Diagramas de Transição",
+    "objectID": "pages/comoexecutar.html#como-compilar-e-usar-o-analisador-sintático",
+    "href": "pages/comoexecutar.html#como-compilar-e-usar-o-analisador-sintático",
+    "title": " ",
     "section": "",
-    "text": "graph LR\n    A1(Start se_ligue) --\"s\"--&gt; A2\n    A2 --\"e\"--&gt; A3\n    A3 --\"_\"--&gt; A4\n    A4 --\"l\"--&gt; A5\n    A5 --\"i\"--&gt; A6\n    A6 --\"g\"--&gt; A7\n    A7 --\"u\"--&gt; A8\n    A8 --\"e\"--&gt; A9((T_SE_LIGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    B1(Start yotra) --\"y\"--&gt; B2\n    B2 --\"o\"--&gt; B3\n    B3 --\"t\"--&gt; B4\n    B4 --\"r\"--&gt; B5\n    B5 --\"a\"--&gt; B6((T_YOTRA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    C1(Start nada_ve) --\"n\"--&gt; C2\n    C2 --\"a\"--&gt; C3\n    C3 --\"d\"--&gt; C4\n    C4 --\"a\"--&gt; C5\n    C5 --\"_\"--&gt; C6\n    C6 --\"v\"--&gt; C7\n    C7 --\"e\"--&gt; C8((T_NADA_VE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    D1(Start ensonha) --\"e\"--&gt; D2\n    D2 --\"n\"--&gt; D3\n    D3 --\"s\"--&gt; D4\n    D4 --\"o\"--&gt; D5\n    D5 --\"n\"--&gt; D6\n    D6 --\"h\"--&gt; D7\n    D7 --\"a\"--&gt; D8((T_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    E1(Start dorme_ensonha) --\"d\"--&gt; E2\n    E2 --\"o\"--&gt; E3\n    E3 --\"r\"--&gt; E4\n    E4 --\"m\"--&gt; E5\n    E5 --\"e\"--&gt; E6\n    E6 --\"_\"--&gt; E7\n    E7 --\"e\"--&gt; E8\n    E8 --\"n\"--&gt; E9\n    E9 --\"s\"--&gt; E10\n    E10 --\"o\"--&gt; E11\n    E11 --\"n\"--&gt; E12\n    E12 --\"h\"--&gt; E13\n    E13 --\"a\"--&gt; E14((T_DORME_ENSONHA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    F1(Start dinovo) --\"d\"--&gt; F2\n    F2 --\"i\"--&gt; F3\n    F3 --\"n\"--&gt; F4\n    F4 --\"o\"--&gt; F5\n    F5 --\"v\"--&gt; F6\n    F6 --\"o\"--&gt; F7((T_DINOVO))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    G1(Start malocar) --\"m\"--&gt; G2\n    G2 --\"a\"--&gt; G3\n    G3 --\"l\"--&gt; G4\n    G4 --\"o\"--&gt; G5\n    G5 --\"c\"--&gt; G6\n    G6 --\"a\"--&gt; G7\n    G7 --\"r\"--&gt; G8((T_MALOCAR))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    H1(Start fun) --\"f\"--&gt; H2\n    H2 --\"u\"--&gt; H3\n    H3 --\"n\"--&gt; H4((T_FUN))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    I1(Start deGue) --\"d\"--&gt; I2\n    I2 --\"e\"--&gt; I3\n    I3 --\"G\"--&gt; I4\n    I4 --\"u\"--&gt; I5\n    I5 --\"e\"--&gt; I6((T_DEGUE))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    J1(Start devolva) --\"d\"--&gt; J2\n    J2 --\"e\"--&gt; J3\n    J3 --\"v\"--&gt; J4\n    J4 --\"o\"--&gt; J5\n    J5 --\"l\"--&gt; J6\n    J6 --\"v\"--&gt; J7\n    J7 --\"a\"--&gt; J8((T_DEVOLVA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    K1(Start oPrai) --\"o\"--&gt; K2\n    K2 --\"P\"--&gt; K3\n    K3 --\"r\"--&gt; K4\n    K4 --\"a\"--&gt; K5\n    K5 --\"i\"--&gt; K6((T_OPRAI))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    L1(Start calma_calabreso) --\"c\"--&gt; L2\n    L2 --\"a\"--&gt; L3\n    L3 --\"l\"--&gt; L4\n    L4 --\"m\"--&gt; L5\n    L5 --\"a\"--&gt; L6\n    L6 --\"_\"--&gt; L7\n    L7 --\"c\"--&gt; L8\n    L8 --\"a\"--&gt; L9\n    L9 --\"l\"--&gt; L10\n    L10 --\"a\"--&gt; L11\n    L11 --\"b\"--&gt; L12\n    L12 --\"r\"--&gt; L13\n    L13 --\"e\"--&gt; L14\n    L14 --\"s\"--&gt; L15\n    L15 --\"o\"--&gt; L16((T_CALMA_CALABRESO))",
+    "text": "Para compilar e usar este parser, você precisará ter o GCC, Flex (Lex) e o Bison (Yacc) instalados em seu sistema. Os passos gerais são:\n\nBuildar o analisador_sintatico: Execute o comando make abaixo a partir da pasta raiz. ```bash make ````\nExecutar o compilador: Execute o binário gerado, passando o código fonte da linguagem ‘Oxe Lang’ como entrada.\n./arvore_sintatica &lt; input/exemplo-input.txt",
     "crumbs": [
       "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
+      "Analisador Sintático",
+      "⚙️ Como Compilar e Usar o Analisador Sintático ⚙️"
     ]
   },
   {
-    "objectID": "pages/examples.html#diagrama-de-transições-para-expressões-regulares",
-    "href": "pages/examples.html#diagrama-de-transições-para-expressões-regulares",
-    "title": "Diagramas de Transição",
-    "section": "Diagrama de transições para expressões regulares",
-    "text": "Diagrama de transições para expressões regulares\n\nDiagrama para dígitos\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R1(Start DIGITO) --\"0–9\"--&gt; R2((DIGITO))\n\n\n\n\n\n\n\n\nDiagrama para letras\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R3(Start LETRA) --\"a–z, A–Z, _\"--&gt; R4((LETRA))\n\n\n\n\n\n\n\n\nDiagrama para identificadores (ID)\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R5(Start ID) --\"letra\"--&gt; R6(id1)\n    R6 --\"letra ou digito\"--&gt; R6\n    R6 --&gt; R7((ID))\n\n\n\n\n\n\n\n\nDiagrama para números inteiros\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R8(Start INTEIRO) --\"dígito\"--&gt; R9(inteiro 1)\n    R9 --\"dígito\"--&gt; R9\n    R9 --&gt; R10((INTEIRO))\n\n\n\n\n\n\n\n\nDiagrama para números de ponto flutuante (FLOAT)\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R11(Start FLOAT) --\"dígito\"--&gt; R12\n    R12 --\"dígito\"--&gt; R12\n    R12 --\".\"--&gt; R13\n    R13 --\"dígito\"--&gt; R14\n    R14 --\"dígito\"--&gt; R14\n    R14 --&gt; R15((FLOAT))\n\n\n\n\n\n\n\n\nDiagrama para literais de string\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R16(Start STRING_LITERAL) --\"aspas\"--&gt; R17\n    R17 --\"qualquer exceto aspas\"--&gt; R17\n    R17 --\"aspas\"--&gt; R18((STRING_LITERAL))\n\n\n\n\n\n\n\n\nDiagrama para literais de caractere\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R19(Start CHAR_LITERAL) --\"'\"--&gt; R20\n    R20 --\"qualquer exceto aspas simples\"--&gt; R21\n    R21 --\"'\"--&gt; R22((CHAR_LITERAL))\n\n\n\n\n\n\n\n\nDiagrama para comentários de linha\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R23(Start COMENTARIO_LINHA) --\"//\"--&gt; R24\n    R24 --\"qualquer caractere exceto \\\\n\"--&gt; R24\n    R24 --\"\\\\n\"--&gt; R25((COMENTARIO_LINHA))\n\n\n\n\n\n\n\n\nDiagrama para comentários de bloco\n\n\n\n\n\n  %%| fig-width: 6.5\n  graph LR\n    R26(Start COMENTARIO_BLOCO) --\"/*\"--&gt; R27\n    R27 --\"qualquer exceto '*/'\"--&gt; R27\n    R27 --\"*/\"--&gt; R28((COMENTARIO_BLOCO))",
+    "objectID": "pages/regprod.html",
+    "href": "pages/regprod.html",
+    "title": "Regras de Produção",
+    "section": "",
+    "text": "As regras de produção são essenciais para garantir a consistência e a qualidade dos processos. Elas definem padrões claros que devem ser seguidos, minimizando erros e otimizando os resultados. Além disso, ajudam na padronização e na comunicação entre equipes, promovendo eficiência e alinhamento.",
     "crumbs": [
       "Home",
-      "Estados de Transição",
-      "Diagramas de Transição"
+      "Analisador Sintático",
+      "Regras de Produção"
+    ]
+  },
+  {
+    "objectID": "pages/regprod.html#por-que-é-necessário-uso-das-regras-de-produção",
+    "href": "pages/regprod.html#por-que-é-necessário-uso-das-regras-de-produção",
+    "title": "Regras de Produção",
+    "section": "",
+    "text": "As regras de produção são essenciais para garantir a consistência e a qualidade dos processos. Elas definem padrões claros que devem ser seguidos, minimizando erros e otimizando os resultados. Além disso, ajudam na padronização e na comunicação entre equipes, promovendo eficiência e alinhamento.",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "Regras de Produção"
+    ]
+  },
+  {
+    "objectID": "pages/regprod.html#regras-de-produção-da-linguagem-calabresso",
+    "href": "pages/regprod.html#regras-de-produção-da-linguagem-calabresso",
+    "title": "Regras de Produção",
+    "section": "Regras de produção da linguagem Calabresso++",
+    "text": "Regras de produção da linguagem Calabresso++\nAs regras de produção usadas para a construção do nosso analisador sintático foram:\n\nRegra 1: &lt;expr&gt; ::= &lt;term&gt; \"+\" &lt;expr&gt; | &lt;term&gt;\nRegra 2: &lt;term&gt; ::= &lt;factor&gt; \"*\" &lt;term&gt; | &lt;factor&gt;\nRegra 3: &lt;factor&gt; ::= \"(\" &lt;expr&gt; \")\" | &lt;id&gt;\nRegra 4: &lt;id&gt; ::= \"a\" | \"b\" | \"c\" | ... | \"z\"",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "Regras de Produção"
     ]
   }
 ]
