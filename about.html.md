@@ -1,6 +1,5 @@
 ---
 title: "Sobre nós"
-image: "./images/studie.png"
 about: 
   template: jolla
   links:
@@ -13,6 +12,9 @@ about:
     - icon: linkedin
       text: Mayara Rodrigues
       href: https://www.linkedin.com/in/mayara-rodrigues-mr01
+    - icon: linkedin
+      text: Yuri Freitas Hughes
+      href: https://www.linkedin.com/in/yuri-hughes
 
 
 ---

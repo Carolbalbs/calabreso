@@ -7,10 +7,18 @@ website:
         - pages/intro.qmd
       - section: Tutorais e Guias
         contents:
+        - pages/tutoriais.qmd
         - pages/edc.qmd
         - pages/funcoes.qmd
-        - pages/comousar.qmd
       - section: Estados de Transição
         contents:
         - pages/examples.qmd
+      - section: Analisador Léxico
+        contents:
+        - pages/comousar.qmd
+      - section: Analisador Sintático
+        contents:
+        - pages/comoexecutar.qmd
+        - pages/regprod.qmd
+        - pages/examplestree.qmd
 

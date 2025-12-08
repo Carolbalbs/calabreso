@@ -1,8 +1,8 @@
 ---
-title: "Analisador Léxico"
+title: ""
 ---
 
-## ⚙️ Como Executar o Analisador Léxico
+## ⚙️ Como Executar o Analisador Léxico ⚙️
 ::: {layout="[40,300]"}
 
 :::

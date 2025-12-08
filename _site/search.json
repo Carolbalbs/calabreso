@@ -43,63 +43,99 @@
     ]
   },
   {
+    "objectID": "pages/edc.html",
+    "href": "pages/edc.html",
+    "title": "Estruturas de Controle",
+    "section": "",
+    "text": "se_ligue (nota &gt;= 7.0) {\n    oPrai(\"Aprovado com sucesso!\");\n} yotra (nota &gt;= 5.0) {\n    oPrai(\"Recuperação necessária.\");\n} nada_ve {\n    oPrai(\"Reprovado.\");\n}",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Estruturas de Controle"
+    ]
+  },
+  {
+    "objectID": "pages/edc.html#condicional",
+    "href": "pages/edc.html#condicional",
+    "title": "Estruturas de Controle",
+    "section": "",
+    "text": "se_ligue (nota &gt;= 7.0) {\n    oPrai(\"Aprovado com sucesso!\");\n} yotra (nota &gt;= 5.0) {\n    oPrai(\"Recuperação necessária.\");\n} nada_ve {\n    oPrai(\"Reprovado.\");\n}",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Estruturas de Controle"
+    ]
+  },
+  {
+    "objectID": "pages/edc.html#laço-dinovo-for",
+    "href": "pages/edc.html#laço-dinovo-for",
+    "title": "Estruturas de Controle",
+    "section": "Laço dinovo (for)",
+    "text": "Laço dinovo (for)\ndinovo (malocar inteiro contador = 1; contador &lt;= 10; contador++) {\n    oPrai(\"Tabuada do 5: 5 x \" + contador + \" = \" + (5 * contador));\n\n}",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Estruturas de Controle"
+    ]
+  },
+  {
+    "objectID": "pages/edc.html#laço-ensonha-while",
+    "href": "pages/edc.html#laço-ensonha-while",
+    "title": "Estruturas de Controle",
+    "section": "Laço ensonha (while)",
+    "text": "Laço ensonha (while)\nmalocar inteiro senha = 0;\nensonha (senha != 1234) {\n    oPrai(\"Digite a senha correta:\");\n    // senha = leitura();\n}\noPrai(\"Acesso liberado!\");",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Estruturas de Controle"
+    ]
+  },
+  {
+    "objectID": "pages/edc.html#laço-dorme...ensonha-do-while",
+    "href": "pages/edc.html#laço-dorme...ensonha-do-while",
+    "title": "Estruturas de Controle",
+    "section": "Laço dorme...ensonha (do-while)",
+    "text": "Laço dorme...ensonha (do-while)\nmalocar inteiro opcao = 0;\ndorme {\n    oPrai(\"Menu: 1-Jogar | 2-Sair\");\n    oPrai(\"Escolha uma opção:\");\n    opcao++;\n} ensonha (opcao &lt; 2);",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Estruturas de Controle"
+    ]
+  },
+  {
     "objectID": "pages/comousar.html",
     "href": "pages/comousar.html",
-    "title": "Analisador Léxico",
+    "title": " ",
     "section": "",
     "text": "Compile o projeto, dentro da pasta docs, siga os passos abaixo:\n\n1.1\nflex scanner_britolang.l\n1.2\ngcc lex.yy.c -o scanner\n\nExecute o analisador com o arquivo scanner de exemplo\n\n ./scanner exemplo_britolang.lang\n\nPara verificar os erros, executeo scanner em um arquivo com erros\n\n  ./scanner erros_britolang.lang\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Analisador Léxico"
+      "Analisador Léxico",
+      "⚙️ Como Executar o Analisador Léxico ⚙️"
     ]
   },
   {
     "objectID": "pages/comousar.html#como-executar-o-analisador-léxico",
     "href": "pages/comousar.html#como-executar-o-analisador-léxico",
-    "title": "Analisador Léxico",
+    "title": " ",
     "section": "",
     "text": "Compile o projeto, dentro da pasta docs, siga os passos abaixo:\n\n1.1\nflex scanner_britolang.l\n1.2\ngcc lex.yy.c -o scanner\n\nExecute o analisador com o arquivo scanner de exemplo\n\n ./scanner exemplo_britolang.lang\n\nPara verificar os erros, executeo scanner em um arquivo com erros\n\n  ./scanner erros_britolang.lang\nA saída será uma lista dos tokens reconhecidos, com sua categoria e valor identificado.",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Analisador Léxico"
+      "Analisador Léxico",
+      "⚙️ Como Executar o Analisador Léxico ⚙️"
     ]
   },
   {
     "objectID": "pages/comousar.html#observações-finais",
     "href": "pages/comousar.html#observações-finais",
-    "title": "Analisador Léxico",
+    "title": " ",
     "section": "📌 Observações Finais",
     "text": "📌 Observações Finais\n\nO projeto foi desenvolvido com Flex (Lex).\nOs padrões léxicos estão definidos no arquivo scanner_britolang.l.\nA linguagem é uma ferramenta educacional, com o objetivo de tornar o estudo de análise léxica mais leve, divertido e regionalizado.",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Analisador Léxico"
-    ]
-  },
-  {
-    "objectID": "pages/funcoes.html",
-    "href": "pages/funcoes.html",
-    "title": "Funções",
-    "section": "",
-    "text": "deGue calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {\n    devolva (nota1 + nota2) / 2;\n}",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Funções"
-    ]
-  },
-  {
-    "objectID": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
-    "href": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
-    "title": "Funções",
-    "section": "📄 Exemplo de Código calculadora.yotra",
-    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    malocar flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    malocar flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal)\n    }",
-    "crumbs": [
-      "Home",
-      "Tutorais e Guias",
-      "Funções"
+      "Analisador Léxico",
+      "⚙️ Como Executar o Analisador Léxico ⚙️"
     ]
   },
   {
@@ -175,63 +211,87 @@
     ]
   },
   {
-    "objectID": "pages/edc.html",
-    "href": "pages/edc.html",
-    "title": "Estruturas de Controle",
+    "objectID": "pages/funcoes.html",
+    "href": "pages/funcoes.html",
+    "title": "Funções",
     "section": "",
-    "text": "se_ligue (nota &gt;= 7.0) {\n    oPrai(\"Aprovado com sucesso!\");\n} yotra (nota &gt;= 5.0) {\n    oPrai(\"Recuperação necessária.\");\n} nada_ve {\n    oPrai(\"Reprovado.\");\n}",
+    "text": "deGue calcularMedia(nota1: flutuante, nota2: flutuante): flutuante {\n    devolva (nota1 + nota2) / 2;\n}",
     "crumbs": [
       "Home",
       "Tutorais e Guias",
-      "Estruturas de Controle"
+      "Funções"
     ]
   },
   {
-    "objectID": "pages/edc.html#condicional",
-    "href": "pages/edc.html#condicional",
-    "title": "Estruturas de Controle",
+    "objectID": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
+    "href": "pages/funcoes.html#exemplo-de-código-calculadora.yotra",
+    "title": "Funções",
+    "section": "📄 Exemplo de Código calculadora.yotra",
+    "text": "📄 Exemplo de Código calculadora.yotra\ndeGue_calculadora(): sem_volta {\n    // Declaração e inicialização de variáveis\n    malocar flutuante preco = 150.0, desconto = 20.0;\n\n    // Cálculo do valor final com desconto\n    malocar flutuante valorFinal = preco - (preco * desconto / 100);\n\n    // Impressão do resultado\n    oPrai(\"Preço original: R$ \" + preco);\n    oPrai(\"Desconto: \" + desconto + \"%\");\n    oPrai(\"Valor final: R$ \" + valorFinal)\n    }",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Funções"
+    ]
+  },
+  {
+    "objectID": "pages/examplestree.html",
+    "href": "pages/examplestree.html",
+    "title": "Casos de teste",
     "section": "",
-    "text": "se_ligue (nota &gt;= 7.0) {\n    oPrai(\"Aprovado com sucesso!\");\n} yotra (nota &gt;= 5.0) {\n    oPrai(\"Recuperação necessária.\");\n} nada_ve {\n    oPrai(\"Reprovado.\");\n}",
+    "text": "Aqui estão alguns exemplos de casos de teste para validar a geração da árvore sintática utilizando Bison e Flex:\n\n\n\n\n\n\nNoteExemplo 1: Precedência aritmética\n\n\n\n\n\n\n\n\n1 + 2 * 3;\n\n\n\n(+ 1 (* 2 3))\n\n\n\n\n\n\nNoteExemplo 2: Parênteses alterando precedência\n\n\n\n\n\n\n\n\n\n(1 + 2) * 3;\n\n\n\n(* (+ 1 2) 3)\n\n\n\n\n\n\nNoteExemplo 3: Declaração e atribuição\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5;\n\n\n\n(declaration var inteiro x (assign 5))\n\n\n\n\n\n\nNoteExemplo 4: Atribuição com expressão\n\n\n\n\n\n\n\n\n\nnotasAlunos[1] malocar (nota1 + nota2) / 2.0;\n\n\n\n(assign (index notasAlunos 1) (/ (+ nota1 nota2) 2.0))\n:::\n\n\n\n\n\n\nNoteExemplo 5: Definição de função simples\n\n\n\n\n\n\n\n\n\ndeGue inteiro soma(inteiro a, inteiro b) {\n    devolva a + b;\n}\n\n\n\n(function-decl inteiro soma ((param inteiro a) (param inteiro b)) (return (+ a b)))\n\n\n\n\n\n\nNoteExemplo 6: Condicional (if / elif / else)\n\n\n\n\n\n\n\n\n\nse_ligue (x &gt; 0) {\n    oPrai(\"positivo\");\n} yotra (x == 0) {\n    oPrai(\"zero\");\n} nada_ve {\n    oPrai(\"negativo\");\n}\n\n\n\n(if (&gt; x 0) (call oPrai (\"positivo\")) (elif (= x 0) (call oPrai (\"zero\"))) (else (call oPrai (\"negativo\"))))\n\n\n\n\n\n\nNoteExemplo 7: Laço for (dinovo) com break (calma_calabreso)\n\n\n\n\n\n\n\n\n\ndinovo (var inteiro i malocar 0; i &lt; 5; i += 1) {\n    se_ligue (i == 3) {\n        calma_calabreso;\n    }\n}\n\n\n\n(for (declaration var inteiro i (assign 0)) (&lt; i 5) (assign i (+= i 1)) (block (if (= i 3) (break))))\n\n\n\n\n\n\nNoteExemplo 8: While (ensonha) e Do-while (dorme-ensonha)\n\n\n\n\n\n\n\n\n\nvar inteiro c malocar 0;\nensonha (c &lt; 2) {\n    c += 1;\n}\nvar inteiro t malocar 0;\ndorme-ensonha {\n    t += 1;\n} enquanto (t &lt; 2);\n\n\n\n(block (declaration var inteiro c (assign 0)) (while (&lt; c 2) (assign c (+= c 1))) (declaration var inteiro t (assign 0)) (do-while (assign t (+= t 1)) (&lt; t 2)))\n\n\n\n\n\n\nNoteExemplo 9: Expressão aninhada (testa associatividade)\n\n\n\n\n\n\n\n\n\na + (b * (c + d));\n\n\n\n(+ a (* b (+ c d)))\n\n\n\n\n\n\nNoteExemplo 10: Caso de erro — falta de ponto-e-vírgula\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5\nResultado esperado: parse error indicando token ; esperado (ou mensagem equivalente do analisador).",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Estruturas de Controle"
+      "Analisador Sintático",
+      "Casos de teste"
     ]
   },
   {
-    "objectID": "pages/edc.html#laço-dinovo-for",
-    "href": "pages/edc.html#laço-dinovo-for",
-    "title": "Estruturas de Controle",
-    "section": "Laço dinovo (for)",
-    "text": "Laço dinovo (for)\ndinovo (malocar inteiro contador = 1; contador &lt;= 10; contador++) {\n    oPrai(\"Tabuada do 5: 5 x \" + contador + \" = \" + (5 * contador));\n\n}",
+    "objectID": "pages/examplestree.html#casos-de-teste-para-análise-sintática",
+    "href": "pages/examplestree.html#casos-de-teste-para-análise-sintática",
+    "title": "Casos de teste",
+    "section": "",
+    "text": "Aqui estão alguns exemplos de casos de teste para validar a geração da árvore sintática utilizando Bison e Flex:\n\n\n\n\n\n\nNoteExemplo 1: Precedência aritmética\n\n\n\n\n\n\n\n\n1 + 2 * 3;\n\n\n\n(+ 1 (* 2 3))\n\n\n\n\n\n\nNoteExemplo 2: Parênteses alterando precedência\n\n\n\n\n\n\n\n\n\n(1 + 2) * 3;\n\n\n\n(* (+ 1 2) 3)\n\n\n\n\n\n\nNoteExemplo 3: Declaração e atribuição\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5;\n\n\n\n(declaration var inteiro x (assign 5))\n\n\n\n\n\n\nNoteExemplo 4: Atribuição com expressão\n\n\n\n\n\n\n\n\n\nnotasAlunos[1] malocar (nota1 + nota2) / 2.0;\n\n\n\n(assign (index notasAlunos 1) (/ (+ nota1 nota2) 2.0))\n:::\n\n\n\n\n\n\nNoteExemplo 5: Definição de função simples\n\n\n\n\n\n\n\n\n\ndeGue inteiro soma(inteiro a, inteiro b) {\n    devolva a + b;\n}\n\n\n\n(function-decl inteiro soma ((param inteiro a) (param inteiro b)) (return (+ a b)))\n\n\n\n\n\n\nNoteExemplo 6: Condicional (if / elif / else)\n\n\n\n\n\n\n\n\n\nse_ligue (x &gt; 0) {\n    oPrai(\"positivo\");\n} yotra (x == 0) {\n    oPrai(\"zero\");\n} nada_ve {\n    oPrai(\"negativo\");\n}\n\n\n\n(if (&gt; x 0) (call oPrai (\"positivo\")) (elif (= x 0) (call oPrai (\"zero\"))) (else (call oPrai (\"negativo\"))))\n\n\n\n\n\n\nNoteExemplo 7: Laço for (dinovo) com break (calma_calabreso)\n\n\n\n\n\n\n\n\n\ndinovo (var inteiro i malocar 0; i &lt; 5; i += 1) {\n    se_ligue (i == 3) {\n        calma_calabreso;\n    }\n}\n\n\n\n(for (declaration var inteiro i (assign 0)) (&lt; i 5) (assign i (+= i 1)) (block (if (= i 3) (break))))\n\n\n\n\n\n\nNoteExemplo 8: While (ensonha) e Do-while (dorme-ensonha)\n\n\n\n\n\n\n\n\n\nvar inteiro c malocar 0;\nensonha (c &lt; 2) {\n    c += 1;\n}\nvar inteiro t malocar 0;\ndorme-ensonha {\n    t += 1;\n} enquanto (t &lt; 2);\n\n\n\n(block (declaration var inteiro c (assign 0)) (while (&lt; c 2) (assign c (+= c 1))) (declaration var inteiro t (assign 0)) (do-while (assign t (+= t 1)) (&lt; t 2)))\n\n\n\n\n\n\nNoteExemplo 9: Expressão aninhada (testa associatividade)\n\n\n\n\n\n\n\n\n\na + (b * (c + d));\n\n\n\n(+ a (* b (+ c d)))\n\n\n\n\n\n\nNoteExemplo 10: Caso de erro — falta de ponto-e-vírgula\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5\nResultado esperado: parse error indicando token ; esperado (ou mensagem equivalente do analisador).",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Estruturas de Controle"
+      "Analisador Sintático",
+      "Casos de teste"
     ]
   },
   {
-    "objectID": "pages/edc.html#laço-ensonha-while",
-    "href": "pages/edc.html#laço-ensonha-while",
-    "title": "Estruturas de Controle",
-    "section": "Laço ensonha (while)",
-    "text": "Laço ensonha (while)\nmalocar inteiro senha = 0;\nensonha (senha != 1234) {\n    oPrai(\"Digite a senha correta:\");\n    // senha = leitura();\n}\noPrai(\"Acesso liberado!\");",
+    "objectID": "pages/regprod.html",
+    "href": "pages/regprod.html",
+    "title": "Regras de Produção",
+    "section": "",
+    "text": "As regras de produção são essenciais para garantir a consistência e a qualidade dos processos. Elas definem padrões claros que devem ser seguidos, minimizando erros e otimizando os resultados. Além disso, ajudam na padronização e na comunicação entre equipes, promovendo eficiência e alinhamento.",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Estruturas de Controle"
+      "Analisador Sintático",
+      "Regras de Produção"
     ]
   },
   {
-    "objectID": "pages/edc.html#laço-dorme...ensonha-do-while",
-    "href": "pages/edc.html#laço-dorme...ensonha-do-while",
-    "title": "Estruturas de Controle",
-    "section": "Laço dorme...ensonha (do-while)",
-    "text": "Laço dorme...ensonha (do-while)\nmalocar inteiro opcao = 0;\ndorme {\n    oPrai(\"Menu: 1-Jogar | 2-Sair\");\n    oPrai(\"Escolha uma opção:\");\n    opcao++;\n} ensonha (opcao &lt; 2);",
+    "objectID": "pages/regprod.html#por-que-é-necessário-uso-das-regras-de-produção",
+    "href": "pages/regprod.html#por-que-é-necessário-uso-das-regras-de-produção",
+    "title": "Regras de Produção",
+    "section": "",
+    "text": "As regras de produção são essenciais para garantir a consistência e a qualidade dos processos. Elas definem padrões claros que devem ser seguidos, minimizando erros e otimizando os resultados. Além disso, ajudam na padronização e na comunicação entre equipes, promovendo eficiência e alinhamento.",
     "crumbs": [
       "Home",
-      "Tutorais e Guias",
-      "Estruturas de Controle"
+      "Analisador Sintático",
+      "Regras de Produção"
+    ]
+  },
+  {
+    "objectID": "pages/regprod.html#regras-de-produção-da-linguagem-calabresso",
+    "href": "pages/regprod.html#regras-de-produção-da-linguagem-calabresso",
+    "title": "Regras de Produção",
+    "section": "Regras de produção da linguagem Calabresso++",
+    "text": "Regras de produção da linguagem Calabresso++\nAs regras de produção usadas para a construção do nosso analisador sintático foram:\n\nRegra 1: &lt;expr&gt; ::= &lt;term&gt; \"+\" &lt;expr&gt; | &lt;term&gt;\nRegra 2: &lt;term&gt; ::= &lt;factor&gt; \"*\" &lt;term&gt; | &lt;factor&gt;\nRegra 3: &lt;factor&gt; ::= \"(\" &lt;expr&gt; \")\" | &lt;id&gt;\nRegra 4: &lt;id&gt; ::= \"a\" | \"b\" | \"c\" | ... | \"z\"",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "Regras de Produção"
     ]
   },
   {
@@ -242,7 +302,55 @@
     "text": "A implementação desta linguagem tem como finalidade unir conceitos fundamentais da programação com elementos culturais e populares da família Brito, utilizando expressões e memes amplamente reconhecidos para tornar o aprendizado mais acessível, divertido e memorável.\n\n\n\n\n\n\n\n\n\nObjetivo\nEste possui projeto se trata apenas de um trabalho educacional que tem como objetivo demonstrar a possibilidade de criar linguagens de programação podem ser também instrumentos de expressão cultural e social, indo além do uso estritamente técnico.\nAo ressignificar palavras e atribuir significados computacionais a memes e bordões, esta linguagem evidencia como a computação pode dialogar com o cotidiano, gerando novas possibilidades de ensino, gamificação e experimentação. Assim, a implementação da linguagem Calabreso++ representa apenas como uma implementação divertida utilizando os conhecimentos teoricos adquiridos na componente de MATA61 - Compiladores\n\n\n\n\n Back to top",
     "crumbs": [
       "Home",
-      "Sejam Bem vindo Calabresos"
+      "**Sejam Bem vindo Calabresos**"
+    ]
+  },
+  {
+    "objectID": "pages/comoexecutar.html#como-compilar-e-usar",
+    "href": "pages/comoexecutar.html#como-compilar-e-usar",
+    "title": " ",
+    "section": "Como Compilar e Usar",
+    "text": "Como Compilar e Usar\nPara compilar e usar este parser, você precisará ter o GCC, Flex (Lex) e o Bison (Yacc) instalados em seu sistema. Os passos gerais são:\n\nBuildar o analisador_sintatico: Execute o comando make abaixo a partir da pasta raiz. ```bash make ````\nExecutar o compilador: Execute o binário gerado, passando o código fonte da linguagem ‘Oxe Lang’ como entrada.\n./arvore_sintatica &lt; input/exemplo-input.txt",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "⚙️ Como Executar o Analisador Sintático ⚙️"
+    ]
+  },
+  {
+    "objectID": "pages/comoexecutar.html#section",
+    "href": "pages/comoexecutar.html#section",
+    "title": " ",
+    "section": "",
+    "text": "Para compilar e usar este parser, você precisará ter o GCC, Flex (Lex) e o Bison (Yacc) instalados em seu sistema. Os passos gerais são:\n\nBuildar o analisador_sintatico: Execute o comando make abaixo a partir da pasta raiz. ```bash make ````\nExecutar o compilador: Execute o binário gerado, passando o código fonte da linguagem ‘Oxe Lang’ como entrada.\n./arvore_sintatica &lt; input/exemplo-input.txt",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "⚙️ Como Compilar e Usar o Analisador Sintático ⚙️"
+    ]
+  },
+  {
+    "objectID": "pages/comoexecutar.html",
+    "href": "pages/comoexecutar.html",
+    "title": " ",
+    "section": "",
+    "text": "Para compilar e usar este parser, você precisará ter o GCC, Flex (Lex) e o Bison (Yacc) instalados em seu sistema. Os passos gerais são:\n\nBuildar o analisador_sintatico: Execute o comando make abaixo a partir da pasta raiz. ```bash make ````\nExecutar o compilador: Execute o binário gerado, passando o código fonte da linguagem ‘Oxe Lang’ como entrada.\n./arvore_sintatica &lt; input/exemplo-input.txt",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "⚙️ Como Compilar e Usar o Analisador Sintático ⚙️"
+    ]
+  },
+  {
+    "objectID": "pages/comoexecutar.html#como-compilar-e-usar-o-analisador-sintático",
+    "href": "pages/comoexecutar.html#como-compilar-e-usar-o-analisador-sintático",
+    "title": " ",
+    "section": "",
+    "text": "Para compilar e usar este parser, você precisará ter o GCC, Flex (Lex) e o Bison (Yacc) instalados em seu sistema. Os passos gerais são:\n\nBuildar o analisador_sintatico: Execute o comando make abaixo a partir da pasta raiz. ```bash make ````\nExecutar o compilador: Execute o binário gerado, passando o código fonte da linguagem ‘Oxe Lang’ como entrada.\n./arvore_sintatica &lt; input/exemplo-input.txt",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "⚙️ Como Compilar e Usar o Analisador Sintático ⚙️"
     ]
   }
 ]
