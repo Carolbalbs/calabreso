@@ -20,5 +20,5 @@ website:
         contents:
         - pages/comoexecutar.qmd
         - pages/regprod.qmd
-        - pages/examplestree.qmd
+        - pages/casos_teste_arvore.qmd
 

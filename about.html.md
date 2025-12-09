@@ -1,5 +1,6 @@
 ---
 title: "Sobre nós"
+image: "./images/studie.png"
 about: 
   template: jolla
   links:
