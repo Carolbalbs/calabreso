@@ -7,6 +7,54 @@
     "text": "Olá! Somos um grupo de estudantes de Ciência da Computação na Universidade Federal da Bahia. Nosso objetivo com este trabalho implementar os conceitos teoricos adquiridos na disciplina de compiladores, por meio de uma abordagem divertida e criativa.\n\n\n Back to top"
   },
   {
+    "objectID": "pages/casos_teste_arvore.html",
+    "href": "pages/casos_teste_arvore.html",
+    "title": "Casos de teste 📊",
+    "section": "",
+    "text": "Exemplo\nCategoria\nValida\n\n\n\n\n1\nExpressões\nPrecedência de operadores\n\n\n2\nExpressões\nParênteses e precedência\n\n\n3\nDeclarações\nDeclaração com atribuição\n\n\n4\nExpressões\nArray indexing e operações\n\n\n5\nFunções\nDeclaração de função\n\n\n6\nControle\nCondicional completo (if/elif/else)\n\n\n7\nControle\nLaço for com break\n\n\n8\nControle\nWhile e do-while\n\n\n9\nExpressões\nAninhamento e associatividade\n\n\n10\nErros\nDetecção de erro sintático",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "Casos de teste 📊"
+    ]
+  },
+  {
+    "objectID": "pages/casos_teste_arvore.html#resumo-dos-casos-de-teste",
+    "href": "pages/casos_teste_arvore.html#resumo-dos-casos-de-teste",
+    "title": "Casos de teste 📊",
+    "section": "",
+    "text": "Exemplo\nCategoria\nValida\n\n\n\n\n1\nExpressões\nPrecedência de operadores\n\n\n2\nExpressões\nParênteses e precedência\n\n\n3\nDeclarações\nDeclaração com atribuição\n\n\n4\nExpressões\nArray indexing e operações\n\n\n5\nFunções\nDeclaração de função\n\n\n6\nControle\nCondicional completo (if/elif/else)\n\n\n7\nControle\nLaço for com break\n\n\n8\nControle\nWhile e do-while\n\n\n9\nExpressões\nAninhamento e associatividade\n\n\n10\nErros\nDetecção de erro sintático",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "Casos de teste 📊"
+    ]
+  },
+  {
+    "objectID": "pages/casos_teste_arvore.html#notas-de-implementação",
+    "href": "pages/casos_teste_arvore.html#notas-de-implementação",
+    "title": "Casos de teste 📊",
+    "section": "Notas de Implementação",
+    "text": "Notas de Implementação\n\nSímbolos da Árvore:\n\n├── : Nó intermediário\n└── : Último nó de um nível\n│ : Continuação vertical",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "Casos de teste 📊"
+    ]
+  },
+  {
+    "objectID": "pages/casos_teste_arvore.html#casos-de-teste-para-análise-sintática",
+    "href": "pages/casos_teste_arvore.html#casos-de-teste-para-análise-sintática",
+    "title": "Casos de teste 📊",
+    "section": "Casos de Teste para Análise Sintática",
+    "text": "Casos de Teste para Análise Sintática\nAqui estão alguns exemplos de casos de teste para validar a geração da árvore sintática utilizando Bison e Flex:\n\n\n\n\n\n\nNoteExemplo 1: Precedência aritmética\n\n\n\n\n\n\n\nEntrada:\n1 + 2 * 3;\n\n\nSaída de árvore esperada:\nEXPR\n├── NUM (1)\n├── OP (+)\n└── EXPR\n    ├── NUM (2)\n    ├── OP (*)\n    └── NUM (3)\n\n\n\n\n\n\nNoteExemplo 2: Parênteses alterando precedência\n\n\n\n\n\n\n\n\nEntrada:\n(1 + 2) * 3;\n\n\nSaida de árvore esperada:\nEXPR\n├── EXPR\n│   ├── NUM (1)\n│   ├── OP (+)\n│   └── NUM (2)\n├── OP (*)\n└── NUM (3)\n\n\n\n\n\n\nNoteExemplo 3: Declaração e atribuição\n\n\n\n\n\n\n\n\nEntrada:\nvar inteiro x malocar 5;\n\n\nSaida de árvore esperada:\nDECL\n├── VAR\n├── TYPE (inteiro)\n├── ID (x)\n└── ASSIGN\n    └── NUM (5)\n\n\n\n\n\n\nNoteExemplo 4: Atribuição com expressão\n\n\n\n\n\n\n\n\nEntrada:\nnotasAlunos[1] malocar (nota1 + nota2) / 2.0;\n\n\nSaida de árvore esperada:\nASSIGN\n├── ARRAY_ACCESS\n│   ├── ID (notasAlunos)\n│   └── INDEX\n│       └── NUM (1)\n└── EXPR\n    ├── EXPR\n    │   ├── ID (nota1)\n    │   ├── OP (+)\n    │   └── ID (nota2)\n    ├── OP (/)\n    └── NUM (2.0)\n:::\n\n\n\n\n\n\nNoteExemplo 5: Definição de função simples\n\n\n\n\n\n\n\n\nEntrada:\ndeGue inteiro soma(inteiro a, inteiro b) {\n    devolva a + b;\n}\n\n\nSaida de árvore esperada:\nFUNC_DECL\n├── RETURN_TYPE (inteiro)\n├── ID (soma)\n├── PARAM_LIST\n│   ├── PARAM\n│   │   ├── TYPE (inteiro)\n│   │   └── ID (a)\n│   └── PARAM\n│       ├── TYPE (inteiro)\n│       └── ID (b)\n└── BODY\n    └── BLOCK\n        └── RETURN\n            └── EXPR\n                ├── ID (a)\n                ├── OP (+)\n                └── ID (b)\n\n\n\n\n\n\nNoteExemplo 6: Condicional (if / elif / else)\n\n\n\n\n\n\n\n\nEntrada:\nse_ligue (x &gt; 0) {\n    oPrai(\"positivo\");\n} yotra (x == 0) {\n    oPrai(\"zero\");\n} nada_ve {\n    oPrai(\"negativo\");\n}\n\n\nSaida de árvore esperada:\nIF_STMT\n├── CONDITION\n│   ├── ID (x)\n│   ├── OP (&gt;)\n│   └── NUM (0)\n├── THEN\n│   └── BLOCK\n│       └── CALL\n│           ├── ID (oPrai)\n│           └── ARG_LIST\n│               └── STRING (\"positivo\")\n├── ELIF\n│   ├── CONDITION\n│   │   ├── ID (x)\n│   │   ├── OP (==)\n│   │   └── NUM (0)\n│   └── THEN\n│       └── BLOCK\n│           └── CALL\n│               ├── ID (oPrai)\n│               └── ARG_LIST\n│                   └── STRING (\"zero\")\n└── ELSE\n    └── BLOCK\n        └── CALL\n            ├── ID (oPrai)\n            └── ARG_LIST\n                └── STRING (\"negativo\")\n\n\n\n\n\n\nNoteExemplo 7: Laço for (dinovo) com break (calma_calabreso)\n\n\n\n\n\n\n\n\nEntrada:\ndinovo (var inteiro i malocar 0; i &lt; 5; i += 1) {\n    se_ligue (i == 3) {\n        calma_calabreso;\n    }\n}\n\n\nSaida de árvore esperada:\nFOR_STMT\n├── INIT\n│   └── DECL\n│       ├── VAR\n│       ├── TYPE (inteiro)\n│       ├── ID (i)\n│       └── ASSIGN\n│           └── NUM (0)\n├── CONDITION\n│   ├── ID (i)\n│   ├── OP (&lt;)\n│   └── NUM (5)\n├── INCREMENT\n│   ├── ID (i)\n│   ├── OP (+=)\n│   └── NUM (1)\n└── BODY\n    └── BLOCK\n        └── IF_STMT\n            ├── CONDITION\n            │   ├── ID (i)\n            │   ├── OP (==)\n            │   └── NUM (3)\n            └── THEN\n                └── BLOCK\n                    └── BREAK\n\n\n\n\n\n\nNoteExemplo 8: While (ensonha) e Do-while (dorme-ensonha)\n\n\n\n\n\n\n\n\nEntrada:\nvar inteiro c malocar 0;\nensonha (c &lt; 2) {\n    c += 1;\n}\nvar inteiro t malocar 0;\ndorme-ensonha {\n    t += 1;\n} enquanto (t &lt; 2);\n\n\nSaida de árvore esperada:\nSTMT_LIST\n├── DECL\n│   ├── VAR\n│   ├── TYPE (inteiro)\n│   ├── ID (c)\n│   └── ASSIGN\n│       └── NUM (0)\n├── WHILE_STMT\n│   ├── CONDITION\n│   │   ├── ID (c)\n│   │   ├── OP (&lt;)\n│   │   └── NUM (2)\n│   └── BODY\n│       └── BLOCK\n│           └── ASSIGN\n│               ├── ID (c)\n│               ├── OP (+=)\n│               └── NUM (1)\n├── DECL\n│   ├── VAR\n│   ├── TYPE (inteiro)\n│   ├── ID (t)\n│   └── ASSIGN\n│       └── NUM (0)\n└── DO_WHILE_STMT\n    ├── BODY\n    │   └── BLOCK\n    │       └── ASSIGN\n    │           ├── ID (t)\n    │           ├── OP (+=)\n    │           └── NUM (1)\n    └── CONDITION\n        ├── ID (t)\n        ├── OP (&lt;)\n        └── NUM (2)\n\n\n\n\n\n\nNoteExemplo 9: Expressão aninhada (testa associatividade)\n\n\n\n\n\n\n\n\nEntrada:\na + (b * (c + d));\n\n\nSaida de árvore esperada:\nEXPR\n├── ID (a)\n├── OP (+)\n└── EXPR\n    ├── ID (b)\n    ├── OP (*)\n    └── EXPR\n        ├── ID (c)\n        ├── OP (+)\n        └── ID (d)\n\n\n\n\n\n\nNoteExemplo 10: Caso de erro — falta de ponto-e-vírgula\n\n\n\n\n\n\n\n\nEntrada:\nvar inteiro x malocar 5\n\n\nSaida de árvore esperada:\nsyntax error, unexpected $end, expecting ';'\nError at line 1, column 24",
+    "crumbs": [
+      "Home",
+      "Analisador Sintático",
+      "Casos de teste 📊"
+    ]
+  },
+  {
     "objectID": "pages/examples.html",
     "href": "pages/examples.html",
     "title": "Diagramas de Transição",
@@ -124,30 +172,6 @@
       "Home",
       "Tutorais e Guias",
       "Estruturas de Controle"
-    ]
-  },
-  {
-    "objectID": "pages/examplestree.html",
-    "href": "pages/examplestree.html",
-    "title": "Casos de teste",
-    "section": "",
-    "text": "Aqui estão alguns exemplos de casos de teste para validar a geração da árvore sintática utilizando Bison e Flex:\n\n\n\n\n\n\nNoteExemplo 1: Precedência aritmética\n\n\n\n\n\n\n\n\n1 + 2 * 3;\n\n\n\n(+ 1 (* 2 3))\n\n\n\n\n\n\nNoteExemplo 2: Parênteses alterando precedência\n\n\n\n\n\n\n\n\n\n(1 + 2) * 3;\n\n\n\n(* (+ 1 2) 3)\n\n\n\n\n\n\nNoteExemplo 3: Declaração e atribuição\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5;\n\n\n\n(declaration var inteiro x (assign 5))\n\n\n\n\n\n\nNoteExemplo 4: Atribuição com expressão\n\n\n\n\n\n\n\n\n\nnotasAlunos[1] malocar (nota1 + nota2) / 2.0;\n\n\n\n(assign (index notasAlunos 1) (/ (+ nota1 nota2) 2.0))\n:::\n\n\n\n\n\n\nNoteExemplo 5: Definição de função simples\n\n\n\n\n\n\n\n\n\ndeGue inteiro soma(inteiro a, inteiro b) {\n    devolva a + b;\n}\n\n\n\n(function-decl inteiro soma ((param inteiro a) (param inteiro b)) (return (+ a b)))\n\n\n\n\n\n\nNoteExemplo 6: Condicional (if / elif / else)\n\n\n\n\n\n\n\n\n\nse_ligue (x &gt; 0) {\n    oPrai(\"positivo\");\n} yotra (x == 0) {\n    oPrai(\"zero\");\n} nada_ve {\n    oPrai(\"negativo\");\n}\n\n\n\n(if (&gt; x 0) (call oPrai (\"positivo\")) (elif (= x 0) (call oPrai (\"zero\"))) (else (call oPrai (\"negativo\"))))\n\n\n\n\n\n\nNoteExemplo 7: Laço for (dinovo) com break (calma_calabreso)\n\n\n\n\n\n\n\n\n\ndinovo (var inteiro i malocar 0; i &lt; 5; i += 1) {\n    se_ligue (i == 3) {\n        calma_calabreso;\n    }\n}\n\n\n\n(for (declaration var inteiro i (assign 0)) (&lt; i 5) (assign i (+= i 1)) (block (if (= i 3) (break))))\n\n\n\n\n\n\nNoteExemplo 8: While (ensonha) e Do-while (dorme-ensonha)\n\n\n\n\n\n\n\n\n\nvar inteiro c malocar 0;\nensonha (c &lt; 2) {\n    c += 1;\n}\nvar inteiro t malocar 0;\ndorme-ensonha {\n    t += 1;\n} enquanto (t &lt; 2);\n\n\n\n(block (declaration var inteiro c (assign 0)) (while (&lt; c 2) (assign c (+= c 1))) (declaration var inteiro t (assign 0)) (do-while (assign t (+= t 1)) (&lt; t 2)))\n\n\n\n\n\n\nNoteExemplo 9: Expressão aninhada (testa associatividade)\n\n\n\n\n\n\n\n\n\na + (b * (c + d));\n\n\n\n(+ a (* b (+ c d)))\n\n\n\n\n\n\nNoteExemplo 10: Caso de erro — falta de ponto-e-vírgula\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5\nResultado esperado: parse error indicando token ; esperado (ou mensagem equivalente do analisador).",
-    "crumbs": [
-      "Home",
-      "Analisador Sintático",
-      "Casos de teste"
-    ]
-  },
-  {
-    "objectID": "pages/examplestree.html#casos-de-teste-para-análise-sintática",
-    "href": "pages/examplestree.html#casos-de-teste-para-análise-sintática",
-    "title": "Casos de teste",
-    "section": "",
-    "text": "Aqui estão alguns exemplos de casos de teste para validar a geração da árvore sintática utilizando Bison e Flex:\n\n\n\n\n\n\nNoteExemplo 1: Precedência aritmética\n\n\n\n\n\n\n\n\n1 + 2 * 3;\n\n\n\n(+ 1 (* 2 3))\n\n\n\n\n\n\nNoteExemplo 2: Parênteses alterando precedência\n\n\n\n\n\n\n\n\n\n(1 + 2) * 3;\n\n\n\n(* (+ 1 2) 3)\n\n\n\n\n\n\nNoteExemplo 3: Declaração e atribuição\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5;\n\n\n\n(declaration var inteiro x (assign 5))\n\n\n\n\n\n\nNoteExemplo 4: Atribuição com expressão\n\n\n\n\n\n\n\n\n\nnotasAlunos[1] malocar (nota1 + nota2) / 2.0;\n\n\n\n(assign (index notasAlunos 1) (/ (+ nota1 nota2) 2.0))\n:::\n\n\n\n\n\n\nNoteExemplo 5: Definição de função simples\n\n\n\n\n\n\n\n\n\ndeGue inteiro soma(inteiro a, inteiro b) {\n    devolva a + b;\n}\n\n\n\n(function-decl inteiro soma ((param inteiro a) (param inteiro b)) (return (+ a b)))\n\n\n\n\n\n\nNoteExemplo 6: Condicional (if / elif / else)\n\n\n\n\n\n\n\n\n\nse_ligue (x &gt; 0) {\n    oPrai(\"positivo\");\n} yotra (x == 0) {\n    oPrai(\"zero\");\n} nada_ve {\n    oPrai(\"negativo\");\n}\n\n\n\n(if (&gt; x 0) (call oPrai (\"positivo\")) (elif (= x 0) (call oPrai (\"zero\"))) (else (call oPrai (\"negativo\"))))\n\n\n\n\n\n\nNoteExemplo 7: Laço for (dinovo) com break (calma_calabreso)\n\n\n\n\n\n\n\n\n\ndinovo (var inteiro i malocar 0; i &lt; 5; i += 1) {\n    se_ligue (i == 3) {\n        calma_calabreso;\n    }\n}\n\n\n\n(for (declaration var inteiro i (assign 0)) (&lt; i 5) (assign i (+= i 1)) (block (if (= i 3) (break))))\n\n\n\n\n\n\nNoteExemplo 8: While (ensonha) e Do-while (dorme-ensonha)\n\n\n\n\n\n\n\n\n\nvar inteiro c malocar 0;\nensonha (c &lt; 2) {\n    c += 1;\n}\nvar inteiro t malocar 0;\ndorme-ensonha {\n    t += 1;\n} enquanto (t &lt; 2);\n\n\n\n(block (declaration var inteiro c (assign 0)) (while (&lt; c 2) (assign c (+= c 1))) (declaration var inteiro t (assign 0)) (do-while (assign t (+= t 1)) (&lt; t 2)))\n\n\n\n\n\n\nNoteExemplo 9: Expressão aninhada (testa associatividade)\n\n\n\n\n\n\n\n\n\na + (b * (c + d));\n\n\n\n(+ a (* b (+ c d)))\n\n\n\n\n\n\nNoteExemplo 10: Caso de erro — falta de ponto-e-vírgula\n\n\n\n\n\n\n\n\n\nvar inteiro x malocar 5\nResultado esperado: parse error indicando token ; esperado (ou mensagem equivalente do analisador).",
-    "crumbs": [
-      "Home",
-      "Analisador Sintático",
-      "Casos de teste"
     ]
   },
   {
@@ -274,7 +298,7 @@
     "href": "pages/comoexecutar.html",
     "title": " ",
     "section": "",
-    "text": "Para compilar e usar este parser, você precisará ter o GCC, Flex (Lex) e o Bison (Yacc) instalados em seu sistema. Os passos gerais são:\n\nBuildar o analisador_sintatico: Execute o comando make abaixo a partir da pasta raiz. ```bash make ````\nExecutar o compilador: Execute o binário gerado, passando o código fonte da linguagem ‘Oxe Lang’ como entrada.\n./arvore_sintatica &lt; input/exemplo-input.txt",
+    "text": "Para compilar e usar este parser, você precisará ter o GCC, Flex (Lex) e o Bison (Yacc) instalados em seu sistema. Os passos gerais são:\n\nBuildar o analisador_sintatico: Execute o comando make abaixo a partir da pasta raiz. ```bash make ````\nExecutar o compilador: Execute o binário gerado, passando o código fonte da linguagem ‘Calabreso++’ como entrada.\n./arvore_sintatica &lt; input/exemplo-input.txt",
     "crumbs": [
       "Home",
       "Analisador Sintático",
@@ -286,7 +310,7 @@
     "href": "pages/comoexecutar.html#como-compilar-e-usar-o-analisador-sintático",
     "title": " ",
     "section": "",
-    "text": "Para compilar e usar este parser, você precisará ter o GCC, Flex (Lex) e o Bison (Yacc) instalados em seu sistema. Os passos gerais são:\n\nBuildar o analisador_sintatico: Execute o comando make abaixo a partir da pasta raiz. ```bash make ````\nExecutar o compilador: Execute o binário gerado, passando o código fonte da linguagem ‘Oxe Lang’ como entrada.\n./arvore_sintatica &lt; input/exemplo-input.txt",
+    "text": "Para compilar e usar este parser, você precisará ter o GCC, Flex (Lex) e o Bison (Yacc) instalados em seu sistema. Os passos gerais são:\n\nBuildar o analisador_sintatico: Execute o comando make abaixo a partir da pasta raiz. ```bash make ````\nExecutar o compilador: Execute o binário gerado, passando o código fonte da linguagem ‘Calabreso++’ como entrada.\n./arvore_sintatica &lt; input/exemplo-input.txt",
     "crumbs": [
       "Home",
       "Analisador Sintático",
@@ -296,37 +320,73 @@
   {
     "objectID": "pages/regprod.html",
     "href": "pages/regprod.html",
-    "title": "Regras de Produção",
+    "title": "Regras de Produção 📜",
     "section": "",
     "text": "As regras de produção são essenciais para garantir a consistência e a qualidade dos processos. Elas definem padrões claros que devem ser seguidos, minimizando erros e otimizando os resultados. Além disso, ajudam na padronização e na comunicação entre equipes, promovendo eficiência e alinhamento.",
     "crumbs": [
       "Home",
       "Analisador Sintático",
-      "Regras de Produção"
+      "Regras de Produção 📜"
     ]
   },
   {
     "objectID": "pages/regprod.html#por-que-é-necessário-uso-das-regras-de-produção",
     "href": "pages/regprod.html#por-que-é-necessário-uso-das-regras-de-produção",
-    "title": "Regras de Produção",
+    "title": "Regras de Produção 📜",
     "section": "",
     "text": "As regras de produção são essenciais para garantir a consistência e a qualidade dos processos. Elas definem padrões claros que devem ser seguidos, minimizando erros e otimizando os resultados. Além disso, ajudam na padronização e na comunicação entre equipes, promovendo eficiência e alinhamento.",
     "crumbs": [
       "Home",
       "Analisador Sintático",
-      "Regras de Produção"
+      "Regras de Produção 📜"
     ]
   },
   {
     "objectID": "pages/regprod.html#regras-de-produção-da-linguagem-calabresso",
     "href": "pages/regprod.html#regras-de-produção-da-linguagem-calabresso",
-    "title": "Regras de Produção",
+    "title": "Regras de Produção 📜",
     "section": "Regras de produção da linguagem Calabresso++",
     "text": "Regras de produção da linguagem Calabresso++\nAs regras de produção usadas para a construção do nosso analisador sintático foram:\n\nRegra 1: &lt;expr&gt; ::= &lt;term&gt; \"+\" &lt;expr&gt; | &lt;term&gt;\nRegra 2: &lt;term&gt; ::= &lt;factor&gt; \"*\" &lt;term&gt; | &lt;factor&gt;\nRegra 3: &lt;factor&gt; ::= \"(\" &lt;expr&gt; \")\" | &lt;id&gt;\nRegra 4: &lt;id&gt; ::= \"a\" | \"b\" | \"c\" | ... | \"z\"",
     "crumbs": [
       "Home",
       "Analisador Sintático",
-      "Regras de Produção"
+      "Regras de Produção 📜"
+    ]
+  },
+  {
+    "objectID": "pages/tutoriais.html",
+    "href": "pages/tutoriais.html",
+    "title": "Tabela de Símbolos",
+    "section": "",
+    "text": "Durante o processo de análise léxica, a Calabreso++ utiliza uma Tabela de Símbolos para armazenar e rastrear todos os identificadores encontrados no código fonte.\nEssa tabela é essencial para garantir que variáveis, funções e outros símbolos sejam reconhecidos corretamente ao longo da análise e fases posteriores da compilação.",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Tabela de Símbolos"
+    ]
+  },
+  {
+    "objectID": "pages/tutoriais.html#como-funciona",
+    "href": "pages/tutoriais.html#como-funciona",
+    "title": "Tabela de Símbolos",
+    "section": "Como funciona?",
+    "text": "Como funciona?\nA Tabela de Símbolos é implementada como uma estrutura simples baseada em arrays. Cada identificador único é armazenado na tabela à medida que aparece no código. Quando o mesmo identificador reaparece, sua posição é reutilizada — evitando duplicação.",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Tabela de Símbolos"
+    ]
+  },
+  {
+    "objectID": "pages/tutoriais.html#estrutura",
+    "href": "pages/tutoriais.html#estrutura",
+    "title": "Tabela de Símbolos",
+    "section": "Estrutura:",
+    "text": "Estrutura:\n#define MAX_SYMBOLS 100000\n#define MAX_ID_LENGTH 256\n\nchar symbol_table[MAX_SYMBOLS][MAX_ID_LENGTH];\nint symbol_count = 0;\n\nMAX_SYMBOLS: Número máximo de símbolos que a tabela pode armazenar.\nMAX_ID_LENGTH: Tamanho máximo de cada identificador.\nsymbol_table: Array que guarda os nomes dos identificadores.\nsymbol_count: Quantidade atual de símbolos armazenados.\n\n\nFunção Principal: get_symbol_position\nint get_symbol_position(const char* id);\nEssa função é responsável por:\n\nBuscar um identificador já existente na tabela.\nAdicionar um novo identificador se ele ainda não estiver registrado.\nRetornar a posição do identificador na tabela.\nRetornar -1 caso a tabela esteja cheia.\n\nExemplo de uso dentro do analisador:\nvoid print_identifier(const char* yytext_val) {\n    printf(\"ID\");\n    int pos = get_symbol_position(yytext_val);\n    if (pos != -1){\n        printf(\", %d\", pos);\n    }\n}\nEssa impressão ajuda a visualizar não apenas que o token é um identificador, mas qual a sua posição na tabela de símbolos, facilitando o rastreamento e testes.",
+    "crumbs": [
+      "Home",
+      "Tutorais e Guias",
+      "Tabela de Símbolos"
     ]
   }
 ]
