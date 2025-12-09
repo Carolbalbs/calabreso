@@ -5,6 +5,9 @@ website:
       - section: Introdução
         contents:
         - pages/intro.qmd
+      - section: Analisador Léxico
+        contents:
+        - pages/comousar.qmd
       - section: Tutorais e Guias
         contents:
         - pages/tutoriais.qmd
@@ -13,9 +16,6 @@ website:
       - section: Estados de Transição
         contents:
         - pages/examples.qmd
-      - section: Analisador Léxico
-        contents:
-        - pages/comousar.qmd
       - section: Analisador Sintático
         contents:
         - pages/comoexecutar.qmd
